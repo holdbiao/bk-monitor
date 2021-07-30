@@ -1,0 +1,144 @@
+{
+  "source_label": [
+    {
+      "index": null,
+      "label_type": "source_label",
+      "level": null,
+      "parent_label": null,
+      "label_name": "蓝鲸数据平台",
+      "label_id": "bk_data"
+    },
+    {
+      "index": null,
+      "label_type": "source_label",
+      "level": null,
+      "parent_label": null,
+      "label_name": "蓝鲸监控",
+      "label_id": "bk_monitor"
+    },
+    {
+      "index": null,
+      "label_type": "source_label",
+      "level": null,
+      "parent_label": null,
+      "label_name": "蓝鲸监控",
+      "label_id": "custom"
+    }
+  ],
+  "result_table_label": [
+    {
+      "index": 1,
+      "label_type": "result_table_label",
+      "level": 1,
+      "parent_label": null,
+      "label_name": "应用",
+      "label_id": "applications"
+    },
+    {
+      "index": 2,
+      "label_type": "result_table_label",
+      "level": 2,
+      "parent_label": "applications",
+      "label_name": "业务应用",
+      "label_id": "application_check"
+    },
+    {
+      "index": 2,
+      "label_type": "result_table_label",
+      "level": 2,
+      "parent_label": "services",
+      "label_name": "组件",
+      "label_id": "component"
+    },
+    {
+      "index": 3,
+      "label_type": "result_table_label",
+      "level": 1,
+      "parent_label": null,
+      "label_name": "主机",
+      "label_id": "hosts"
+    },
+    {
+      "index": 1,
+      "label_type": "result_table_label",
+      "level": 2,
+      "parent_label": "hosts",
+      "label_name": "进程",
+      "label_id": "host_process"
+    },
+    {
+      "index": 2,
+      "label_type": "result_table_label",
+      "level": 2,
+      "parent_label": "hosts",
+      "label_name": "操作系统",
+      "label_id": "os"
+    },
+    {
+      "index": 4,
+      "label_type": "result_table_label",
+      "level": 1,
+      "parent_label": null,
+      "label_name": "其他",
+      "label_id": "others"
+    },
+    {
+      "index": 2,
+      "label_type": "result_table_label",
+      "level": 2,
+      "parent_label": "others",
+      "label_name": "其他",
+      "label_id": "other_rt"
+    },
+    {
+      "index": 2,
+      "label_type": "result_table_label",
+      "level": 1,
+      "parent_label": null,
+      "label_name": "服务",
+      "label_id": "services"
+    },
+    {
+      "index": 1,
+      "label_type": "result_table_label",
+      "level": 2,
+      "parent_label": "services",
+      "label_name": "服务模块",
+      "label_id": "service_module"
+    }
+  ],
+  "type_label": [
+    {
+      "index": null,
+      "label_type": "type_label",
+      "level": null,
+      "parent_label": null,
+      "label_name": "自定义事件类型",
+      "label_id": "custom_event"
+    },
+    {
+      "index": null,
+      "label_type": "type_label",
+      "level": null,
+      "parent_label": null,
+      "label_name": "事件类型",
+      "label_id": "event"
+    },
+    {
+      "index": null,
+      "label_type": "type_label",
+      "level": null,
+      "parent_label": null,
+      "label_name": "日志类型",
+      "label_id": "log"
+    },
+    {
+      "index": null,
+      "label_type": "type_label",
+      "level": null,
+      "parent_label": null,
+      "label_name": "时序数据",
+      "label_id": "time_series"
+    }
+  ]
+}

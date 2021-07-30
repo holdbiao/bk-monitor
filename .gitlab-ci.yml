@@ -1,0 +1,161 @@
+stages:
+  # pep8 代码风格检查
+  - pep8
+  # 后端单元测试
+  - backends_test
+  # SaaS 模块单元测试，由于环境变量不能一样，所以需要分开测试
+  - saas_test
+  # eslint 代码风格检查
+  - eslint
+  # webpack项目构建
+  - webpack
+
+#pep8:
+#  stage: pep8
+#  tags:
+#    - apps
+#  before_script:
+#    - LANG="zh_CN.utf8"
+#    - export LC_ALL=zh_CN.UTF-8
+#    - source /data/gitlab-runner/bin/activate
+#    - pyenv versions | grep "open_ce_bk_monitor_py3.6" && echo "virtualenv has been installed" || pyenv virtualenv 3.6.6 open_ce_bk_monitor_py3.6
+#    - pyenv shell open_ce_bk_monitor_py3.6
+#    - pip install -r requirements.txt
+#    - pip install -r requirements_test.txt
+#  script:
+#    - flake8 --config=.ci-flake8 .
+#    # 新代码都要使用严格的 pep 检查，逐渐把 .ci-flake8 替代掉
+#    - flake8 --config=.flake8 blueapps
+#    - flake8 --config=.flake8 alarm_backends/tests/
+#    - flake8 --config=.flake8 packages/monitor_web/tests/
+#    - flake8 --config=.flake8 alarm_backends/core/control/
+#    - flake8 --config=.flake8 alarm_backends/core/detect_result/
+#    - flake8 --config=.flake8 alarm_backends/service/detect/
+#    - flake8 --config=.flake8 alarm_backends/service/trigger/
+#    - flake8 --config=.flake8 alarm_backends/service/nodata/
+#    - flake8 --config=.flake8 packages/monitor_web/alert_events/
+
+backends_test:
+  stage: backends_test
+  tags:
+    - apps
+  before_script:
+    - LANG="zh_CN.utf8"
+    - export LC_ALL=zh_CN.UTF-8
+    - source /data/gitlab-runner/bin/activate
+    - source scripts/develop/sites/community/env.sh
+    - mkdir -p logs/bkmonitor/
+    - pyenv shell open_ce_bk_monitor_py3.6
+    - pyenv versions
+    - pip install -r requirements.txt
+    - pip install -r requirements_test.txt
+  script:
+    - cp scripts/develop/local_settings_tpl.py ./local_settings.py
+    # 随机测试 DB 名字，避免多个单元测试进程同时跑时数据库冲突
+    - sed -i.bak "s/test_${APP_ID}/test_${APP_ID}_${RANDOM}/g" ./local_settings.py && rm ./local_settings.py.bak
+    - sed -i.bak "s/test_${BK_DATA_MYSQL_NAME}/test_${BK_DATA_MYSQL_NAME}_${RANDOM}/g" ./local_settings.py && rm ./local_settings.py.bak
+    - pytest alarm_backends/tests metadata/tests bkmonitor/data_source/tests query_api/tests -s --cov=alarm_backends --cov=metadata --cov=bkmonitor/data_source --cov=query_api
+
+saas_test:
+  stage: saas_test
+  tags:
+    - apps
+  before_script:
+    - LANG="zh_CN.utf8"
+    - export LC_ALL=zh_CN.UTF-8
+    - source /data/gitlab-runner/bin/activate
+    - source scripts/develop/sites/community/env.sh
+    - mkdir -p logs/bkmonitor/
+    - pyenv versions
+    - pyenv shell open_ce_bk_monitor_py3.6
+    - pip install -r requirements.txt
+    - pip install -r requirements_test.txt
+  script:
+    - cp scripts/develop/local_settings_tpl.py ./local_settings.py
+    # 随机测试 DB 名字，避免多个单元测试进程同时跑时数据库冲突
+    - sed -i.bak "s/test_${APP_ID}/test_${APP_ID}_${RANDOM}/g" ./local_settings.py && rm ./local_settings.py.bak
+    - sed -i.bak "s/test_${BK_DATA_MYSQL_NAME}/test_${BK_DATA_MYSQL_NAME}_${RANDOM}/g" ./local_settings.py && rm ./local_settings.py.bak
+    - unset DJANGO_CONF_MODULE
+    - mysql -uroot -e "CREATE DATABASE IF NOT EXISTS $APP_ID DEFAULT CHARACTER SET = 'utf8' DEFAULT COLLATE 'utf8_general_ci';"
+    - mysql -uroot -e "CREATE DATABASE IF NOT EXISTS $BK_DATA_MYSQL_NAME DEFAULT CHARACTER SET = 'utf8' DEFAULT COLLATE 'utf8_general_ci';"
+    - pytest packages/monitor_web/tests -s --cov=packages/monitor_web
+
+eslint:
+  stage: eslint
+  tags:
+    - apps
+  before_script:
+    - source /data/gitlab-runner/paas-webfe/bin/activate
+    - which node && node --version
+    - alias tnpm="/data/gitlab-runner/node/bin/tnpm"
+    - which tnpm && tnpm --version
+  script:
+    - mkdir -p webpack/node_modules
+    - cp -r /data/gitlab-data/cache/bkmonitor/monitor_alert_internel/node_modules webpack/
+    - make npm-install
+    - cd webpack
+    - npx eslint "src/**/**/*.vue"
+  except:
+    - feature_no_data_alarm
+
+build-webpack:
+  tags:
+    - apps
+  before_script:
+    # webpack项目构建
+    - source /data/gitlab-runner/paas-webfe/bin/activate
+    - which node && node --version
+    - alias tnpm="/data/gitlab-runner/node/bin/tnpm"
+    - which tnpm && tnpm --version
+  variables:
+    CI_REPOSITORY_URL:
+      http://$GIT_USERNAME:$GIT_PASSWORD@gitlab-paas.open.oa.com/$CI_PROJECT_PATH.git
+    OUT_PUT_DIR:
+      static/monitor
+    WEBPACK_BUILD_BRANCH:
+      webpack-build-ci-$CI_PIPELINE_ID
+    GITLAB_URL:
+      http://gitlab-paas.open.oa.com
+  stage: webpack
+  artifacts:
+    paths:
+      - $OUT_PUT_DIR
+  script:
+    - echo "start npm build"
+    - git checkout $CI_COMMIT_REF_NAME
+    - git fetch
+    - git reset --hard origin/$CI_COMMIT_REF_NAME
+    - git pull
+    - git checkout -b $WEBPACK_BUILD_BRANCH
+    # 将下载失败的包预先拷贝到node_module下
+    - mkdir -p webpack/node_modules
+    - cp -r /data/gitlab-data/cache/bkmonitor/monitor_alert_internel/node_modules webpack/
+    - make webpack-build
+    - rm -rf $OUT_PUT_DIR && cp -r webpack/monitor $OUT_PUT_DIR
+    - git add --all $OUT_PUT_DIR
+    - git commit -m "[ci skip] Webpack Auto Build By CI" || exit 0
+    - git push $CI_REPOSITORY_URL $WEBPACK_BUILD_BRANCH:$WEBPACK_BUILD_BRANCH || exit 0
+    - python packages/utils/create_merge_request.py $WEBPACK_BUILD_BRANCH $CI_COMMIT_REF_NAME "Webpack Auto Build By CI"
+
+  only:
+    - master
+    - testing
+    - /^ee-V.*\.x$/
+    - /^ee-V.*\.x-stage$/
+
+#pages:
+#  stage: apidoc
+#  variables:
+#    PUBLIC_DIR:  # 用来生成pages的目录
+#      public
+#    INPUT_DIR:   # 需要扫描注释的路径
+#      webpack/src/commons/
+#    OUTPUT_DIR:  # 文档输出目录
+#      $PUBLIC_DIR/apidoc/
+#  script:
+#  - apidoc -i $INPUT_DIR -o $OUTPUT_DIR
+#  artifacts:
+#    paths:  # 产物路径，用于发布pages
+#    - $PUBLIC_DIR
+#  only:
+#  - testing

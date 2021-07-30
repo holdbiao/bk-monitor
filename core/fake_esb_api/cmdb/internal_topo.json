@@ -1,0 +1,44 @@
+{
+  "2": {
+    "bk_set_id": 2,
+    "module": [
+      {
+        "bk_module_name": "idle host",
+        "bk_module_id": 3
+      },
+      {
+        "bk_module_name": "fault host",
+        "bk_module_id": 4
+      }
+    ],
+    "bk_set_name": "idle pool"
+  },
+  "3": {
+    "bk_set_id": 3,
+    "module": [
+      {
+        "bk_module_name": "idle host",
+        "bk_module_id": 7
+      },
+      {
+        "bk_module_name": "fault host",
+        "bk_module_id": 8
+      }
+    ],
+    "bk_set_name": "idle pool"
+  },
+  "4": {
+    "bk_set_id": 4,
+    "module": [
+      {
+        "bk_module_name": "idle host",
+        "bk_module_id": 11
+      },
+      {
+        "bk_module_name": "fault host",
+        "bk_module_id": 12
+      }
+    ],
+    "bk_set_name": "idle pool"
+  }
+}

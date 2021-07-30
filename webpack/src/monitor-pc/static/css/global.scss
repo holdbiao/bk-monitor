@@ -1,0 +1,147 @@
+/* stylelint-disable declaration-no-important */
+.clear-fix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.collapse-transition {
+  transition: .3s height ease-in-out;
+}
+.tippy-tooltip {
+  .tippy-content {
+    padding: 0;
+  }
+  .tippy-arrow,
+  .tippy-roundarrow {
+    position: absolute;
+    width: 0;
+    height: 0
+  }
+  &.common-monitor-theme {
+    padding: 0 !important;
+    pointer-events: all;
+    min-width: 68px;
+    border-radius: 2px !important;
+  }
+  &.add-metric-theme {
+    .tippy-arrow {
+      left: 16px !important;
+    }
+  }
+  &.add-target-theme {
+    left: 20px;
+    .tippy-arrow {
+      left: 5px !important;
+    }
+  }
+  &.open-config-script-theme {
+    transform: translateY(16px) !important;
+    padding: 0;
+  }
+  &.navigation-message-theme {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  &.edit-ip-node-theme,
+  &.edit-operator-node-theme,
+  &.task-card-theme {
+    padding: 0 !important;
+    pointer-events: all;
+    min-width: 68px;
+    .tippy-content {
+      transition: none !important;
+    }
+  }
+  &.tippy-metric-theme {
+    padding: 7px 10px;
+    .tippy-content {
+      min-width: 189px;
+      .item {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &.group-card-theme {
+    padding: 0 !important;
+    pointer-events: all;
+    min-width: 98px;
+    .tippy-content {
+      transition: none !important;
+    }
+  }
+  &.performance-dialog-theme {
+    transform: translate(-38px, 10px) !important;
+    .tippy-arrow {
+      left: auto !important;
+      right: 8px;
+    }
+  }
+  &.shield-theme {
+    border-radius: 2px;
+    box-shadow: 0px 1px 4px 0px rgba(196,198,204,1);
+  }
+  &.table-filter-theme {
+    border-radius: 2px;
+    box-shadow: 0px 1px 4px 0px rgba(196,198,204,1);
+  }
+  &.strategy-remind-theme {
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,.2);
+  }
+}
+.item-input-create {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  .bk-icon {
+    margin-right: 4px;
+  }
+}
+.highcharts-tooltip-container {
+  z-index: 2501;
+}
+.list-pagination {
+  .bk-page-total-count {
+    line-height: 34px !important;
+  }
+}
+.bk-table-empty-block {
+  background-color: #fff;
+}
+.bk-big-tree-empty {
+  display: none;
+}
+.resize-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #c4c6cc;
+  z-index: 99999;
+}
+.bk-select.is-default-trigger.is-unselected:before {
+  color: #c4c6cc;
+}
+.loading-fixed {
+  position: absolute !important;
+  z-index: 1000;
+}
+.container-header {
+  height: auto !important;
+}
+.mc-btn-add {
+  min-width: 88px;
+}
+.codicon[class*=codicon-] {
+  font-family: "codicon" !important;
+}
+.cursor-element {
+  background: url("../images/svg/lock.svg");
+  height: 16px;
+  width: 12px;
+}

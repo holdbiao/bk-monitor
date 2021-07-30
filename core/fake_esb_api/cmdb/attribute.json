@@ -1,0 +1,2539 @@
+{
+  "host": [
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_host_innerip",
+      "id": 26,
+      "unit": "",
+      "description": "",
+      "isrequired": true,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "^((1?\\d{1,2}|2[0-4]\\d|25[0-5])[.]){3}(1?\\d{1,2}|2[0-4]\\d|25[0-5])(,((1?\\d{1,2}|2[0-4]\\d|25[0-5])[.]){3}(1?\\d{1,2}|2[0-4]\\d|25[0-5]))*$",
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "inner ip",
+      "placeholder": "",
+      "bk_property_type": "singlechar",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_host_outerip",
+      "id": 27,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "^((1?\\d{1,2}|2[0-4]\\d|25[0-5])[.]){3}(1?\\d{1,2}|2[0-4]\\d|25[0-5])(,((1?\\d{1,2}|2[0-4]\\d|25[0-5])[.]){3}(1?\\d{1,2}|2[0-4]\\d|25[0-5]))*$",
+      "editable": true,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "outer ip",
+      "placeholder": "",
+      "bk_property_type": "singlechar",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "operator",
+      "id": 28,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": true,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "main operator",
+      "placeholder": "",
+      "bk_property_type": "objuser",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_bak_operator",
+      "id": 29,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": true,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "backup operator",
+      "placeholder": "",
+      "bk_property_type": "objuser",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_asset_id",
+      "id": 30,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "asset id",
+      "placeholder": "",
+      "bk_property_type": "singlechar",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_sn",
+      "id": 31,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": true,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "device sn",
+      "placeholder": "",
+      "bk_property_type": "singlechar",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_comment",
+      "id": 32,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": true,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "comment",
+      "placeholder": "",
+      "bk_property_type": "longchar",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_service_term",
+      "id": 33,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": {
+        "max": "10",
+        "min": "1"
+      },
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "service term",
+      "placeholder": "",
+      "bk_property_type": "int",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_sla",
+      "id": 34,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": [
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "1",
+          "name": "L1"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "2",
+          "name": "L2"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "3",
+          "name": "L3"
+        }
+      ],
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "sla level",
+      "placeholder": "",
+      "bk_property_type": "enum",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_cloud_id",
+      "id": 35,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": null,
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "cloud area",
+      "placeholder": "",
+      "bk_property_type": "foreignkey",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_state_name",
+      "id": 36,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": [
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AR",
+          "name": "Argentina"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AD",
+          "name": "Andorra"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AE",
+          "name": "United Arab Emirates"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AF",
+          "name": "Afghanistan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AG",
+          "name": "Antigua & Barbuda"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AI",
+          "name": "Anguilla"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AL",
+          "name": "Albania"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AM",
+          "name": "Armenia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AO",
+          "name": "Angola"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AQ",
+          "name": "Antarctica"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AS",
+          "name": "American Samoa"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AT",
+          "name": "Austria"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AU",
+          "name": "Australia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AW",
+          "name": "Aruba"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AX",
+          "name": "Aland Island"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "AZ",
+          "name": "Azerbaijan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BA",
+          "name": "Bosnia & Herzegovina"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BB",
+          "name": "Barbados"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BD",
+          "name": "Bangladesh"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BE",
+          "name": "Belgium"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BF",
+          "name": "Burkina"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BG",
+          "name": "Bulgaria"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BH",
+          "name": "Bahrain"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BI",
+          "name": "Burundi"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BJ",
+          "name": "Benin"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BL",
+          "name": "Saint Barthélemy"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BM",
+          "name": "Bermuda"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BN",
+          "name": "Brunei"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BO",
+          "name": "Bolivia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BQ",
+          "name": "Caribbean Netherlands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BR",
+          "name": "Brazil"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BS",
+          "name": "The Bahamas"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BT",
+          "name": "Bhutan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BV",
+          "name": "Bouvet Island"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BW",
+          "name": "Botswana"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BY",
+          "name": "Belarus"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "BZ",
+          "name": "Belize"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CA",
+          "name": "Canada"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CC",
+          "name": "Cocos (Keeling) Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CD",
+          "name": "Democratic Republic of the Congo"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CF",
+          "name": "Central African Republic"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CG",
+          "name": "Republic of the Congo"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CH",
+          "name": "Switzerland"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CI",
+          "name": "Cote d'Ivoire"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CK",
+          "name": "Cook Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CL",
+          "name": "Chile"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CM",
+          "name": "Cameroon"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CN",
+          "name": "China"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CO",
+          "name": "Colombia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CR",
+          "name": "Costa Rica"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CU",
+          "name": "Cuba"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CV",
+          "name": "Cape Verde"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CW",
+          "name": "Curacao"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CX",
+          "name": "Christmas Island"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CY",
+          "name": "Cyprus"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "CZ",
+          "name": "Czech Republic"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "DE",
+          "name": "Germany"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "DJ",
+          "name": "Djibouti"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "DK",
+          "name": "Denmark"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "DM",
+          "name": "Dominica"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "DO",
+          "name": "Dominican Republic"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "DZ",
+          "name": "Algeria"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "EC",
+          "name": "Ecuador"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "EE",
+          "name": "Estonia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "EG",
+          "name": "Egypt"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "EH",
+          "name": "Western Sahara"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "ER",
+          "name": "Eritrea"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "ES",
+          "name": "Spain"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "ET",
+          "name": "Ethiopia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "FI",
+          "name": "Finland"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "FJ",
+          "name": "Fiji"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "FK",
+          "name": "Falkland Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "FM",
+          "name": "Federated States of Micronesia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "FO",
+          "name": "Faroe Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "FR",
+          "name": "France"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GA",
+          "name": "Gabon"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GB",
+          "name": "Great Britain (United Kingdom; England)"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GD",
+          "name": "Grenada"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GE",
+          "name": "Georgia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GF",
+          "name": "French Guiana"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GG",
+          "name": "Guernsey"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GH",
+          "name": "Ghana"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GI",
+          "name": "Gibraltar"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GL",
+          "name": "Greenland"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GM",
+          "name": "Gambia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GN",
+          "name": "Guinea"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GP",
+          "name": "Guadeloupe"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GQ",
+          "name": "Equatorial Guinea"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GR",
+          "name": "Greece"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GS",
+          "name": "South Georgia and the South Sandwich Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GT",
+          "name": "Guatemala"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GU",
+          "name": "Guam"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GW",
+          "name": "Guinea-Bissau"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "GY",
+          "name": "Guyana"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "HM",
+          "name": "Heard Island and McDonald Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "HN",
+          "name": "Honduras"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "HR",
+          "name": "Croatia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "HT",
+          "name": "Haiti"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "HU",
+          "name": "Hungary"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "ID",
+          "name": "Indonesia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "IE",
+          "name": "Ireland"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "IL",
+          "name": "Israel"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "IM",
+          "name": "Isle of Man"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "IN",
+          "name": "India"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "IO",
+          "name": "British Indian Ocean Territory"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "IQ",
+          "name": "Iraq"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "IR",
+          "name": "Iran"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "IS",
+          "name": "Iceland"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "IT",
+          "name": "Italy"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "JE",
+          "name": "Jersey"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "JM",
+          "name": "Jamaica"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "JO",
+          "name": "Jordan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "JP",
+          "name": "Japan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "KE",
+          "name": "Kenya"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "KG",
+          "name": "Kyrgyzstan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "KH",
+          "name": "Cambodia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "KI",
+          "name": "Kiribati"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "KM",
+          "name": "The Comoros"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "KN",
+          "name": "St. Kitts & Nevis"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "KP",
+          "name": "North Korea"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "KR",
+          "name": "South Korea"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "KW",
+          "name": "Kuwait"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "KY",
+          "name": "Cayman Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "KZ",
+          "name": "Kazakhstan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "LA",
+          "name": "Laos"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "LB",
+          "name": "Lebanon"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "LC",
+          "name": "St. Lucia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "LI",
+          "name": "Liechtenstein"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "LK",
+          "name": "Sri Lanka"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "LR",
+          "name": "Liberia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "LS",
+          "name": "Lesotho"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "LT",
+          "name": "Lithuania"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "LU",
+          "name": "Luxembourg"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "LV",
+          "name": "Latvia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "LY",
+          "name": "Libya"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MA",
+          "name": "Morocco"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MC",
+          "name": "Monaco"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MD",
+          "name": "Moldova"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "ME",
+          "name": "Montenegro"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MF",
+          "name": "Saint Martin (France)"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MG",
+          "name": "Madagascar"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MH",
+          "name": "Marshall islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MK",
+          "name": "Republic of Macedonia (FYROM)"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "ML",
+          "name": "Mali"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MM",
+          "name": "Myanmar (Burma)"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MN",
+          "name": "Mongolia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MP",
+          "name": "Northern Mariana Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MQ",
+          "name": "Martinique"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MR",
+          "name": "Mauritania"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MS",
+          "name": "Montserrat"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MT",
+          "name": "Malta"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MU",
+          "name": "Mauritius"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MV",
+          "name": "Maldives"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MW",
+          "name": "Malawi"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MX",
+          "name": "Mexico"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MY",
+          "name": "Malaysia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "MZ",
+          "name": "Mozambique"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "NA",
+          "name": "Namibia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "NC",
+          "name": "New Caledonia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "NE",
+          "name": "Niger"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "NF",
+          "name": "Norfolk Island"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "NG",
+          "name": "Nigeria"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "NI",
+          "name": "Nicaragua"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "NL",
+          "name": "Netherlands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "NO",
+          "name": "Norway"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "NP",
+          "name": "Nepal"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "NR",
+          "name": "Nauru"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "NU",
+          "name": "Niue"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "NZ",
+          "name": "New Zealand"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "OM",
+          "name": "Oman"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PA",
+          "name": "Panama"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PE",
+          "name": "Peru"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PF",
+          "name": "French polynesia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PG",
+          "name": "Papua New Guinea"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PH",
+          "name": "The Philippines"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PK",
+          "name": "Pakistan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PL",
+          "name": "Poland"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PM",
+          "name": "Saint-Pierre and Miquelon"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PN",
+          "name": "Pitcairn Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PR",
+          "name": "Puerto Rico"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PS",
+          "name": "Palestinian territories"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PT",
+          "name": "Portugal"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PW",
+          "name": "Palau"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "PY",
+          "name": "Paraguay"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "QA",
+          "name": "Qatar"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "RE",
+          "name": "Réunion"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "RO",
+          "name": "Romania"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "RS",
+          "name": "Serbia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "RU",
+          "name": "Russian Federation"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "RW",
+          "name": "Rwanda"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SA",
+          "name": "Saudi Arabia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SB",
+          "name": "Solomon Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SC",
+          "name": "Seychelles"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SD",
+          "name": "Sudan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SE",
+          "name": "Sweden"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SG",
+          "name": "Singapore"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SH",
+          "name": "St. Helena & Dependencies"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SI",
+          "name": "Slovenia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SJ",
+          "name": "Svalbard and Jan Mayen"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SK",
+          "name": "Slovakia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SL",
+          "name": "Sierra Leone"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SM",
+          "name": "San Marino"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SN",
+          "name": "Senegal"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SO",
+          "name": "Somalia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SR",
+          "name": "Suriname"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SS",
+          "name": "South Sudan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "ST",
+          "name": "Sao Tome & Principe"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SV",
+          "name": "El Salvador"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SX",
+          "name": "Sint Maarten"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SY",
+          "name": "Syria"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "SZ",
+          "name": "Swaziland"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TC",
+          "name": "Turks & Caicos Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TD",
+          "name": "Chad"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TF",
+          "name": "French Southern Territories"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TG",
+          "name": "Togo"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TH",
+          "name": "Thailand"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TJ",
+          "name": "Tajikistan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TK",
+          "name": "Tokelau"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TL",
+          "name": "Timor-Leste (East Timor)"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TM",
+          "name": "Turkmenistan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TN",
+          "name": "Tunisia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TO",
+          "name": "Tonga"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TR",
+          "name": "Turkey"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TT",
+          "name": "Trinidad & Tobago"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TV",
+          "name": "Tuvalu"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "TZ",
+          "name": "Tanzania"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "UA",
+          "name": "Ukraine"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "UG",
+          "name": "Uganda"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "UM",
+          "name": "United States Minor Outlying Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "UY",
+          "name": "Uruguay"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "UZ",
+          "name": "Uzbekistan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "VA",
+          "name": "Vatican City (The Holy See)"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "VC",
+          "name": "St. Vincent & the Grenadines"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "VE",
+          "name": "Venezuela"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "VG",
+          "name": "British Virgin Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "VI",
+          "name": "United States Virgin Islands"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "VN",
+          "name": "Vietnam"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "US",
+          "name": "United States of America (USA)"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "VU",
+          "name": "Vanuatu"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "WF",
+          "name": "Wallis and Futuna"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "WS",
+          "name": "Samoa"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "YE",
+          "name": "Yemen"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "YT",
+          "name": "Mayotte"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "ZA",
+          "name": "South Africa"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "ZM",
+          "name": "Zambia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "ZW",
+          "name": "Zimbabwe"
+        }
+      ],
+      "editable": true,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "state name",
+      "placeholder": "",
+      "bk_property_type": "enum",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_province_name",
+      "id": 37,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": [
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "110000",
+          "name": "Beijing"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "120000",
+          "name": "Tianjin"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "130000",
+          "name": "Hebei "
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "140000",
+          "name": "Shanxi"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "150000",
+          "name": "Inner Mongolia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "210000",
+          "name": "Liaoning"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "220000",
+          "name": "Jilin"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "230000",
+          "name": "Heilongjiang"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "310000",
+          "name": "Shanghai"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "320000",
+          "name": "Jiangsu"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "330000",
+          "name": "Zhejiang"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "340000",
+          "name": "Anhui"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "350000",
+          "name": "Fujian"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "360000",
+          "name": "Jiangxi"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "370000",
+          "name": "Shandong"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "410000",
+          "name": "Henan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "420000",
+          "name": "Hubei"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "430000",
+          "name": "Hunan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "440000",
+          "name": "Guangdong"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "450000",
+          "name": "Guangxi"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "460000",
+          "name": "Hainan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "500000",
+          "name": "Chongqing"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "510000",
+          "name": "Sichuan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "520000",
+          "name": "Guizhou"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "530000",
+          "name": "Yunnan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "540000",
+          "name": "Tibet"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "610000",
+          "name": "Shaanxi"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "620000",
+          "name": "Gansu"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "630000",
+          "name": "Qinghai"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "640000",
+          "name": "Ningxia"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "650000",
+          "name": "Sinkiang"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "710000",
+          "name": "Taiwan"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "810000",
+          "name": "Hong Kong"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "820000",
+          "name": "Macau"
+        }
+      ],
+      "editable": true,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "province name",
+      "placeholder": "",
+      "bk_property_type": "enum",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_isp_name",
+      "id": 38,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": [
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "0",
+          "name": "Others"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "1",
+          "name": "China Telecom"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "2",
+          "name": "China Unicom"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "3",
+          "name": "China Mobile"
+        }
+      ],
+      "editable": true,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "isp name",
+      "placeholder": "",
+      "bk_property_type": "enum",
+      "bk_property_group_name": "default",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "default"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_host_name",
+      "id": 39,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "host name",
+      "placeholder": "",
+      "bk_property_type": "singlechar",
+      "bk_property_group_name": "auto discover (from agent)",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "auto"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_os_type",
+      "id": 40,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": [
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "1",
+          "name": "Linux"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "2",
+          "name": "Windows"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "3",
+          "name": "AIX"
+        }
+      ],
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "os type",
+      "placeholder": "",
+      "bk_property_type": "enum",
+      "bk_property_group_name": "auto discover (from agent)",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "auto"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_os_name",
+      "id": 41,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "os name",
+      "placeholder": "",
+      "bk_property_type": "singlechar",
+      "bk_property_group_name": "auto discover (from agent)",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "auto"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_os_version",
+      "id": 42,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "os vesion",
+      "placeholder": "",
+      "bk_property_type": "singlechar",
+      "bk_property_group_name": "auto discover (from agent)",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "auto"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_os_bit",
+      "id": 43,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "os bit",
+      "placeholder": "",
+      "bk_property_type": "singlechar",
+      "bk_property_group_name": "auto discover (from agent)",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "auto"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_cpu",
+      "id": 44,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": {
+        "max": "1000000",
+        "min": "1"
+      },
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "cpu number",
+      "placeholder": "",
+      "bk_property_type": "int",
+      "bk_property_group_name": "auto discover (from agent)",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "auto"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_cpu_mhz",
+      "id": 45,
+      "unit": "Hz",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": {
+        "max": "100000000",
+        "min": "1"
+      },
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "cpu frequency",
+      "placeholder": "",
+      "bk_property_type": "int",
+      "bk_property_group_name": "auto discover (from agent)",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "auto"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_cpu_module",
+      "id": 46,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "cpu module",
+      "placeholder": "",
+      "bk_property_type": "singlechar",
+      "bk_property_group_name": "auto discover (from agent)",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "auto"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_mem",
+      "id": 47,
+      "unit": "MB",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": {
+        "max": "100000000",
+        "min": "1"
+      },
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "memory",
+      "placeholder": "",
+      "bk_property_type": "int",
+      "bk_property_group_name": "auto discover (from agent)",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "auto"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_disk",
+      "id": 48,
+      "unit": "GB",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": {
+        "max": "100000000",
+        "min": "1"
+      },
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "disk",
+      "placeholder": "",
+      "bk_property_type": "int",
+      "bk_property_group_name": "auto discover (from agent)",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "auto"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_mac",
+      "id": 49,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "inner MAC",
+      "placeholder": "",
+      "bk_property_type": "singlechar",
+      "bk_property_group_name": "auto discover (from agent)",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "auto"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "bk_outer_mac",
+      "id": 50,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "outer MAC",
+      "placeholder": "",
+      "bk_property_type": "singlechar",
+      "bk_property_group_name": "auto discover (from agent)",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "auto"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "create_time",
+      "id": 51,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": "",
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "import data",
+      "placeholder": "",
+      "bk_property_type": "time",
+      "bk_property_group_name": "",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "none"
+    },
+    {
+      "creator": "cc_system",
+      "bk_isapi": false,
+      "bk_issystem": false,
+      "bk_property_id": "import_from",
+      "id": 52,
+      "unit": "",
+      "description": "",
+      "isrequired": false,
+      "isreadonly": false,
+      "last_time": "2019-05-17 12:38:29",
+      "ispre": true,
+      "metadata": {
+        "label": null
+      },
+      "option": [
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "1",
+          "name": "excel"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "2",
+          "name": "agent"
+        },
+        {
+          "is_default": false,
+          "type": "text",
+          "id": "3",
+          "name": "api"
+        }
+      ],
+      "editable": false,
+      "bk_obj_id": "host",
+      "isonly": false,
+      "bk_property_name": "import source",
+      "placeholder": "",
+      "bk_property_type": "enum",
+      "bk_property_group_name": "",
+      "create_time": "2019-05-17 12:38:29",
+      "bk_supplier_account": "0",
+      "bk_property_index": 0,
+      "bk_property_group": "none"
+    }
+  ]
+}

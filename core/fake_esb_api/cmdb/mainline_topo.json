@@ -1,0 +1,47 @@
+[
+  {
+    "bk_pre_obj_name": "",
+    "bk_obj_name": "business",
+    "bk_next_obj": "level",
+    "bk_next_name": "level",
+    "bk_obj_id": "biz",
+    "bk_supplier_account": "0",
+    "bk_pre_obj_id": ""
+  },
+  {
+    "bk_pre_obj_name": "business",
+    "bk_obj_name": "level",
+    "bk_next_obj": "set",
+    "bk_next_name": "set",
+    "bk_obj_id": "level",
+    "bk_supplier_account": "0",
+    "bk_pre_obj_id": "biz"
+  },
+  {
+    "bk_pre_obj_name": "level",
+    "bk_obj_name": "set",
+    "bk_next_obj": "module",
+    "bk_next_name": "module",
+    "bk_obj_id": "set",
+    "bk_supplier_account": "0",
+    "bk_pre_obj_id": "level"
+  },
+  {
+    "bk_pre_obj_name": "set",
+    "bk_obj_name": "module",
+    "bk_next_obj": "host",
+    "bk_next_name": "host",
+    "bk_obj_id": "module",
+    "bk_supplier_account": "0",
+    "bk_pre_obj_id": "set"
+  },
+  {
+    "bk_pre_obj_name": "module",
+    "bk_obj_name": "host",
+    "bk_next_obj": "",
+    "bk_next_name": "",
+    "bk_obj_id": "host",
+    "bk_supplier_account": "0",
+    "bk_pre_obj_id": "module"
+  }
+]

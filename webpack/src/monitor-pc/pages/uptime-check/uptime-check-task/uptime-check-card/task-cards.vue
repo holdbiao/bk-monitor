@@ -1,0 +1,438 @@
+<template>
+  <div class="task-cards">
+    <div class="task-cards-header" v-if="taskList.length">
+      <span :class="[!taskDetail.show ? 'header-name' : 'header-title']" @click="handleBackGroup"> {{ $t('拨测任务') }} </span>
+      <span v-if="taskDetail.show" class="header-detail">> </span>
+      <span v-if="taskDetail.show" class="header-name">{{taskDetail.name}}</span>
+    </div>
+    <div class="task-cards-container">
+      <div class="card-list" ref="cardList">
+        <div class="card-list-item" draggable
+             v-for="(item, index) in taskList"
+             :ref="'card-' + index"
+             :key="index"
+             :class="{ 'drag-active': drag.active === index }"
+             @drag="handleDrag(index, $event)"
+             @dragstart="handleDragStart(index,item, $event)"
+             @dragend="handleDragEnd(index, $event)"
+             @click.stop="handleItemClick(item)"
+             @mouseenter="hoverActive = index"
+             @mouseleave="handleTaskMouseLeave(item, index)">
+          <div class="item-title">
+            <div class="item-title-name">{{item.name}}</div>
+            <div class="item-title-url">{{item.url}}</div>
+            <span class="item-title-icon"
+                  v-authority="{ active: !authority.MANAGE_AUTH }"
+                  v-if="hoverActive === index"
+                  :ref="'popover-' + index"
+                  :class="{ 'hover-active': popover.hover }"
+                  @click.stop="authority.MANAGE_AUTH ? handlePopoverShow(item, index, $event) : handleShowAuthorityDetail()"
+                  @mouseleave="handleTaskPopoverLeave"
+                  @mouseover="popover.hover = true">
+              <i class="bk-icon icon-more"></i>
+            </span>
+          </div>
+          <div class="item-content">
+            <div class="label-item">
+              <div class="label-item-name">
+                <span class="label-num"
+                      :style="{ color: filterAvailableAlarm(item.available, item.available_alarm) }">
+                  {{ item.available !== null ? item.available : '--'}}
+                </span><span style="color: #63656e">{{item.available !== null ? '%' : ''}}</span>
+              </div>
+              <div class="label-item-title"> {{ $t('可用率') }} </div>
+            </div>
+            <div class="label-item">
+              <div class="label-item-name">
+                <template v-if="item.task_duration !== null">
+                  <span class="label-num"
+                        :style="{ color: filterTaskDurationAlarm(item.task_duration, item.task_duration_alarm) }">
+                    {{ item.task_duration }}
+                  </span><span style="color: #63656e">{{item.task_duration !== null ? 'ms' : ''}}</span>
+                </template>
+                <template v-else>
+                  <span class="label-num icon-monitor icon-remind" style="color: #ea3636;"></span>
+                </template>
+              </div>
+              <div class="label-item-title"> {{ $t('平均响应时长') }} </div>
+            </div>
+          </div>
+          <div v-if="drag.active === index" class="drag-active-item">
+          </div>
+        </div>
+      </div>
+      <div class="card-loading" v-show="scroll.show">
+        <span class="icon-monitor icon-loading"></span> {{ $t('加载更多。。。') }} </div>
+      <div v-show="false">
+        <div class="popover-desc" ref="popoverContent">
+          <div class="popover-desc-btn" @click.stop="handleEditTask"> {{ $t('编辑') }} </div>
+          <div class="popover-desc-btn" @click.stop="handleDeleteTask"> {{ $t('删除') }} </div>
+          <div class="popover-desc-btn" @click.stop="handleCloneTask"> {{ $t('克隆') }} </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import { uptimeCheckMixin } from '../../../../common/mixins'
+import { createNamespacedHelpers } from 'vuex'
+const { mapGetters } = createNamespacedHelpers('uptime-check-task')
+export default {
+  name: 'task-cards',
+  mixins: [uptimeCheckMixin],
+  inject: ['authority', 'handleShowAuthorityDetail'],
+  props: {
+    tasks: {
+      type: Array,
+      default() {
+        return []
+      }
+    },
+    taskDetail: {
+      type: Object,
+      required: true
+    }
+  },
+  data() {
+    return {
+      task: {
+        list: []
+      },
+      scroll: {
+        show: false
+      },
+      drag: {
+        active: -1
+      },
+      popover: {
+        hover: false,
+        instance: null,
+        active: -1
+      },
+      hoverActive: -1
+    }
+  },
+  computed: {
+    ...mapGetters({ taskList: 'groupTaskList' }),
+    hasTaskList() {
+      return !!this.taskList.length
+    }
+  },
+  watch: {
+    'taskList.length': {
+      handler() {
+        this.$nextTick().then(() => {
+          this.handleWindowResize()
+        })
+      }
+    }
+  },
+  beforeDestroy() {
+    this.handlePopoverHide()
+  },
+  methods: {
+    refreshItemWidth() {
+      this.handleWindowResize()
+    },
+    handleWindowResize() {
+      const len = this.taskList.length
+      const width = this.$refs['card-0'] && this.$refs['card-0'].length
+        ? this.$refs['card-0'][0].getBoundingClientRect().width : 400
+      if (len > 0) {
+        let i = 0
+        while (i < len) {
+          const ref = this.$refs[`card-${i}`][0]
+          if (ref && ref.getBoundingClientRect().width !== width) {
+            ref.style.maxWidth = `${width}px`
+          }
+          i += 1
+        }
+      }
+    },
+    handleWindowScroll() {
+      const scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight)
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      const clientHeight = window.innerHeight
+      || Math.min(document.documentElement.clientHeight, document.body.clientHeight)
+      if (clientHeight + scrollTop >= scrollHeight && !this.scroll.show) {
+        this.scroll.show = true
+        setTimeout(() => {
+          this.scroll.show = false
+          for (let i = 0; i < 50; i++) {
+            this.taskList.push({ name: `${this.$t('新增')}-0${i}` })
+          }
+          this.$nextTick().then(() => {
+            this.handleWindowResize()
+          })
+        }, 2000)
+      }
+    },
+    getItemWidth() {
+      return this.taskList.length ? this.$refs['card-0'][0].getBoundingClientRect().width : 0
+    },
+    handleExpand() {
+      this.expand = !this.expand
+    },
+    handleBackGroup() {
+      if (this.taskDetail.show) {
+        this.$emit('update:taskDetail', {
+          show: false,
+          name: '',
+          tasks: [],
+          id: -1
+        })
+      }
+    },
+    handleTaskMouseLeave() {
+      this.hoverActive = -1
+      this.popover.hover = false
+    },
+    handleTaskPopoverLeave() {
+      this.popover.hover = this.popover.active >= 0
+      !this.popover.hover && this.handlePopoverHide()
+    },
+    handlePopoverShow(item, index, e) {
+      this.popover.instance = this.$bkPopover(e.target, {
+        content: this.$refs.popoverContent,
+        arrow: false,
+        trigger: 'click',
+        placement: 'bottom',
+        theme: 'light task-card',
+        maxWidth: 520,
+        duration: [200, 0],
+        appendTo: () => this.$refs[`popover-${index}`][0],
+        onHidden: () => {
+          this.popover.hover = false
+        }
+      })
+      // .instances[0]
+      this.popover.active = index
+      this.popover.instance && this.popover.instance.show(100)
+    },
+    handlePopoverHide() {
+      this.popover.instance && this.popover.instance.hide(100)
+      this.popover.instance && this.popover.instance.destroy()
+      this.popover.instance = null
+    },
+    handleEditTask() {
+      this.$emit('edit', this.taskList[this.hoverActive])
+    },
+    handleDeleteTask() {
+      this.$emit('delete-task', this.taskList[this.hoverActive])
+    },
+    handleCloneTask() {
+      this.$emit('clone-task', this.taskList[this.hoverActive])
+    },
+    handleItemClick(item) {
+      this.$emit('detail-show', item)
+    },
+    handleDragStart(i, item, e) {
+      const event = e
+      event.dataTransfer.setData('text/plain', item.id)
+      event.dropEffect = 'move'
+      this.handlePopoverHide()
+      this.drag.active = i
+    },
+    handleDragEnd(i, e) {
+      e.preventDefault()
+      this.drag.active = -1
+    },
+    handleDeleteItem(i) {
+      this.taskList.splice(i, 1)
+    },
+    handleDrag(i, e) {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      if (e.y < 180) {
+        window.scrollTo(e.x, scrollTop - 9)
+      }
+    }
+  }
+}
+</script>
+<style lang="scss" scoped>
+.task-cards {
+  &-header {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 14px;
+    color: #979ba5;
+    font-weight: bold;
+    .header-title {
+      cursor: pointer;
+    }
+    .header-name {
+      color: #313238;
+      cursor: default;
+    }
+    .header-detail {
+      padding: 0 5px;
+      font-weight: normal;
+      cursor: default;
+    }
+  }
+  &-container {
+    @keyframes done-loading {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+    .card-list {
+      display: flex;
+      margin-right: -20px;
+      flex-wrap: wrap;
+      position: relative;
+      &-item {
+        flex: 1;
+        min-width: 300px;
+        max-width: 400px;
+        height: 194px;
+        background: #fff;
+        border-radius: 2px;
+        border: 1px solid #dcdee5;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        cursor: pointer;
+        &:hover {
+          box-shadow: 0px 3px 6px 0px rgba(0,0,0,.1);
+        }
+        .item-title {
+          display: flex;
+          flex-direction: column;
+          height: 60px;
+          padding: 10px 24px 0;
+          border-bottom: 1px solid #dcdee5;
+          &-name {
+            color: #313238;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 2px;
+            max-width: 350px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            line-height: 20px;
+          }
+          &-url {
+            color: #979ba5;
+            font-size: 12px;
+            padding-right: 5px;
+            text-align: left;
+            direction: rtl;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            unicode-bidi: plaintext;
+            margin-right: 30px;
+            line-height: 16px;
+          }
+          &-icon {
+            position: absolute;
+            right: 14px;
+            top: 14px;
+            color: #63656e;
+            font-size: 18px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color .2s  ease-in-out;
+            &.hover-active {
+              background-color: #f0f1f5;
+              border-radius: 50%;
+              color: #3a84ff;
+            }
+          }
+        }
+        .item-content {
+          flex: 1;
+          height: 134px;
+          display: flex;
+          justify-content: center;
+          padding-top: 29px;
+          .label-item {
+            font-size: 12px;
+            color: #979ba5;
+            &-name {
+              text-align: center;
+              .label-num {
+                font-size: 36px;
+                color: #313238;
+                display: inline-flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 50px;
+              }
+            }
+            &-title {
+              text-align: center;
+            }
+            &:first-child {
+              margin-right: 60px;
+            }
+          }
+        }
+      }
+      .drag-active {
+        border: 1px dashed #c4c6cc;
+        &-item {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background: #fafbfd;
+          opacity: .6;
+        }
+
+      }
+    }
+    .card-loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      .icon-loading {
+        font-size: 14px;
+        color: #c4c6cc;
+        margin-right: 5px;
+        animation: done-loading 1s linear 0s infinite;
+      }
+    }
+    .popover-desc {
+      display: flex;
+      flex-direction: column;
+      color: #63656e;
+      font-size: 12px;
+      border-radius: 2px;
+      border: 1px solid #dcdee5;
+      min-width: 68px;
+      padding: 6px 0;
+      background: #fff;
+      &-btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 10px;
+        height: 32px;
+        background: #fff;
+        // &:first-child {
+        //     border-bottom: 1px solid #DCDEE5;
+        // }
+        &:hover {
+          background: #f0f1f5;
+          color: #3a84ff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+</style>

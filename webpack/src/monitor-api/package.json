@@ -1,0 +1,21 @@
+{
+  "name": "monitor-api",
+  "version": "1.0.0",
+  "description": "monitor api",
+  "main": "api.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "qs": "^6.9.0",
+    "vue": "2.6.10"
+  },
+  "keywords": [
+    "monitor",
+    "api"
+  ],
+  "author": "bk fe",
+  "license": "MIT"
+}

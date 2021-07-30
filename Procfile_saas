@@ -1,0 +1,5 @@
+#web: gunicorn wsgi_v3 -b :$PORT -e DJANGO_SETTINGS_MODULE=settings --timeout 300 --workers=4 --threads=8 --max-requests=100
+
+web: env DJANGO_SETTINGS_MODULE=settings python manage.py runserver 0.0.0.0:$PORT
+beat: python manage.py celery beat
+celery: env C_FORCE_ROOT=True python manage.py celery worker -c 4 --maxtasksperchild=1 --time-limit=60

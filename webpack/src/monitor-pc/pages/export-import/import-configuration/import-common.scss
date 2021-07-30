@@ -1,0 +1,215 @@
+@import '../../../static/css/common';
+
+$statusColors: #94F5A4 #FD9C9C #3A84FF;
+$statusBorderColors: #2DCB56 #EA3636 #3A84FF;
+$collapseHeaderBackground: #F0F1F5;
+$whiteColor: #FFFFFF;
+$directionIconColor: #313238;
+$markBackground: #CADDFF;
+
+@mixin layout-flex($flexDirection: row, $alignItems: stretch, $justifyContent: flex-start) {
+    display: flex;
+    flex-direction: $flexDirection;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+}
+@mixin icon-direction($size: 6px) {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: $size solid transparent;
+}
+@mixin button-fixed {
+    position: fixed;
+    bottom: 11px;
+    z-index: 2;
+}
+@mixin collapse-item-right($colorIndex) {
+    color: nth($statusBorderColors, $colorIndex);
+    font-weight: bold;
+}
+@mixin col-row-status($i: 1) {
+    margin-right: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: nth($statusColors, $i);
+    border: 1px solid nth($statusBorderColors, $i);
+}
+
+/deep/ .bk-button-icon-loading::before {
+    content: '';
+}
+/deep/ .bk-collapse-item {
+    &-header {
+        position: relative;
+        @include layout-flex(row, center, space-between);
+        padding: 0 20px;
+        background: $collapseHeaderBackground;
+        border-radius: 2px 2px 0px 0px;
+        border: 1px solid $defaultBorderColor;
+        font-size: 12px;
+        .fr {
+            display: none;
+        }
+        &:hover {
+            color: $defaultFontColor;
+        }
+    }
+    &-content {
+        padding: 0;
+    }
+}
+/deep/ .bk-table {
+    border-top: 0;
+    .bk-table-row .cell {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .is-first .cell {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    .is-left:not(.is-first) .cell{
+        padding-left: 10px;
+    }
+}
+/deep/ .collapse-disabled {
+    cursor: not-allowed;
+    .bk-collapse-item-header {
+        pointer-events: none;
+    }
+}
+.import-config {
+    min-height: 100%;
+    &-tag {
+        margin-bottom: 10px;
+        .config-tag {
+            display: flex;
+        }
+    }
+    &-content {
+        .collapse-item {
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+            &-left {
+                @include layout-flex(row, center);
+            }
+            /deep/ &-right {
+                .total-success {
+                    @include collapse-item-right(1);
+                }
+                .total-failed {
+                    @include collapse-item-right(2);
+                }
+                .total-importing {
+                    @include collapse-item-right(3);
+                }
+                .separator {
+                    margin-right: 5px;
+                }
+            }
+            &-icon {
+                display: inline-block;
+                transition: transform .2s ease-in-out;
+                font-size: 12px;
+                position: relative;
+                top: -1px;
+            }
+            &-title {
+                margin-left: 6px;
+                font-weight:bold;
+            }
+            &-mark {
+                margin-left: 10px;
+                width: 45px;
+                height: 22px;
+                border-radius: 2px;
+                line-height: 22px;
+                text-align: center;
+                background: $markBackground;
+                color: $primaryFontColor;
+            }
+            .icon-rotate {
+                transform: rotate(90deg)
+            }
+        }
+        .item-icon-left {
+            @include icon-direction;
+            border-left-color: $directionIconColor;
+        }
+        .item-icon-top {
+            @include icon-direction;
+            border-top-color: $directionIconColor;
+        }
+        .status-col {
+            @include layout-flex(row, center);
+            height: 20px;
+        }
+        .status-runing {
+            margin-right: 6px;
+            margin-left: -4px;
+            width: 16px;
+            height: 16px;
+            font-size: 16px;
+            color: nth($statusColors, 3);
+            animation: button-icon-loading 1s linear infinite;
+        }
+        .status-success {
+            @include col-row-status(1);
+        }
+        .status-failed {
+            @include col-row-status(2);
+        }
+        .detail-col {
+            @include layout-flex(row, center, space-between);
+            padding-right: 12px;
+        }
+        .detail-col-button {
+            min-width: 38px;
+        }
+        /deep/ .render-header {
+            @include layout-flex(row, center);
+            .header-icon {
+                margin-left: 6px;
+            }
+            .bk-select {
+                position: absolute;
+                left: 0;
+                right: 15px;
+                opacity: 0;
+            }
+        }
+    }
+    &-footer {
+        padding: 11px 0;
+        .footer-banner {
+            position: fixed;
+            width: 100%;
+            height: 54px;
+            bottom: 0;
+            right: 0;
+            background: $whiteColor;
+            box-shadow: 0px -3px 6px 0px rgba(49,50,56,0.05);
+            z-index: 1;
+        }
+        .button1-wrap {
+            display: inline-block;
+        }
+        .footer-button1 {
+            @include button-fixed;
+        }
+        .footer-button2 {
+            @include button-fixed;
+            margin-left: 100px;
+        }
+    }
+    &-empty {
+        @include layout-flex(row, center, center);
+        height: 360px;
+        margin-bottom: 9px;
+        background: $whiteColor;
+        border: 1px solid $defaultBorderColor;
+    }
+}

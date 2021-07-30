@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta charset="utf-8">
+        <title> index </title>
+        <script template>   
+            document.title = '监控平台|蓝鲸'
+        </script>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script>
+          setTimeout(() => {
+            new Vue({
+              el: '#app',
+              render(h) {
+                return h('monitor-echarts', {
+                  props: {
+                    getSeriesData() {
+                      const res = { result: true, code: 200, message: 'OK', data: [{ dimensions: {}, target: 'AVG(idle)', datapoints: [[0.9782351295896354, 1615365660000], [0.9782351312943237, 1615365720000], [0.9782351331243082, 1615365780000], [0.978235131716655, 1615365840000], [0.9782351397435858, 1615365900000], [0.9782351429217866, 1615365960000], [0.978235151425959, 1615366020000], [0.9782351553146668, 1615366080000], [0.9782351640295345, 1615366140000], [0.9782351661000721, 1615366200000], [0.978235174829206, 1615366260000], [0.9782351761256157, 1615366320000], [0.9782351813184564, 1615366380000], [0.9782351833646226, 1615366440000], [0.9782351911713697, 1615366500000], [0.9782351954209801, 1615366560000], [0.9782352000767691, 1615366620000], [0.9782352042073615, 1615366680000], [0.9782352117016091, 1615366740000], [0.9782352105021094, 1615366800000], [0.9782351981719074, 1615366860000], [0.9782351783183734, 1615366920000], [0.9782351788849102, 1615366980000], [0.9782351789472894, 1615367040000], [0.9782351845377761, 1615367100000], [0.978235188155524, 1615367160000], [0.978235194121409, 1615367220000], [0.9782351974891246, 1615367280000], [0.978235205638254, 1615367340000], [0.9782352009670796, 1615367400000], [0.9782352038561489, 1615367460000], [0.9782351986174972, 1615367520000], [0.9782351965537587, 1615367580000], [0.978235197983798, 1615367640000], [0.9782352031411744, 1615367700000], [0.9782352035283832, 1615367760000], [0.9782352050179784, 1615367820000], [0.9782352074122963, 1615367880000], [0.9782352154831041, 1615367940000], [0.9782352190148381, 1615368000000], [0.9782352262293844, 1615368060000], [0.9782352263810349, 1615368120000], [0.9782352298168415, 1615368180000], [0.9782352311387622, 1615368240000], [0.978235232015489, 1615368300000], [0.9782352253136778, 1615368360000], [0.978235230952101, 1615368420000], [0.9782352350843547, 1615368480000], [0.9782352431774495, 1615368540000], [0.9782352431418376, 1615368600000], [0.9782352496319008, 1615368660000], [0.9782352559327111, 1615368720000], [0.9782352617973361, 1615368780000], [0.9782352695036947, 1615368840000], [0.9782352758284268, 1615368900000], [0.9782352821395601, 1615368960000], [0.9782352898715461, 1615369020000], [0.9782352908958428, 1615369080000], [0.9782352934789422, 1615369140000], [0.9782352983080761, 1615369200000]], metric: { metric_field: 'idle', result_table_id: 'system.cpu_detail', metric_field_name: 'CPU\u5355\u6838\u7a7a\u95f2\u7387' }, unit: 'percentunit' }] }
+                      window.data = res.data
+                      return new Promise(resolve => resolve(res.data))
+                    },
+                    handleGetSeriesData() {
+                      const { graphPanel, event_begin_time } = this.detail
+                      const params = {
+                        bk_biz_id: this.$store.getters.bizId,
+                        id: this.detail.id,
+                        start_time: moment(event_begin_time).add(-1, 'h')
+                          .unix(),
+                        end_time: moment().unix()
+                      }
+                      if (graphPanel) {
+                        const [{ data: queryConfig, alias }] = graphPanel.targets
+                        this.chart.title = graphPanel.title || ''
+                        this.chart.subtitle = graphPanel.subTitle || ''
+                        this.chart.chartType = graphPanel.type === 'bar' ? 'bar' : 'line'
+                        const chartQueryConfig = transformDataKey(queryConfig, true)
+                        const res = await eventGraphQuery(
+                          { ...chartQueryConfig, ...params }
+                          , { needRes: true, needMessage: false }
+                        ).catch((err) => {
+                          if (err && this.noGraphCode.includes(err.code)) {
+                            this.chart.selectForFetch = false
+                            this.chart.observeIntersection = false
+                            this.chart.emptyText = err.message
+                          } else {
+                            this.$bkMessage({
+                              message: err.message,
+                              theme: 'error',
+                              ellipsisLine: 0
+                            })
+                          }
+                        })
+                        this.chart.first = false
+                        const { level, algorithmList } = this.detail
+                        const algorithmValue = algorithmList?.find(item => item?.level === level)?.algorithmConfig?.sensitivityValue
+                        // 异常检测图表转换
+                        // eslint-disable-next-line camelcase
+                        if (chartQueryConfig?.extend_fields?.intelligent_detect?.result_table_id) {
+                          const chartSeries = res.data.find(item => item?.metric?.['metric_field'] === 'value'
+                              && item?.['time_offset'] === 'current')
+                          // 智能异常检测算法 边界画图设置
+                          const { dimensions } = chartSeries
+                          const coverList = []
+                          const algorithm2bound = {
+                            75: 3,
+                            50: 2,
+                            25: 1
+                          }
+                          const algorithm2Level = {
+                            1: 5,
+                            2: 4,
+                            3: 3
+                          }
+                          const algorithm2Color = {
+                            1: '#ea3636',
+                            2: '#ff8000',
+                            3: '#ffd000'
+                          }
+                          const upBoundary = res.data?.find(item => item.dimensions.bk_target_ip === dimensions.bk_target_ip
+                              && item.dimensions.bk_target_cloud_id === dimensions.bk_target_cloud_id
+                              && item.metric.metric_field === `upper_bound${algorithm2bound[algorithmValue]}`)
+                              ?.datapoints?.map(item => ([item[1], item[0]])) || []
+                          const lowBoundary = res.data?.find(item => item.dimensions.bk_target_ip === dimensions.bk_target_ip
+                              && item.dimensions.bk_target_cloud_id === dimensions.bk_target_cloud_id
+                              && item.metric.metric_field === `lower_bound${algorithm2bound[algorithmValue]}`)
+                              ?.datapoints.map(item => ([item[1], item[0]])) || []
+                          const coverData = res.data?.find(item => item.dimensions.bk_target_ip === dimensions.bk_target_ip
+                              && item.dimensions.bk_target_cloud_id === dimensions.bk_target_cloud_id
+                              && item.metric.metric_field === `is_anomaly${algorithm2bound[algorithmValue]}`)?.datapoints
+                          if (coverData?.length) {
+                            coverList.push({
+                              data: coverData.map((item, index) => ([chartSeries?.datapoints[index][1], item[0] > 0
+                                ? chartSeries?.datapoints[index][0]
+                                : null])),
+                              color: algorithm2Color[level],
+                              z: algorithm2Level[level] + 10,
+                              name: `${level}-cover`
+                            })
+                          }
+                          const allData = res.data.filter(item => item?.metric?.['metric_field'] === 'value')
+                            .map(({ target, datapoints, ...setData }) => {
+                              const item =  {
+                                datapoints,
+                                ...setData,
+                                target: this.handleBuildLegend(alias, {
+                                  ...setData,
+                                  tag: setData.dimensions,
+                                  metric: setData.metric,
+                                  formula: params.method,
+                                  ...params
+                                }) || target
+                              }
+                              if (setData.time_offset === 'current') {
+                                return {
+                                  ...item,
+                                  boundary: [
+                                    {
+                                      upBoundary,
+                                      lowBoundary,
+                                      color: '#ccc',
+                                      stack: `${level}-boundary-${item.target}`,
+                                      z: algorithm2Level[level]
+                                    }
+                                  ],
+                                  coverSeries: coverList.map(set => ({ ...set, name: `${set.name}-${item.target}` }))
+                                }
+                              }
+                              return item
+                            })
+
+                          return allData
+                        }
+                        return res.data.map(({ target, datapoints, ...setData }) => ({
+                          datapoints,
+                          ...setData,
+                          target: this.handleBuildLegend(alias, {
+                            ...setData,
+                            tag: setData.dimensions,
+                            metric: setData.metric,
+                            formula: params.method,
+                            ...params
+                          }) || target
+                        }))
+                      }
+                      return []
+                    },
+                    title: 'CPU单核空闲率',
+                    subtitle: 'system.cpu_detail'
+                  }
+                })
+              }
+            })
+
+          }, 1000)
+        </script>
+    </body>
+</html>

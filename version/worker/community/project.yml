@@ -1,0 +1,15 @@
+version: 1.0
+- name: monitor
+  module: bkmonitorv3
+  project_dir: bkmonitorv3/monitor
+  alias: monitor
+  language: python/3.6
+  version: 1.0.0
+  version_type: ce
+- name: grafana
+  module: bkmonitorv3
+  project_dir: bkmonitorv3/monitor
+  alias: grafana
+  language: golang
+  version: 1.0.0
+  version_type: ce

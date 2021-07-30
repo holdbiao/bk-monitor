@@ -1,0 +1,704 @@
+﻿[
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 30,
+        "path": "/monitor/alarm/alarms/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/alarm_instance/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/monitors/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/monitor_source/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/monitors/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/monitor_source/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/basealarm_defs/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/base_alarm/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/basealarm_defs/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/base_alarm/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/performance_monitor_items/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/host_index/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/performance_monitor_items/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/host_index/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "X-HTTP-Method-Override": "DELETE",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/monitors/{id}/delete/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/monitor_source/{id}/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/monitors/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/monitor_source/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "X-HTTP-Method-Override": "PATCH",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/monitors/{id}/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/monitor_source/{id}/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "X-HTTP-Method-Override": "DELETE",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/monitor_items/{id}/delete/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/monitor_item/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/monitor_items/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/monitor_item/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "X-HTTP-Method-Override": "PATCH",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/monitor_items/{id}/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/monitor_item/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/monitor_items/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/monitor_item/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/monitor_items/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/monitor_item/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "X-HTTP-Method-Override": "DELETE",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/alarm_sources/{id}/delete/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/alarm_source/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/alarm_sources/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/alarm_source/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "X-HTTP-Method-Override": "PATCH",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/alarm_sources/{id}/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/alarm_source/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/alarm_sources/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/alarm_source/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/alarm_sources/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/alarm_source/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "X-HTTP-Method-Override": "DELETE",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/shield_configs/{id}/delete/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/shield_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/shield_configs/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/shield_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "X-HTTP-Method-Override": "PATCH",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/shield_configs/{id}/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/shield_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/shield_configs/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/shield_config/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/shield_configs/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/shield_config/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/collect_incident_alarm/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/collect_incident/{id}/alarm_instance/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "X-HTTP-Method-Override": "DELETE",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/notice_configs/{id}/delete/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/notice_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/notice_configs/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/notice_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "X-HTTP-Method-Override": "PATCH",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/notice_configs/{id}/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/notice_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/notice_configs/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/notice_config/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/notice_configs/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/notice_config/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "X-HTTP-Method-Override": "DELETE",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/notice_groups/{id}/delete/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/notice_group/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/notice_groups/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/notice_group/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "X-HTTP-Method-Override": "PATCH",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/notice_groups/{id}/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/notice_group/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/notice_groups/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/notice_group/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/notice_groups/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/notice_group/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "X-HTTP-Method-Override": "DELETE",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/solution_configs/{id}/delete/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/solution_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/solution_configs/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/solution_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "X-HTTP-Method-Override": "PATCH",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/solution_configs/{id}/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/solution_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/solution_configs/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/solution_config/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/solution_configs/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/solution_config/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "X-HTTP-Method-Override": "DELETE",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/converge_configs/{id}/delete/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/converge_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/converge_configs/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/converge_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "X-HTTP-Method-Override": "PATCH",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/converge_configs/{id}/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/converge_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/converge_configs/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/converge_config/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/converge_configs/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/converge_config/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 30,
+        "path": "/monitor/alarm/alarms/cnts/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/alarm_instance/cnts/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 30,
+        "path": "/monitor/alarm/alarms/freq_alarms/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/alarm_instance/freq_alarms/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/alarms/dimension_cnts/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/alarm_instance/dimension_cnts/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/biz_custom_event_data_id/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/business/{id}/get_or_create_custom_event_data_id/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "X-HTTP-Method-Override": "DELETE",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/detect_algorithm_configs/{id}/delete/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/detect_algorithm_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/detect_algorithm_configs/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/detect_algorithm_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "X-HTTP-Method-Override": "PATCH",
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/detect_algorithm_configs/{id}/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/detect_algorithm_config/{id}/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/detect_algorithm_configs/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/detect_algorithm_config/"
+    },
+    {
+        "resource_classification": "不分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/monitor/detect_algorithm_configs/",
+        "registed_http_method": "POST",
+        "dest_http_method": "POST",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/detect_algorithm_config/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/alarm_sources/notice_group/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/notice_group/{id}/alarm_sources/"
+    },
+    {
+        "resource_classification": "无分类",
+        "headers": {
+            "Accept": "application/json"
+        },
+        "description": "",
+        "timeout": 10,
+        "path": "/monitor/alarm/alarms/{id}/",
+        "registed_http_method": "GET",
+        "dest_http_method": "GET",
+        "dest_url": "http://{stageVariables.domain}/s/monitor_api/alarm_instance/{id}/"
+    }
+]

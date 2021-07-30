@@ -1,0 +1,10 @@
+include {{ settings.BASE_DIR }}/etc/redis_default.conf
+bind 127.0.0.1
+port {{ settings.REDIS_LOG_PORT }}
+pidfile ""
+logfile ""
+dir {{ settings.BASE_DIR }}/data/
+save ""
+appendonly yes
+maxmemory 49152mb
+maxmemory-policy volatile-lru

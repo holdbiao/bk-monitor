@@ -1,0 +1,298 @@
+[inet_http_server]
+port = 127.0.0.1:{{ settings.SUPERVISOR_PORT }}
+
+[supervisorctl]
+configuration = {{ settings.BASE_DIR }}/alarm_backends/conf/supervisord.conf
+serverurl = http://127.0.0.1:{{ settings.SUPERVISOR_PORT }}
+
+[supervisord]
+directory = {{ settings.BASE_DIR }}
+environment = DJANGO_SETTINGS_MODULE="settings",DJANGO_CONF_MODULE="conf.worker.{{ ENVIRONMENT }}.{{ PLATFORM }}",LOGGER_WITHOUT_CONSOLE="1"
+logfile = {{ settings.BASE_DIR }}/logs/supervisord.log
+pidfile = {{ settings.BASE_DIR }}/logs/supervisord.pid
+
+[rpcinterface:supervisor]
+supervisor.rpcinterface_factory = supervisor.rpcinterface:make_main_rpcinterface
+
+[program:watchdog]
+command=python -m watchdog http://127.0.0.1:{{ settings.SUPERVISOR_PORT }}
+priority = 9999
+directory = {{ settings.BASE_DIR }}
+stdout_logfile = {{ settings.BASE_DIR }}/logs/%(program_name)s.log
+redirect_stderr = true
+
+[program:redis-server]
+command = /usr/local/redis/bin/%(program_name)s etc/redis.conf
+priority = 9999
+stdout_logfile = logs/%(program_name)s.log
+redirect_stderr = true
+
+[program:logging]
+command=python manage.py run_func -m kernel.logging.main
+process_name = %(program_name)s%(process_num)s
+numprocs=1
+priority=100
+startsecs=0
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:alarm]
+command=python manage.py run_func -m kernel.alarm.main
+process_name = %(program_name)s%(process_num)s
+numprocs=2
+priority=200
+startsecs=0
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:recovery]
+command=python manage.py run_func -m kernel.recovery.main
+process_name = %(program_name)s%(process_num)s
+numprocs=2
+priority=200
+startsecs=0
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:converge]
+process_name = %(program_name)s%(process_num)s
+command=python manage.py run_func -m kernel.converge.main ; "start" is a flag to differ from cronjob
+numprocs=5                    ; number of processes copies to start (def 1)
+priority=300                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:match_alarm]
+process_name = %(program_name)s%(process_num)s
+command=python manage.py run_func -m kernel.match_alarm.main
+numprocs=8                    ; number of processes copies to start (def 1)
+priority=400                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:qos]
+command=python manage.py run_func -m kernel.qos.main ; "start" is a flag to differ from cronjob
+numprocs=1                    ; number of processes copies to start (def 1)
+priority=500                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+
+{% for poll_type in settings.ALARM_POLLERS.keys %}
+[program:run_poll_alarm_{{ poll_type }}]
+command=python manage.py run_poll_alarm --poll-type {{ poll_type }}
+numprocs=1                    ; number of processes copies to start (def 1)
+priority=520                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+{% endfor%}
+
+[program:run_cron]
+process_name = %(program_name)s%(process_num)s
+command=python manage.py run_func -m kernel.cron.main ; "start" is a flag to differ from cronjob
+numprocs=1                    ; number of processes copies to start (def 1)
+priority=1                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=false
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:run_data_detect]
+process_name = %(program_name)s%(process_num)s
+command=python manage.py %(program_name)s --min-interval 20 --max-cycles 10000
+numprocs=4                    ; number of processes copies to start (def 1)
+priority=600                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:run_data_access]
+process_name = %(program_name)s%(process_num)s
+command=python manage.py %(program_name)s --min-interval 60 --max-cycles 10000
+numprocs=4                    ; number of processes copies to start (def 1)
+priority=610                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:celery_beat]
+environment = NEED_DJANGO_SETUP=1
+command=celery -A kernel.scheduler.celery_app beat -l info ; "start" is a flag to differ from cronjob
+numprocs=1                    ; number of processes copies to start (def 1)
+priority=700                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:scheduler0]
+environment = NEED_DJANGO_SETUP=1
+command=celery -A kernel.scheduler.celery_app worker -l info --autoscale={{settings.CELERY_MAX_WORKERS}},{{settings.CELERY_WORKERS}} -Q celery_high,celery_low,run_data_access,run_data_detect --maxtasksperchild={{settings.CELERY_MAX_TASKS_PER_CHILD}} ; "start" is a flag to differ from cronjob
+numprocs=1                    ; number of processes copies to start (def 1)
+priority=700                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:scheduler1]
+environment = NEED_DJANGO_SETUP=1
+command=celery -A kernel.scheduler.celery_app worker -l info --autoscale={{settings.CELERY_MAX_WORKERS}},{{settings.CELERY_WORKERS}} -Q celery_high,celery_normal,celery_low,run_data_access --maxtasksperchild={{settings.CELERY_MAX_TASKS_PER_CHILD}} ; "start" is a flag to differ from cronjob
+numprocs=1                    ; number of processes copies to start (def 1)
+priority=700                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:scheduler2]
+environment = NEED_DJANGO_SETUP=1
+command=celery -A kernel.scheduler.celery_app worker -l info --autoscale={{settings.CELERY_MAX_WORKERS}},{{settings.CELERY_WORKERS}} -Q celery,celery_high,celery_normal,celery_low,run_data_detect --maxtasksperchild={{settings.CELERY_MAX_TASKS_PER_CHILD}} ; "start" is a flag to differ from cronjob
+numprocs=1                    ; number of processes copies to start (def 1)
+priority=700                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:scheduler3]
+environment = NEED_DJANGO_SETUP=1
+command=celery -A kernel.scheduler.celery_app worker -l info --autoscale=2,1 -Q celery_image_exporter  ; "start" is a flag to differ from cronjob
+numprocs=1                    ; number of processes copies to start (def 1)
+priority=700                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:scheduler4]
+environment = NEED_DJANGO_SETUP=1
+command=celery -A kernel.scheduler.celery_app worker -l info --autoscale=10,{{settings.CELERY_WORKERS}}  -Q celery_cron --maxtasksperchild=1  ; "start" is a flag to differ from cronjob
+numprocs=1                    ; number of processes copies to start (def 1)
+priority=700                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:nodata]
+command=python manage.py run_func -m kernel.nodata.main
+process_name = %(program_name)s%(process_num)s
+numprocs=2
+priority=800
+startsecs=0
+stopwaitsecs=30
+autostart=false
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[group:scheduler]
+programs=celery_beat,scheduler0,scheduler1,scheduler2,scheduler3,scheduler4
+
+[group:run_poll_alarm]
+programs={{ poll_alarm_programs }}
+
+[program:healthz]
+process_name = %(program_name)s%(process_num)s
+command=python manage.py healthz_service
+numprocs=1                    ; number of processes copies to start (def 1)
+priority=520                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true
+
+[program:kernel_api]
+environment = DJANGO_SETTINGS_MODULE="settings",DJANGO_CONF_MODULE="conf.api.{{ ENVIRONMENT }}.{{ PLATFORM }}",BKAPP_DEPLOY_PLATFORM="{{ PLATFORM }}",BKAPP_DEPLOY_ENV="api",LOGGER_WITHOUT_CONSOLE="1"
+process_name = %(program_name)s%(process_num)s
+command=gunicorn -w 4 -b 127.0.0.1:{{ settings.KERNEL_API_PORT }} -k gevent wsgi:application
+numprocs=1                    ; number of processes copies to start (def 1)
+priority=520                  ; the relative start priority (default 999)
+startsecs=0                   ; number of secs prog must stay running (def. 1)
+stopwaitsecs=30
+autostart=true
+autorestart=true
+stdout_logfile=/dev/null
+redirect_stderr=true
+stopasgroup=true
+killasgroup=true

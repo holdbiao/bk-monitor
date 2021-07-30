@@ -1,0 +1,53 @@
+[
+  {
+    "bk_biz_id": 2,
+    "language": "1",
+    "life_cycle": "2",
+    "bk_biz_developer": "",
+    "bk_biz_maintainer": "admin",
+    "bk_biz_tester": "",
+    "time_zone": "Asia/Shanghai",
+    "default": 0,
+    "create_time": "2019-05-17T12:38:29.549+08:00",
+    "bk_biz_productor": "",
+    "bk_supplier_account": "0",
+    "operator": "admin",
+    "bk_biz_name": "蓝鲸",
+    "last_time": "2019-11-01T17:29:29.208+08:00",
+    "bk_supplier_id": 0
+  },
+  {
+    "bk_biz_id": 3,
+    "language": "2",
+    "life_cycle": "2",
+    "bk_biz_developer": "",
+    "bk_biz_maintainer": "admin",
+    "bk_biz_tester": "admin",
+    "time_zone": "Asia/Shanghai",
+    "default": 0,
+    "create_time": "2019-05-23T15:10:45.798+08:00",
+    "bk_biz_productor": "",
+    "bk_supplier_account": "0",
+    "operator": "",
+    "bk_biz_name": "测试业务",
+    "last_time": "2020-01-06T14:39:43.002+08:00",
+    "bk_supplier_id": 0
+  },
+  {
+    "bk_biz_id": 4,
+    "language": "1",
+    "life_cycle": "2",
+    "bk_biz_developer": "",
+    "bk_biz_maintainer": "admin",
+    "bk_biz_tester": "",
+    "time_zone": "Asia/Shanghai",
+    "default": 0,
+    "create_time": "2019-06-19T16:36:36.136+08:00",
+    "bk_biz_productor": "",
+    "bk_supplier_account": "0",
+    "operator": "",
+    "bk_biz_name": "Test Business",
+    "last_time": "2019-08-29T10:23:18.468+08:00",
+    "bk_supplier_id": 0
+  }
+]

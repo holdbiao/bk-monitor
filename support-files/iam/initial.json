@@ -1,0 +1,1336 @@
+{
+    "system_id":"bk_monitorv3",
+    "operations":[
+        {
+            "operation":"upsert_system",
+            "data":{
+                "id":"bk_monitorv3",
+                "name":"监控平台",
+                "name_en":"BKMonitor",
+                "description":"蓝鲸监控平台是一款针对主机和互联网应用进行监控的产品，监控服务可用于收集主机资源（系统性能、组件服务、数据库、日志等）的监控指标，探测互联网应用服务的可用性，并对指标进行告警设置。",
+                "description_en":"BKMonitor is a product that monitors the host and Internet applications. The monitoring service can be used to collect monitoring metrics of host (system performance, component services, databases, logs, etc.), detect the availability of Internet application services, and set alarms for metrics.",
+                "clients":"bk_monitorv3",
+                "provider_config":{
+                    "host":"",
+                    "auth":"basic"
+                }
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_business",
+                "name":"业务访问",
+                "name_en":"View Business",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_home",
+                "name":"首页查看",
+                "name_en":"View Home",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_synthetic",
+                "name":"拨测查看",
+                "name_en":"View Synthetic",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_synthetic",
+                "name":"拨测管理",
+                "name_en":"Manage Synthetic",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business",
+                    "view_synthetic"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_public_synthetic_location",
+                "name":"公共拨测节点管理",
+                "name_en":"Manage Public Synthetic Location",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+
+                ],
+                "related_actions":[
+
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_host",
+                "name":"主机详情查看",
+                "name_en":"View Host",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_host",
+                "name":"主机详情管理",
+                "name_en":"Manage Host",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business",
+                    "view_host"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_event",
+                "name":"事件中心查看",
+                "name_en":"View Event",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_plugin",
+                "name":"插件查看",
+                "name_en":"View Plugin",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_plugin",
+                "name":"插件管理",
+                "name_en":"Manage Plugin",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business",
+                    "view_plugin"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_public_plugin",
+                "name":"公共插件管理",
+                "name_en":"Manage Public Plugin",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+
+                ],
+                "related_actions":[
+
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_collection",
+                "name":"采集查看",
+                "name_en":"View Collection",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_collection",
+                "name":"采集管理",
+                "name_en":"Manage Collection",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business",
+                    "view_collection"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_notify_team",
+                "name":"告警组查看",
+                "name_en":"View Notify Team",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_notify_team",
+                "name":"告警组管理",
+                "name_en":"Manage Notify Team",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business",
+                    "view_notify_team"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_rule",
+                "name":"策略查看",
+                "name_en":"View Rule",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business",
+                    "view_notify_team"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_rule",
+                "name":"策略管理",
+                "name_en":"Manage Rule",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business",
+                    "view_rule",
+                    "view_notify_team"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_downtime",
+                "name":"屏蔽查看",
+                "name_en":"View Downtime",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_downtime",
+                "name":"屏蔽管理",
+                "name_en":"Manage Downtime",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business",
+                    "view_downtime"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_custom_metric",
+                "name":"自定义指标上报查看",
+                "name_en":"View Custom Metric",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_custom_metric",
+                "name":"自定义指标上报管理",
+                "name_en":"Manage Custom Metric",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business",
+                    "view_custom_metric"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_custom_event",
+                "name":"自定义事件上报查看",
+                "name_en":"View Custom Event",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_custom_event",
+                "name":"自定义事件上报管理",
+                "name_en":"Manage Custom Event",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business",
+                    "view_custom_event"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_dashboard",
+                "name":"仪表盘查看",
+                "name_en":"View Dashboard",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_dashboard",
+                "name":"仪表盘管理",
+                "name_en":"Manage Dashboard",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business",
+                    "view_dashboard"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"explore_metric",
+                "name":"指标检索",
+                "name_en":"Explore Metric",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"export_config",
+                "name":"导出",
+                "name_en":"Export Config",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"import_config",
+                "name":"导入",
+                "name_en":"Import Config",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_service_category",
+                "name":"服务分类查看",
+                "name_en":"View Service Category",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_global_setting",
+                "name":"全局配置查看",
+                "name_en":"View Global Setting",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+
+                ],
+                "related_actions":[
+
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_global_setting",
+                "name":"全局配置编辑",
+                "name_en":"Manage Global Setting",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+
+                ],
+                "related_actions":[
+                    "view_global_setting"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_self_state",
+                "name":"自监控查看",
+                "name_en":"View Self-state",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+
+                ],
+                "related_actions":[
+
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_upgrade",
+                "name":"配置升级管理",
+                "name_en":"Manage Upgrade",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"view_function_switch",
+                "name":"功能设置查看",
+                "name_en":"View Function Switch",
+                "type":"view",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation":"upsert_action",
+            "data":{
+                "id":"manage_function_switch",
+                "name":"功能设置管理",
+                "name_en":"Manage Function Switch",
+                "type":"manage",
+                "version":1,
+                "related_resource_types":[
+                    {
+                        "id":"biz",
+                        "system_id":"bk_cmdb",
+                        "selection_mode":"instance",
+                        "related_instance_selections":[
+                            {
+                                "system_id":"bk_cmdb",
+                                "id":"business"
+                            }
+                        ]
+                    }
+                ],
+                "related_actions":[
+                    "view_business",
+                    "view_function_switch"
+                ],
+                "description":"",
+                "description_en":""
+            }
+        },
+        {
+            "operation": "upsert_action_groups",
+            "data": [
+                {
+                    "name": "业务",
+                    "name_en": "Business",
+                    "actions": [
+                        {
+                            "id": "view_business"
+                        }
+                    ],
+                    "sub_groups": [
+                        {
+                            "name": "首页",
+                            "name_en": "Home",
+                            "actions": [
+                                {
+                                    "id": "view_home"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "数据检索",
+                            "name_en": "Data Explorer",
+                            "actions": [
+                                {
+                                    "id": "explore_metric"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "仪表盘",
+                            "name_en": "Dashboard",
+                            "actions": [
+                                {
+                                    "id": "view_dashboard"
+                                },
+                                {
+                                    "id": "manage_dashboard"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "主机",
+                            "name_en": "Host",
+                            "actions": [
+                                {
+                                    "id": "view_host"
+                                },
+                                {
+                                    "id": "manage_host"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "拨测",
+                            "name_en": "Synthetic",
+                            "actions": [
+                                {
+                                    "id": "view_synthetic"
+                                },
+                                {
+                                    "id": "manage_synthetic"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "事件",
+                            "name_en": "Event",
+                            "actions": [
+                                {
+                                    "id": "view_event"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "插件",
+                            "name_en": "Plugin",
+                            "actions": [
+                                {
+                                    "id": "view_plugin"
+                                },
+                                {
+                                    "id": "manage_plugin"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "采集",
+                            "name_en": "Collection",
+                            "actions": [
+                                {
+                                    "id": "view_collection"
+                                },
+                                {
+                                    "id": "manage_collection"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "策略",
+                            "name_en": "Rule",
+                            "actions": [
+                                {
+                                    "id": "view_rule"
+                                },
+                                {
+                                    "id": "manage_rule"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "告警组",
+                            "name_en": "Notify Team",
+                            "actions": [
+                                {
+                                    "id": "view_notify_team"
+                                },
+                                {
+                                    "id": "manage_notify_team"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "屏蔽",
+                            "name_en": "Downtime",
+                            "actions": [
+                                {
+                                    "id": "view_downtime"
+                                },
+                                {
+                                    "id": "manage_downtime"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "自定义上报",
+                            "name_en": "Custom Report",
+                            "actions": [
+                                {
+                                    "id": "view_custom_metric"
+                                },
+                                {
+                                    "id": "manage_custom_metric"
+                                },
+                                {
+                                    "id": "view_custom_event"
+                                },
+                                {
+                                    "id": "manage_custom_event"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "导入导出",
+                            "name_en": "Import And Export",
+                            "actions": [
+                                {
+                                    "id": "export_config"
+                                },
+                                {
+                                    "id": "import_config"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "服务分类",
+                            "name_en": "Service Category",
+                            "actions": [
+                                {
+                                    "id": "view_service_category"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "配置升级",
+                            "name_en": "Upgrade",
+                            "actions": [
+                                {
+                                    "id": "manage_upgrade"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "功能设置",
+                            "name_en": "Function Switch",
+                            "actions": [
+                                {
+                                    "id": "view_function_switch"
+                                },
+                                {
+                                    "id": "manage_function_switch"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "全局",
+                    "name_en": "Global",
+                    "actions": [
+                        {
+                            "id": "manage_public_synthetic_location"
+                        },
+                        {
+                            "id": "manage_public_plugin"
+                        },
+                        {
+                            "id": "view_global_setting"
+                        },
+                        {
+                            "id": "manage_global_setting"
+                        },
+                        {
+                            "id": "view_self_state"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "operation": "upsert_common_actions",
+            "data": [
+                {
+                    "name": "监控配置管理",
+                    "name_en": "Manage Config",
+                    "actions": [
+                        {
+                            "id": "view_home"
+                        },
+                        {
+                            "id": "view_synthetic"
+                        },
+                        {
+                            "id": "manage_synthetic"
+                        },
+                        {
+                            "id": "view_host"
+                        },
+                        {
+                            "id": "manage_host"
+                        },
+                        {
+                            "id": "view_event"
+                        },
+                        {
+                            "id": "view_plugin"
+                        },
+                        {
+                            "id": "manage_plugin"
+                        },
+                        {
+                            "id": "view_collection"
+                        },
+                        {
+                            "id": "manage_collection"
+                        },
+                        {
+                            "id": "view_rule"
+                        },
+                        {
+                            "id": "manage_rule"
+                        },
+                        {
+                            "id": "view_notify_team"
+                        },
+                        {
+                            "id": "manage_notify_team"
+                        },
+                        {
+                            "id": "view_downtime"
+                        },
+                        {
+                            "id": "manage_downtime"
+                        },
+                        {
+                            "id": "view_custom_metric"
+                        },
+                        {
+                            "id": "manage_custom_metric"
+                        },
+                        {
+                            "id": "view_custom_event"
+                        },
+                        {
+                            "id": "manage_custom_event"
+                        },
+                        {
+                            "id": "view_dashboard"
+                        },
+                        {
+                            "id": "manage_dashboard"
+                        },
+                        {
+                            "id": "export_config"
+                        },
+                        {
+                            "id": "import_config"
+                        },
+                        {
+                            "id": "view_service_category"
+                        },
+                        {
+                            "id": "manage_upgrade"
+                        },
+                        {
+                            "id": "manage_function_switch"
+                        },
+                        {
+                            "id": "view_function_switch"
+                        },
+                        {
+                            "id": "explore_metric"
+                        }
+                    ]
+                },
+                {
+                    "name": "告警查看和处理",
+                    "name_en": "Handle Alert",
+                    "actions": [
+                        {
+                            "id": "view_home"
+                        },
+                        {
+                            "id": "view_synthetic"
+                        },
+                        {
+                            "id": "view_host"
+                        },
+                        {
+                            "id": "view_event"
+                        },
+                        {
+                            "id": "view_plugin"
+                        },
+                        {
+                            "id": "view_collection"
+                        },
+                        {
+                            "id": "view_rule"
+                        },
+                        {
+                            "id": "view_notify_team"
+                        },
+                        {
+                            "id": "view_downtime"
+                        },
+                        {
+                            "id": "manage_downtime"
+                        },
+                        {
+                            "id": "view_custom_metric"
+                        },
+                        {
+                            "id": "view_custom_event"
+                        },
+                        {
+                            "id": "view_dashboard"
+                        },
+                        {
+                            "id": "view_service_category"
+                        },
+                        {
+                            "id": "view_function_switch"
+                        },
+                        {
+                            "id": "explore_metric"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

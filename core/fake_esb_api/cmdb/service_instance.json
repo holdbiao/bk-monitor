@@ -1,0 +1,35 @@
+[
+  {
+    "bk_biz_id": 2,
+    "bk_module_id": 5,
+    "name": "mysql",
+    "creator": "cc_system",
+    "labels": {
+      "mysql_paas": "admin",
+      "mysql_user": "admin"
+    },
+    "bk_host_id": 1,
+    "last_time": "2019-07-09T13:06:54.013+08:00",
+    "create_time": "2019-07-09T13:06:54.013+08:00",
+    "bk_supplier_account": "0",
+    "service_template_id": 1,
+    "modifier": "cc_system",
+    "id": 1,
+    "bk_host_innerip": ""
+  },
+  {
+    "bk_biz_id": 2,
+    "bk_module_id": 6,
+    "name": "gse",
+    "creator": "cc_system",
+    "labels": null,
+    "bk_host_id": 2,
+    "last_time": "2019-07-09T13:06:54.075+08:00",
+    "create_time": "2019-07-09T13:06:54.075+08:00",
+    "bk_supplier_account": "0",
+    "service_template_id": 2,
+    "modifier": "cc_system",
+    "id": 2,
+    "bk_host_innerip": ""
+  }
+]

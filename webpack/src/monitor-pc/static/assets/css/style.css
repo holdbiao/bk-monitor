@@ -1,0 +1,43 @@
+/* 编辑 设置 删除三个字体图标， json文件../assets/font-selection.json*/
+@font-face {
+  font-family: 'mofonts';
+  src:  url('../assets/fonts/mofonts.eot?tatvrv');
+  src:  url('../assets/fonts/mofonts.eot?tatvrv#iefix') format('embedded-opentype'),
+    url('../assets/fonts/mofonts.ttf?tatvrv') format('truetype'),
+    url('../assets/fonts/mofonts.woff?tatvrv') format('woff'),
+    url('../assets/fonts/mofonts.svg?tatvrv#mofonts') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="mo-icon-"], [class*=" mo-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mofonts' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mo-icon-delete:before {
+  content: "\31";
+  color: #c3cdd7;
+}
+.mo-icon-edit:before {
+  content: "\32";
+  color: #c3cdd7;
+}
+.mo-icon-right:before {
+  content: "\33";
+  color: #c3cdd7;
+}
+.mo-icon-set:before {
+  content: "\34";
+  color: #c3cdd7;
+}

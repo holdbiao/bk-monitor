@@ -1,0 +1,76 @@
+{
+    "name": "blueking-monitor",
+    "description": "blueking-monitor",
+    "version": "1.0.0",
+    "author": "bk fe",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "src/*"
+    ],
+    "scripts": {
+        "test": "node packages/monitor-cli-new/bin/index.js build -e -a",
+        "prod": "npm i && npm run install-build && npm run build",
+        "install-build": "cross-env execMode=install node ./webpack/exec-shell.js",
+        "install-package": "cross-env execMode=install node ./webpack/exec-shell.js",
+        "mobile:dev": "bkmonitor-cli dev -m",
+        "mobile:build": "bkmonitor-cli build -m",
+        "pc:dev": "bkmonitor-cli dev",
+        "pc:build": "bkmonitor-cli build",
+        "dev": "bkmonitor-cli dev",
+        "build": "bkmonitor-cli build -m && bkmonitor-cli build",
+        "clean": "rimraf ../static/monitor/* && rimraf mobile/*",
+        "clean:mobile": "rimraf weixin/*",
+        "clean:pc": "rimraf ../static/monitor/*",
+        "clean-dll": "rimraf ../static/monitor/dll/*",
+        "analyze": "npm run clean && bkmonitor-cli build -a",
+        "analyze:mobile": "npm run clean && bkmonitor-cli build -m -a",
+        "precommit": "lint-staged",
+        "replace": "cross-env execMode=move node ./webpack/exec-shell.js",
+        "fix": "eslint --fix --ext .js,.vue src/",
+        "debug": "node --nolazy --inspect-brk=9229 webpack/start"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.(vue|ts|tsx)": [
+            "eslint --fix",
+            "git add"
+        ],
+        "src/**/*.(vue|scss|css|sass)": [
+            "stylelint --fix",
+            "git add"
+        ],
+        "packages/monitor-cli/src/*!(d).ts": [
+            "eslint --fix"
+        ]
+    },
+    "devDependencies": {
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.2"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ],
+    "engines": {
+        "node": ">= 11.14.0",
+        "npm": ">= 6.5.0"
+    },
+    "typesVersions": {
+        ">=3.1": {
+            "*": [
+                "ts3.1/*"
+            ]
+        }
+    },
+    "dependencies": {
+        "@blueking/bkmonitor-cli": "0.0.16",
+        "core-js": "^3.6.5",
+        "cross-env": "^7.0.2"
+    }
+}

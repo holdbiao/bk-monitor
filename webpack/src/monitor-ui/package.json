@@ -1,0 +1,23 @@
+{
+  "name": "monitor-ui",
+  "version": "1.0.0",
+  "description": "monitor ui",
+  "main": "index.js",
+  "repository": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bk fe",
+  "license": "ISC",
+  "dependencies": {
+    "deepmerge": "^4.2.2",
+    "echarts": "^4.8.0",
+    "html-to-image": "^0.1.1",
+    "moment": "^2.27.0",
+    "resize-detector": "^0.2.2",
+    "throttle-debounce": "^2.2.1",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^9.0.0"
+  }
+}

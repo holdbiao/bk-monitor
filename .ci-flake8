@@ -1,0 +1,64 @@
+[flake8]
+exclude = .git,__pycache__,docs,old,build,dist,venv,webpack,tests
+max-line-length = 160
+ignore =
+    # F
+    # import not used
+    F401,
+    # import *
+    F403,F405,
+    # local variable never used
+    F841,
+
+    # E
+    # continuation line under-indented for hanging indent
+    E121,
+    # continuation line missing indentation or outdented
+    E122,
+    # closing bracket does not match indentation of opening bracket's line
+    E123,
+    # todo continuation line over-indented for hanging indent
+    E126,
+    # continuation line over-indented for visual indent
+    E127,
+    # continuation line under-indented for visual indent
+    E128,
+    # continuation line unaligned for hanging indent
+    E131,
+    # missing whitespace around arithmetic operator
+    E226,
+    # todo block comment should start with '# '
+    E265,
+    # too many leading '#' for block comment
+    E266,
+    # todo too many blank lines
+    E303,
+    # todo expected 2 blank lines after class or function definition
+    E305,
+    # Module level import not at top of file
+    E402,
+    # line too long
+    E501,
+    # do not use bare except
+    E722,
+    # Do not assign a lambda expression, use a def (E731)
+    E731,
+    # Do not use variables named 'l', 'o', or 'i' (E741)
+    E741,
+    # W
+    # todo Trailing whitespace (W291)
+    W291,
+    # todo No newline at end of file (W292)
+    W292,
+    # todo Blank line contains whitespace (W293)
+    W293,
+    # todo Blank line at end of file (W391)
+    W391,
+
+    # line break before binary operator
+    W503,
+    W504,
+
+    # todo .has_key() is deprecated, use 'in'
+    W601,
+    F999,

@@ -1,0 +1,182 @@
+[
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "Apache",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 22,
+    "id": 24
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "Ceph",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 26,
+    "id": 27
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 9,
+    "name": "Default",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 0,
+    "id": 9
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 9,
+    "name": "Default",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 9,
+    "id": 10
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "Etcd",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 11,
+    "id": 17
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "HTTP 服务",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 0,
+    "id": 22
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "Kafka",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 19,
+    "id": 20
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "MongoDB",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 11,
+    "id": 16
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "Mysql",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 11,
+    "id": 12
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "NFS",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 26,
+    "id": 28
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "Nginx",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 22,
+    "id": 23
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "Oracle",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 11,
+    "id": 14
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "RabbitMQ",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 19,
+    "id": 21
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "Redis",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 11,
+    "id": 13
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "SQLServer",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 11,
+    "id": 15
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "Tomcat",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 22,
+    "id": 25
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "Zookeeper",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 11,
+    "id": 18
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "存储",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 0,
+    "id": 26
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "数据库",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 0,
+    "id": 11
+  },
+  {
+    "bk_biz_id": 0,
+    "bk_root_id": 0,
+    "name": "消息队列",
+    "is_built_in": true,
+    "bk_supplier_account": "0",
+    "bk_parent_id": 0,
+    "id": 19
+  }
+]

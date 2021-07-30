@@ -1,0 +1,3 @@
+{
+  "extends": ["@blueking/eslint-config/js"]
+}

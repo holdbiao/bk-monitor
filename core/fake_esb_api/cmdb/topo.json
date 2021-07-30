@@ -1,0 +1,151 @@
+[
+  {
+    "host_count": 0,
+    "default": 0,
+    "bk_obj_name": "business",
+    "bk_obj_id": "biz",
+    "service_instance_count": 0,
+    "child": [
+      {
+        "host_count": 0,
+        "default": 0,
+        "bk_obj_name": "level",
+        "bk_obj_id": "level",
+        "service_instance_count": 0,
+        "child": [
+          {
+            "host_count": 0,
+            "default": 0,
+            "bk_obj_name": "set",
+            "bk_obj_id": "set",
+            "service_instance_count": 0,
+            "child": [
+              {
+                "host_count": 0,
+                "default": 0,
+                "bk_obj_name": "module",
+                "bk_obj_id": "module",
+                "service_instance_count": 0,
+                "child": [],
+                "service_template_id": 0,
+                "bk_inst_id": 5,
+                "bk_inst_name": "appengine"
+              },
+              {
+                "host_count": 0,
+                "default": 0,
+                "bk_obj_name": "module",
+                "bk_obj_id": "module",
+                "service_instance_count": 0,
+                "child": [],
+                "service_template_id": 0,
+                "bk_inst_id": 6,
+                "bk_inst_name": "appo"
+              }
+            ],
+            "service_template_id": 0,
+            "bk_inst_id": 6,
+            "bk_inst_name": "PaaS平台"
+          },
+          {
+            "host_count": 0,
+            "default": 0,
+            "bk_obj_name": "set",
+            "bk_obj_id": "set",
+            "service_instance_count": 0,
+            "service_template_id": 0,
+            "bk_inst_id": 7,
+            "bk_inst_name": "作业平台",
+            "child": []
+          }
+        ],
+        "service_template_id": 0,
+        "bk_inst_id": 3,
+        "bk_inst_name": "Level"
+      }
+    ],
+    "service_template_id": 0,
+    "bk_inst_id": 2,
+    "bk_inst_name": "蓝鲸"
+  },
+  {
+    "host_count": 0,
+    "default": 0,
+    "bk_obj_name": "business",
+    "bk_obj_id": "biz",
+    "service_instance_count": 0,
+    "child": [
+      {
+        "host_count": 0,
+        "default": 0,
+        "bk_obj_name": "level",
+        "bk_obj_id": "level",
+        "service_instance_count": 0,
+        "child": [
+          {
+            "host_count": 0,
+            "default": 0,
+            "bk_obj_name": "set",
+            "bk_obj_id": "set",
+            "service_instance_count": 0,
+            "child": [
+              {
+                "host_count": 0,
+                "default": 0,
+                "bk_obj_name": "module",
+                "bk_obj_id": "module",
+                "service_instance_count": 0,
+                "child": [],
+                "service_template_id": 0,
+                "bk_inst_id": 9,
+                "bk_inst_name": "Test Module1"
+              },
+              {
+                "host_count": 0,
+                "default": 0,
+                "bk_obj_name": "module",
+                "bk_obj_id": "module",
+                "service_instance_count": 0,
+                "child": [],
+                "service_template_id": 0,
+                "bk_inst_id": 10,
+                "bk_inst_name": "Test Module2"
+              }
+            ],
+            "service_template_id": 0,
+            "bk_inst_id": 8,
+            "bk_inst_name": "Test Set1"
+          },
+          {
+            "host_count": 0,
+            "default": 0,
+            "bk_obj_name": "set",
+            "bk_obj_id": "set",
+            "service_instance_count": 0,
+            "service_template_id": 0,
+            "bk_inst_id": 9,
+            "bk_inst_name": "Test Set2",
+            "child": []
+          }
+        ],
+        "service_template_id": 0,
+        "bk_inst_id": 4,
+        "bk_inst_name": "Test Level"
+      }
+    ],
+    "service_template_id": 0,
+    "bk_inst_id": 3,
+    "bk_inst_name": "测试业务"
+  },
+  {
+    "service_template_id": 0,
+    "bk_inst_id": 4,
+    "bk_inst_name": "Test Business",
+    "host_count": 0,
+    "default": 0,
+    "bk_obj_name": "business",
+    "bk_obj_id": "biz",
+    "service_instance_count": 0,
+    "child": []
+  }
+]

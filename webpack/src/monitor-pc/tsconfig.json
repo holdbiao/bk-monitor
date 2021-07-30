@@ -1,0 +1,31 @@
+{
+  "include": [
+    "./**/*.ts",
+    "./**/*.vue",
+    "./**/*.tsx",
+    "./*.ts",
+    "node_modules/vue-tsx-support/enable-check.d.ts"
+, "public-path.js", "new-index.js"  ],
+  "exclude": [
+    "node_modules",
+    "public-path.js"
+  ],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "pretty": true,
+    "jsx": "preserve",
+    "jsxFactory": "VueTsxSupport",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  }
+}

@@ -1,0 +1,9944 @@
+# English translations for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-05-25 22:30+0800\n"
+"PO-Revision-Date: 2017-11-24 14:50+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+msgid "{}分钟内匹配到关键字次数"
+msgstr "Within {} minutes matched the number of keywords"
+
+msgid "{}分钟内接收到事件次数"
+msgstr "Min {} is received within the number of times an event"
+
+msgid "均值"
+msgstr "Mean"
+
+msgid "总和"
+msgstr "Sum"
+
+msgid "最大值"
+msgstr "Max"
+
+msgid "最小值"
+msgstr "Min"
+
+msgid "{}分钟内接收到事件次数{}"
+msgstr "Min {} is received within the number of events {}"
+
+msgid "strategy({}), item({}) 监控项在快照数据中找不到"
+msgstr "rules ({}), item ({}) monitored item can not be found in the snapshot "
+"data"
+
+msgid " 同时 "
+msgstr " Simultaneously "
+
+msgid "[detect] strategy({}) item({}) level[{}] 发现异常点: {}"
+msgstr "[Detect] strategy ({}) item ({}) level [{}] abnormal point: {}"
+
+msgid "当前指标({})已经有{}个周期无数据上报"
+msgstr "Current Metric ({}) {} have no data reporting cycle"
+
+msgid "，并且数据上报延时{}个周期"
+msgstr "{} And data reporting cycle delay"
+
+msgid "当前维度检测到新的上报数据，无数据告警已恢复"
+msgstr "The current dimensions detects a new data reporting, no alarm data has been restored."
+
+msgid "AGENT心跳丢失-GSE"
+msgstr "AGENT heartbeat loss -GSE"
+
+msgid "GSE AGENT 失联"
+msgstr "GSE AGENT Lost"
+
+msgid "Corefile产生-GSE"
+msgstr "Corefile Generation - GSE"
+
+msgid "corefile告警，corefile文件:{}"
+msgstr "corefile file: {}"
+
+msgid "自定义字符型"
+msgstr "Custom character "
+
+msgid "磁盘写满-GSE"
+msgstr "Disk Filled - GSE"
+
+msgid "磁盘({})剩余空间只有{}%"
+msgstr "Disk ({})} {% remaining only space"
+
+msgid "磁盘只读-GSE"
+msgstr "Disk Read-only - GSE"
+
+msgid "磁盘({})只读告警"
+msgstr "Disk ({}) read-only Alarm"
+
+msgid "PING不可达告警-GSE"
+msgstr "PING Unreachable Alarm - GSE"
+
+msgid "Ping不可达"
+msgstr "Ping unreachable"
+
+msgid "在{}分组上生成了汇总事件"
+msgstr "event collect create in group{}"
+
+msgid "监控平台"
+msgstr "BK Monitor"
+
+msgid "日志平台"
+msgstr "BK Log"
+
+msgid "数据平台"
+msgstr "Data System"
+
+msgid "用户自定义"
+msgstr "User custom"
+
+msgid "日志关键字"
+msgstr "Log keyword"
+
+msgid "事件"
+msgstr "Events"
+
+msgid "时序"
+msgstr "Metric"
+
+msgid "其他"
+msgstr "Other"
+
+msgid "今日"
+msgstr "Today"
+
+msgid "昨日"
+msgstr "Yesterday"
+
+msgid "上周"
+msgstr "Last week"
+
+msgid "通知对象为空"
+msgstr "Recipients is null"
+
+msgid "发送成功"
+msgstr "Sent successfully"
+
+msgid "发生无数据告警"
+msgstr "No data alarm occurred"
+
+msgid "发生告警"
+msgstr "alarm occurs"
+
+msgid "蓝鲸监控"
+msgstr "BK Monitor"
+
+msgid "实例"
+msgstr "Examples"
+
+msgid "节点"
+msgstr "Node"
+
+msgid "已持续{}, "
+msgstr "{} Has continued"
+
+msgid "集群"
+msgstr "Cluster"
+
+msgid "模块"
+msgstr "Module"
+
+msgid "首次异常"
+msgstr "First triggered"
+
+msgid "最近异常"
+msgstr "Last triggered"
+
+msgid "级别"
+msgstr "Severity"
+
+msgid "告警级别"
+msgstr "Alarm Severity"
+
+msgid "持续时间"
+msgstr "Duration"
+
+msgid "告警对象"
+msgstr "Alarm object"
+
+msgid "数据来源"
+msgstr "Data Sources"
+
+msgid "内容"
+msgstr "Content"
+
+msgid "告警内容"
+msgstr "Alarm Content"
+
+msgid "告警业务"
+msgstr "Alarm Business"
+
+msgid "目标"
+msgstr "Target"
+
+msgid "告警目标"
+msgstr "Alarm target"
+
+msgid "维度"
+msgstr "Dimension"
+
+msgid "告警维度"
+msgstr "Dimensions"
+
+msgid "详情"
+msgstr "Details"
+
+msgid "告警ID"
+msgstr "Alarm ID"
+
+msgid "当前值"
+msgstr "Current value"
+
+msgid "关联信息"
+msgstr "Related info"
+
+msgid "时间范围"
+msgstr "Time range"
+
+msgid "代表"
+msgstr "Example"
+
+msgid "已持续{},"
+msgstr "{} has continued"
+
+msgid "[{}]{} {}告警,{}{}"
+msgstr "[{}] {} {} Alarm, {} {}"
+
+msgid "[屏蔽通知] shield({}) 通知方式：{}, 内容：{}"
+msgstr "[Mute notification] mute ({}) notified: {}, content: {}"
+
+msgid "开始"
+msgstr "Start"
+
+msgid "结束"
+msgstr "End"
+
+msgid "[屏蔽通知] 开始处理。拉取到 {} 条屏蔽配置等待检测"
+msgstr "[Mute] start processing {} Pulled to detect shielded for waiting"
+
+msgid "[屏蔽通知] shield({}) 处理异常，原因: {}"
+msgstr "[Mute] mute ({}) handling exceptions, reasons: {}"
+
+msgid "[屏蔽通知] shield({}) 发送屏蔽开始通知，发送结果: {}"
+msgstr "[Mute] mute ({}) transmitting shield start notification transmission result: {}"
+
+msgid "[屏蔽通知] shield({}) 发送屏蔽结束通知，发送结果: {}"
+msgstr "[Mute] mute ({}) transmitting shield end notification transmission result: {}"
+
+msgid "[屏蔽通知] 结束处理。有 {} 条屏蔽告警发送了通知"
+msgstr "[Mute] processing ends. {} Have sent a notification alert shielded"
+
+msgid "未拉取到待处理的策略项"
+msgstr "Not pulling the policy item to be treated."
+
+msgid "[detect] strategy({}) item({}) 暂无待检测数据"
+msgstr "[Detect] strategy ({}) item ({}) to be detected No data"
+
+msgid "[detect] strategy({}) item({}) 待检测数据量达到配置值(SQL_MAX_LIMIT){}，部分数据可能存在处理延时"
+msgstr "[Detect] strategy ({}) item ({}) to be detected data amount reaches the "
+"configured value (SQL_MAX_LIMIT) {}, there may be some data processing "
+"delays."
+
+msgid "[detect] strategy({}) item({}) 发现非期望格式的待检测数据{}条, 其中之一: {}"
+msgstr "[Detect] strategy ({}) item ({}) was found to be undesirable data format "
+"detection section {}, one of: {}"
+
+msgid "[detect] strategy({}) item({}) 拉取数据({})条"
+msgstr "[Detect] strategy ({}) item ({}) pulls data ({}) of"
+
+msgid "[detect] strategy({}) 异常检测完成: 异常记录数({})"
+msgstr "[Detect] strategy ({}) to complete the abnormality detection: abnormal "
+"number of records ({})."
+
+msgid ", 当前值{value}{unit}"
+msgstr ", current value is {value}{unit}"
+
+msgid "且"
+msgstr "and"
+
+msgid "较前{{floor_interval}}个时间点的均值({{floor_history_value}})下降超过{{floor}}%"
+msgstr "is more than {{floor}} lower than the average value "
+"({{floor_history_value}}) of the previous {{floor_interval}} time points."
+
+msgid "较前{{ceil_interval}}个时间点的均值({{ceil_history_value}})上升超过{{ceil}}%"
+msgstr "is more than {{ceil}} higher than the average value "
+"({{ceil_history_value}}) of the previous {{ceil_interval}} time points."
+
+msgid "较前{{floor_interval}}天内同一时刻绝对值的均值({{floor_history_value}})下降超过{{floor}}%"
+msgstr "is more than {{floor}}% lower than the average absolute value "
+"({{floor_history_value}}) at the same time in the previous "
+"{{floor_interval}} days."
+
+msgid "较前{{ceil_interval}}天内同一时刻绝对值的均值({{ceil_history_value}})上升超过{{ceil}}%"
+msgstr "is more than {{ceil}}% higher than the average absolute value "
+"({{ceil_interval}}) at the same time in the previous {{ceil_interval}} "
+"days."
+
+msgid "当前服务器在{{data_point.value}}秒前发生系统重启事件"
+msgstr "A system restart event occurred on the server {{data_point.value}} "
+"seconds ago."
+
+msgid "当前进程({{data_point.dimensions.display_name}})不存在"
+msgstr "Current process ({{data_point.dimensions.display_name}}) does not exist."
+
+#, python-format
+msgid ""
+"{% load port_range "
+"%}当前进程({{data_point.dimensions.display_name}})存在，端口({{data_point.dimensions.nonlisten"
+" | port_range}})不存在"
+msgstr "{% load port_range%} the current process "
+"({{data_point.dimensions.display_name}}) exists, port "
+"({{data_point.dimensions.nonlisten | port_range}}) does not exist."
+
+msgid "当前进程({{data_point.dimensions.display_name}})和监听端口({{data_point.dimensions.not_accurate_listen}})存在，监听的IP与CMDB中配置的({{data_point.dimensions.bind_ip}})不符"
+msgstr "Does not match the current process "
+"({{data_point.dimensions.display_name}}) and listening port "
+"({{data_point.dimensions.not_accurate_listen}}) is present, and the CMDB "
+"listening IP configuration ({{data_point.dimensions.bind_ip}}) "
+
+msgid ""
+" - 前一时刻值{{history_data_point.value}}的绝对值 >= "
+"前一时刻值{{history_data_point.value}} * {{ratio}} + {{shock}}"
+msgstr "minus the absolute value of the previous time value "
+"({{history_data_point.value}}) > = previous time value "
+"{{history_data_point.value}} * {{ratio}} + {{shock}}"
+
+msgid "较前一时刻({{history_data_point.value}})下降超过{{floor}}%"
+msgstr "is more than {{floor}}% lower than the previous time value "
+"({{history_data_point.value}})."
+
+msgid "较前一时刻({{history_data_point.value}})上升超过{{ceil}}%"
+msgstr "is more than {{ceil}}% higher than the previous time value "
+"({{history_data_point.value}})."
+
+msgid "较上周同一时刻({{history_data_point.value}})下降超过{{floor}}%"
+msgstr "is more than {{floor}}% lower than the same time value "
+"({{history_data_point.value}}) last week."
+
+msgid "较上周同一时刻({{history_data_point.value}})上升超过{{ceil}}%"
+msgstr "is more than {{ceil}}% higher than the same time value "
+"({{history_data_point.value}}) last week."
+
+msgid ""
+"{} - 前一时刻值{{{{pre_val}}}} {{{{method_desc}}}} "
+"{}天前的同一时刻差值{{{{diffs.{}.0.value |diff:diffs.{}.1.value}}}} * "
+"{{{{ratio}}}} + {{{{shock}}}}"
+msgstr "{} minus the previous time value {{{{pre_val}}}} {{{{method_desc}}}} "
+"{}天前的同一时刻差值{{{{diffs.{}.0.value |diff:diffs.{}.1.value}}}} * "
+"{{{{ratio}}}} + {{{{shock}}}}"
+
+msgid ""
+"{} {{{{method_desc}}}} {}天前的同一时刻绝对值{{{{history_points.{}.value}}}} * "
+"{{{{ratio}}}} + {{{{shock}}}}"
+msgstr "{} {{{{method_desc}}}} absolute value at the same time {} days ago "
+"{{{{history_points.{}.value}}}} * {{{{ratio}}}} + {{{{shock}}}}"
+
+msgid "当前维度存在级别更高的事件，告警已恢复"
+msgstr "Currently there is a higher-level events dimension, alarm has been "
+"restored"
+
+msgid "采集配置ID"
+msgstr "Collection ID"
+
+msgid "采集配置名称"
+msgstr "Collection name"
+
+msgid "服务实例ID"
+msgstr "Service instance ID"
+
+msgid "服务实例名称"
+msgstr "Services instance name"
+
+msgid "目标IP"
+msgstr "Target IP"
+
+msgid "云区域ID"
+msgstr "Cloud area ID"
+
+msgid "模型名称"
+msgstr "Model Name"
+
+msgid "模型实例名称"
+msgstr "Model name"
+
+msgid "节点名称"
+msgstr "Node name"
+
+msgid "节点ID"
+msgstr "Node ID"
+
+msgid "任务ID"
+msgstr "Task ID"
+
+msgid "任务名称"
+msgstr "Task name"
+
+msgid "响应状态码"
+msgstr "The response status code"
+
+msgid "响应消息"
+msgstr "Response message"
+
+msgid "策略已被停用或删除，告警关闭"
+msgstr "Rule has been deactivated or deleted, turn off the alarm"
+
+msgid "策略监控项已被删除，告警关闭"
+msgstr "Rule has been deleted, turn off the alarm"
+
+msgid "策略监控项已被修改，告警关闭"
+msgstr "Rule has been modified, the alarm turned off"
+
+msgid "策略监控维度已被修改，告警关闭"
+msgstr "Dimension has been modified, the alarm turned off"
+
+msgid "告警级别对应的检测算法已被删除，告警关闭"
+msgstr "Corresponding level alarm detection algorithm has been deleted, turn off "
+"the alarm."
+
+msgid "无数据告警设置被关闭，告警关闭"
+msgstr "No data is set off the alarm, the alarm off"
+
+msgid "在恢复检测周期内无数据上报，告警已关闭"
+msgstr "No recovery in the detection data reporting period, the alarm is turned "
+"off"
+
+msgid ""
+"[处理结果] (no_data) event({}), strategy({}), last_check_timestamp({}), "
+"now_timestamp({}),在恢复检测周期内无数据上报，进行事件关闭"
+msgstr "[Processing Results] (no_data) event ({}), strategy ({}), "
+"last_check_timestamp ({}), now_timestamp ({}), no data reporting the "
+"detection of a recovery cycle, a close event"
+
+msgid "CMDB 未查询到告警目标主机 ({}|{}) 的信息，主机可能已被删除，告警关闭"
+msgstr "CMDB is not queried alarm target host ({} | {}) information, the host may"
+" have been deleted, turn off the alarm."
+
+msgid "告警目标实例已不在监控目标范围内，告警关闭"
+msgstr "Alarm monitoring target instance is no longer within the target range, "
+"the alarm shut down"
+
+msgid "[处理结果] (do_recover) event({}), strategy({}) 已经过期，当前事件为: event({})，进行事件恢复"
+msgstr "[Processing Results] (do_recover) event ({}), strategy ({}) has expired, "
+"current events: event ({}), for event recovery."
+
+msgid "当前维度存在更新的告警事件，告警已恢复"
+msgstr "Currently there is a newer dimension alarm event, the alarm has been "
+"restored"
+
+msgid "在恢复检测周期内无数据上报，告警已恢复"
+msgstr "No data is reported in the restoration detection period, the alarm is "
+"restored"
+
+msgid "[处理结果] (no_data) event({}), strategy({}) 在恢复检测周期内无数据上报，进行事件恢复"
+msgstr "[Processing Results] (no_data) event ({}), strategy ({}) reported no data"
+" recovery in the detection period for event recovery."
+
+msgid "连续 {} 个周期不满足触发条件，告警已恢复"
+msgstr "The trigger condition is not satisfied for {} consecutive cycles, the "
+"alarm is recoveried"
+
+msgid "[处理结果] (do_recover) event({}), strategy({}) 连续 {} 个周期内不满足触发条件，进行事件恢复"
+msgstr "[Processing Results] (do_recover) event ({}), strategy ({})} {does not "
+"satisfy the trigger condition is continuous within a period for event "
+"recovery."
+
+msgid "[处理结果] (no_recover) event({}), strategy({}) 在恢复检测周期内仍满足触发条件，不进行恢复"
+msgstr "[Processing Results] (no_recover) event ({}), strategy ({}) in the "
+"recovery period has detected trigger condition is met, no recovery"
+
+msgid "[nodata] strategy({}) item({}) check_timestamp({}) 无待检测数据，可能触发无数据告警"
+msgstr "[Nodata] strategy ({}) item ({}) check_timestamp ({}) to be detected no "
+"data, no data may trigger an alarm."
+
+msgid ""
+"[nodata] strategy({}) item({}) check_timestamp({}) "
+"待检测数据量达到配置值(SQL_MAX_LIMIT){}，部分数据可能存在处理延时"
+msgstr "[Nodata] strategy ({}) item ({}) check_timestamp ({}) to be detected data"
+" amount reaches the configured value (SQL_MAX_LIMIT) {}, there may be "
+"some data processing delays."
+
+msgid ""
+"[nodata] strategy({}) item({}) check_timestamp({}) get "
+"future_timestamp({}) {} records,其中之一: {}"
+msgstr "[Nodata] strategy ({}) item ({}) check_timestamp ({}) get "
+"future_timestamp ({}) {} records, one of: {}"
+
+msgid ""
+"[nodata] strategy({}) item({}) check_timestamp({}) 发现非期望格式的待检测数据{}条,其中之一:"
+" {}"
+msgstr "[Nodata] strategy ({}) item ({}) check_timestamp ({}) was found to be "
+"undesirable data format detection section {}, one of: {}"
+
+msgid "[nodata] strategy({}) item({}) check_timestamp({}) 拉取数据({})条"
+msgstr "[Nodata] strategy ({}) item ({}) check_timestamp ({}) pulls data ({}) of"
+
+msgid "[nodata] strategy({}) 无数据检测完成: 无数据异常记录数({})"
+msgstr "[Nodata] strategy ({}) to complete the data detection No: No abnormality "
+"data record number ({})."
+
+msgid ", 进程启动时间小于10秒，请关注"
+msgstr "Process start-up time of less than 10 seconds, please pay attention."
+
+msgid ""
+"[处理结果] ({result}) record({record_id}), strategy({strategy_id}), "
+"item({item_id})"
+msgstr "[Processing Results] ({result}) record ({record_id}), strategy "
+"({strategy_id}), item ({item_id})"
+
+msgid "蓝鲸"
+msgstr "BlueKing"
+
+msgid "目标应用"
+msgstr "Target Application"
+
+msgid "目标字段"
+msgstr "Target Field"
+
+msgid "查询条件"
+msgstr "Query conditions"
+
+msgid "业务ID"
+msgstr "Business ID"
+
+msgid "结果表名称"
+msgstr "Results Table Name"
+
+msgid "查询SQL语句"
+msgstr "Query SQL statement"
+
+msgid "优先使用存储类型"
+msgstr "Precedence storage type"
+
+msgid "模型ID"
+msgstr "Model ID"
+
+msgid "实例ID列表"
+msgstr "Instance ID list"
+
+msgid "查询字段"
+msgstr "Query field"
+
+msgid "未知"
+msgstr "Unknown"
+
+msgid "业务"
+msgstr "Business"
+
+msgid "实例ID"
+msgstr "Instance ID"
+
+msgid "业务ID列表"
+msgstr "Business ID list"
+
+msgid "模块ID列表"
+msgstr "Module ID list"
+
+msgid "集群ID列表"
+msgstr "Set ID list"
+
+msgid "bk_obj_id({})和bk_inst_id({})只能同时为空或同时不为空"
+msgstr "bk_obj_id ({}) and bk_inst_id ({}) only while empty or not empty while"
+
+msgid "主机ID"
+msgstr "host ID"
+
+msgid "服务实例列表"
+msgstr "Service Instance List"
+
+msgid "模块ID"
+msgstr "Module ID"
+
+#, python-format
+msgid "无法解析的端口号：%s"
+msgstr "Unable to resolve port number: %s"
+
+#, python-format
+msgid "不在合法范围内的端口号：%s"
+msgstr "The port number is not within the valid range:%s"
+
+#, python-format
+msgid "不合法的端口范围定义格式：%s"
+msgstr "Illegal port range defined format: %s"
+
+#, python-format
+msgid "端口范围字符串解析失败：%s"
+msgstr "Port range string parsing failed: %s"
+
+msgid "请求缺少org_id"
+msgstr "The request is missing org_id"
+
+msgid "IP地址"
+msgstr "IP address"
+
+msgid "主机列表"
+msgstr "Host List"
+
+msgid "开发商账号"
+msgstr "Developer account"
+
+msgid "作业模板ID"
+msgstr "Job Template ID"
+
+msgid "脚本内容"
+msgstr "Script content"
+
+msgid "脚本参数"
+msgstr "Script Parameters"
+
+msgid "IP列表"
+msgstr "IP list"
+
+msgid "脚本类型"
+msgstr "Script Type"
+
+msgid "执行账户"
+msgstr "Performing account"
+
+msgid "文件名称"
+msgstr "file name"
+
+msgid "文件内容"
+msgstr "file content"
+
+msgid "目标路径"
+msgstr "Target path"
+
+msgid "进程启动的用户名"
+msgstr "The process starts username"
+
+msgid "进程名"
+msgstr "Process name"
+
+msgid "进程路径"
+msgstr "Process Path"
+
+msgid "进程配置文件路径"
+msgstr "Process Configuration File Path"
+
+msgid "进程日志路径"
+msgstr "Process log path"
+
+msgid "进程日志所在路径"
+msgstr "The path process log"
+
+msgid "联系人"
+msgstr "Contacts"
+
+msgid "进程启动命令"
+msgstr "Command to start the process."
+
+msgid "进程停止命令"
+msgstr "Process stop command"
+
+msgid "进程重启命令"
+msgstr "Command to restart the process."
+
+msgid "进程reload命令"
+msgstr "Process reload command."
+
+msgid "进程kill命令"
+msgstr "A process kill command"
+
+msgid "Agent管理进程索引key"
+msgstr "Agent Management Process index key"
+
+msgid "进程托管类型。0为周期执行进程，1为常驻进程，2为单次执行进程"
+msgstr ".0 managed type process cycle implementation process, a process for the permanent, 2 single execution process."
+
+msgid "进程使用cpu限制，取值范围[0, 100]"
+msgstr "Process uses cpu limit the range [0, 100]."
+
+msgid "进程使用mem限制，取值范围[0, 100]"
+msgstr "Using mem process limit the range [0, 100]."
+
+msgid "定期调度时间"
+msgstr "Regularly scheduled time."
+
+msgid "进程实例个数"
+msgstr "The number of instances the process"
+
+msgid "超时执行时间"
+msgstr "Timeout execution time"
+
+msgid "进程启动后开始检查时间"
+msgstr "Check time since the process started."
+
+msgid "进程启动后结束检查时间"
+msgstr "After the end of the examination time to start the process."
+
+msgid ""
+"进程操作类型 0:启动进程（start）, 1:停止进程（stop）, 2:进程状态查询, 3:注册托管进程, 4:取消托管进程, "
+"7:重启进程（restart）, 8:重新加载进程（reload）, 9:杀死进程（kill）"
+msgstr "Process Operation type 0: Start the process (start), 1: stop the process (stop), 2: process status inquiry, 3: Register the hosting process, 4: cancel the hosting process, 7: restart the process (restart), 8: reload process (reload), 9: kill the process (kill) "
+
+msgid "索引集ID"
+msgstr "Index set ID"
+
+msgid "索引列表"
+msgstr "Index List"
+
+msgid "ES接入场景"
+msgstr "ES access scenario."
+
+msgid "存储集群"
+msgstr "Storage cluster"
+
+msgid "时间字段"
+msgstr "Time field"
+
+msgid "开始时间"
+msgstr "Start time"
+
+msgid "结束时间"
+msgstr "End Time"
+
+msgid "时间标识符"
+msgstr "Time identifier"
+
+msgid "搜索语句"
+msgstr "Search statement"
+
+msgid "搜索过滤条件"
+msgstr "Search filter"
+
+msgid "起始位置"
+msgstr "starting point"
+
+msgid "条数"
+msgstr "Article Number"
+
+msgid "ES的聚合条件"
+msgstr "ES polymerization conditions."
+
+msgid "高亮参数"
+msgstr "Highlight parameter"
+
+msgid "标签分类"
+msgstr "Label classification"
+
+msgid "标签层级"
+msgstr "Tag hierarchy"
+
+msgid "是否展示管理员可见标签"
+msgstr "Whether to show a visible label Administrator"
+
+msgid "需要过滤的结果表类型，如 system"
+msgstr "Type of result table to be filtered, such as system"
+
+msgid "是否包含全业务结果表"
+msgstr "Whether to include the whole business results table"
+
+msgid "结果表ID"
+msgstr "Results Table ID"
+
+msgid "查询内容"
+msgstr "Query"
+
+msgid "操作者"
+msgstr "operator"
+
+msgid "数据源名称"
+msgstr "Data Source Name"
+
+msgid "数据源ID"
+msgstr "Data source ID"
+
+msgid "MDB拆分层级名"
+msgstr "MDB split-level name"
+
+msgid "指标ID"
+msgstr "Metric ID"
+
+msgid "指标名称"
+msgstr "Metric name"
+
+msgid "数据ID"
+msgstr "Data ID"
+
+msgid "事件分组名"
+msgstr "Event group name"
+
+msgid "分组标签"
+msgstr "Group Label"
+
+msgid "事件列表"
+msgstr "Event List"
+
+msgid "事件分组ID"
+msgstr "Event packet ID"
+
+msgid "是否启用"
+msgstr "Enabled or not"
+
+msgid "是否返回数据源信息"
+msgstr "Do return data source information."
+
+msgid "分组名称"
+msgstr "Group Name"
+
+msgid "配置文件ID"
+msgstr "Profile ID"
+
+msgid "插件英文名"
+msgstr "Plug-English name"
+
+msgid "插件版本"
+msgstr "Plugin version"
+
+msgid "配置模板文件名称"
+msgstr "Configuration template file name."
+
+msgid "渲染值"
+msgstr "Render value"
+
+msgid "配置文件实例ID"
+msgstr "Profiles instance ID"
+
+msgid "配置文件的MD5"
+msgstr "MD5 profile"
+
+msgid "配置文件ID列表"
+msgstr "Profile ID list"
+
+msgid "主机信息"
+msgstr "Host Info"
+
+msgid "任务状态"
+msgstr "Task status"
+
+msgid "当前步骤"
+msgstr "Current Step"
+
+msgid "任务日志"
+msgstr "Task log"
+
+msgid "文件包名"
+msgstr "Package name"
+
+msgid "是否为发布版本"
+msgstr "Whether the release version."
+
+msgid "注册任务ID"
+msgstr "Registration Task ID"
+
+msgid "是否完成"
+msgstr "Completion"
+
+msgid "错误信息"
+msgstr "Error Messages"
+
+msgid "插件名"
+msgstr "Plugin name"
+
+msgid "版本号"
+msgstr "version number"
+
+msgid "配置文件名称"
+msgstr "Profile Name"
+
+msgid "配置文件的下发路径，该目录相对于插件根目录"
+msgstr "Issued path configuration file, the root directory with respect to the plug"
+
+msgid "配置文件格式"
+msgstr "Configuration File Format"
+
+msgid "配置文件内容，base64编码"
+msgstr "Configuration file content, base64 encoded"
+
+msgid "配置文件MD5"
+msgstr "Profile MD5"
+
+msgid "配置文件版本"
+msgstr "Profile Version"
+
+msgid "配置文件是否正式版本"
+msgstr "Configuration file is the official version."
+
+msgid "插件md5"
+msgstr "Plug-md5"
+
+msgid "插件版本号"
+msgstr "Plugin version number"
+
+msgid "配置文件模板"
+msgstr "Configuration file template"
+
+msgid "调用者"
+msgstr "Caller"
+
+msgid "调用方app_code"
+msgstr "The caller app_code"
+
+msgid "插件ID"
+msgstr "Plugin ID"
+
+msgid "采集目标类型"
+msgstr "Collection target type"
+
+msgid "采集对象类型"
+msgstr "Acquisition Object Type"
+
+msgid "节点列表"
+msgstr "Node list"
+
+msgid "事件订阅监听的范围"
+msgstr "Event Subscription listening range."
+
+msgid "事件订阅触发的动作列表"
+msgstr "Action list event-triggered subscription"
+
+msgid "远程采集机器"
+msgstr "Remote collection machine"
+
+msgid "是否立即触发"
+msgstr "Whether the trigger immediately."
+
+msgid "采集配置订阅id列表"
+msgstr "Acquisition configure the subscription list id"
+
+msgid "采集配置订阅id"
+msgstr "Acquisition configure the subscription id"
+
+msgid "触发的动作"
+msgstr "Trigger action"
+
+msgid "订阅配置id"
+msgstr "Subscribe to configure id"
+
+msgid "任务id列表"
+msgstr "Task id list"
+
+msgid "是否需要详细log"
+msgstr "Need a detailed log"
+
+msgid "启停选项"
+msgstr "Start-stop option"
+
+msgid "是否展示实例最后一次下发情况"
+msgstr "Whether shows an example of the last issued circumstances."
+
+msgid "实例id"
+msgstr "Instance id"
+
+msgid "任务id"
+msgstr "Task ID"
+
+msgid "插件包ID"
+msgstr "Plugin package ID"
+
+msgid "更新选项"
+msgstr "Update Options"
+
+msgid "更新类型"
+msgstr "Update Type"
+
+msgid "插件信息"
+msgstr "Plugin information."
+
+msgid "插件包信息"
+msgstr "Plugin package information."
+
+msgid "控制信息"
+msgstr "Control Information"
+
+msgid "任务创建人"
+msgstr "Task Created"
+
+msgid "操作类型"
+msgstr "Operation type"
+
+msgid "节点类型"
+msgstr "Node Type"
+
+msgid "目标机器"
+msgstr "Goal machine"
+
+msgid "全局参数"
+msgstr "Global Parameters"
+
+#, python-format
+msgid "无效的数据点：%s"
+msgstr "Invalid data point: %s"
+
+#, python-format
+msgid "无效的指标字段：%s"
+msgstr "Invalid metric field: %s"
+
+#, python-format
+msgid "数据点对应的时间点[%s]无效"
+msgstr "time point [%s] corresponding to the data point is invalid"
+
+msgid "总览"
+msgstr "Overview"
+
+msgid "不支持的条件({})"
+msgstr "Unsupported conditions ({})."
+
+msgid "流控窗口"
+msgstr "Flow control window"
+
+msgid "流控丢弃阈值"
+msgstr "Discard flow control threshold"
+
+msgid "匹配队列流控触发阈值"
+msgstr "Match queue flow control trigger threshold"
+
+msgid "匹配队列流控停止阈值"
+msgstr "Match queue flow control stop threshold value"
+
+msgid "收敛队列流控触发阈值"
+msgstr "Convergence queue flow control trigger threshold"
+
+msgid "收敛队列流控停止阈值"
+msgstr "Convergence queue flow control stop threshold value"
+
+msgid "汇总队列流控触发阈值"
+msgstr "Summary queue flow control trigger threshold"
+
+msgid "汇总队列流控停止阈值"
+msgstr "Summary queue flow control stop threshold value"
+
+msgid "SAAS 应用码"
+msgstr "SAAS application code"
+
+msgid "SAAS 应用密钥"
+msgstr "SAAS application key"
+
+msgid "汇总触发阈值（告警数）"
+msgstr "Summary trigger threshold (alarm number)"
+
+msgid "后台处理队列的子进程数（需重启scheduler:*）"
+msgstr "Background processing of child processes queue (you need to restart "
+"scheduler: *)"
+
+msgid "healthz告警配置"
+msgstr "healthz alarm configuration"
+
+msgid "全局自监控告警开关"
+msgstr "Global self-monitoring alarm switch"
+
+msgid "是否开启告警通知队列"
+msgstr "Whether to set an alarm notification queue"
+
+msgid "是否开启Resource数据收集"
+msgstr "Whether to open Resource Data Collection"
+
+msgid "Resource数据采样率"
+msgstr "Resource data sampling rate."
+
+msgid "同维度汇总阈值"
+msgstr "The same dimension Summary threshold"
+
+msgid "同维度汇总时间窗口"
+msgstr "The same dimension Summary window of time"
+
+msgid "多策略汇总阈值"
+msgstr "Multi-Strategy Summary threshold"
+
+msgid "多策略汇总时间窗口"
+msgstr "Multi-Strategy Summary window of time"
+
+msgid "是否开启升级页面"
+msgstr "Upgrade page is turned."
+
+msgid "Webhook超时时间"
+msgstr "Webhook timeout"
+
+msgid "是否开启默认策略"
+msgstr "Whether to open the default policy."
+
+msgid "Event 模块最大容忍无数据周期数"
+msgstr "No data Cycles Event module maximum tolerance"
+
+msgid "全局 Ping 告警开关"
+msgstr "Global Ping alarm switch"
+
+msgid "全局 Agent失联 告警开关"
+msgstr "Agent lost to the global alarm switch"
+
+msgid "全局磁盘类型屏蔽配置"
+msgstr "Global disk type mask configuration"
+
+msgid "可通过该配置屏蔽指定类型的磁盘的告警"
+msgstr "Specify the type of disk can be shielded by the alarm configuration"
+
+msgid "异常记录保留天数"
+msgstr "Abnormal record the number of days reserved"
+
+msgid "异常记录表用于展示告警事件的收敛记录，清理后会导致历史事件的流转记录展示不全。后台每分钟都会对过期异常记录进行清理，每次清理不超过 1000 条。"
+msgstr "Exception records in the table are representative of convergence recorded"
+" alarm events, and clean up after the transfer will lead to incomplete "
+"historical event records show backstage every minute of obsolete unusual "
+"records to clean up, clean up each time not more than 1000."
+
+msgid "显示图表水印"
+msgstr "Graph showing watermark"
+
+msgid "开启后，页面上的数据图表将带上当前用户名的水印"
+msgstr "When turned on, the data on the page will bring the current chart "
+"watermark username"
+
+msgid "告警通知渠道"
+msgstr "Alarm notification channel"
+
+msgid "告警通知消息队列DSN"
+msgstr "Alarm notification message queue DSN"
+
+msgid ""
+"例如 \"redis://:${passowrd}@${host}:${port}/${db}/${key}\" ，注意用户名和密码需要进行 "
+"urlencode"
+msgstr "For example \"redis://:${passowrd}@${host}:${port}/${db}/${key}\", pay "
+"attention to the need for a username and password urlencode"
+
+msgid "监控采集数据保存天数"
+msgstr "Monitoring data collection to save a few days"
+
+msgid "采集上报数据在influxdb的保留天数，超出保留天数的将被清理。数值越大对存储资源要求越高"
+msgstr "Acquisition of data reported in influxdb Retention Days, the number of "
+"days beyond the reserved will be cleaned. The higher the value the "
+"greater the storage resource requirements"
+
+msgid "通知消息队列长度上限"
+msgstr "Notification message queue length limit"
+
+msgid "若队列长度超出该值，则丢弃旧消息。值为 0 代表无长度限制"
+msgstr "If the queue length exceeds this value, the old message is discarded. A "
+"value of 0 represents no length limit"
+
+msgid "Linux Agent 安装路径"
+msgstr "Linux Agent Install Path"
+
+msgid "Linux 数据保存路径"
+msgstr "Linux Data Storage Path"
+
+msgid "Linux PID 文件保存路径"
+msgstr "Linux PID File Storage Path"
+
+msgid "Linux 日志保存路径"
+msgstr "Linux Log Storage Path"
+
+msgid "Linux IPC 路径"
+msgstr "Linux IPC Path"
+
+msgid "Windows Agent 安装路径"
+msgstr "Windows Agent Install Path"
+
+msgid "Windows 数据保存路径"
+msgstr "Windows Data Storage Path"
+
+msgid "Windows PID 文件保存路径"
+msgstr "Windows PID File Storage Path"
+
+msgid "Windows 日志保存路径"
+msgstr "Windows Log Storage Path"
+
+msgid "Windows IPC 路径"
+msgstr "Windows IPC Path"
+
+msgid "自定义上报默认服务器"
+msgstr "Customizing the default report server"
+
+msgid "拨测任务最大超时限制(ms)"
+msgstr "Uptimecheck task maximum timeout limit (ms)"
+
+msgid "主机不监控字段列表"
+msgstr "The host does not monitor the field list"
+
+msgid "备用机"
+msgstr "Machine Standby"
+
+msgid "测试中"
+msgstr "testing"
+
+msgid "故障中"
+msgstr "Failure"
+
+msgid "主机不告警字段列表"
+msgstr "No alarm host field list"
+
+msgid "运营中[无告警]"
+msgstr "Operations [without warning]."
+
+msgid "开发中[无告警]"
+msgstr "Development [No alarm]"
+
+msgid "特别指定的AES使用密钥"
+msgstr "Specially Designated AES using a key."
+
+msgid "操作系统全局开关"
+msgstr "Global Switch OS"
+
+msgid "Not found."
+msgstr "Not found."
+
+msgid "Permission denied."
+msgstr "Permission denied."
+
+#, python-format
+msgid "不支持的请求方法: %s，请确认resource_routes配置是否正确!"
+msgstr "Unsupported request method:  %s, please verify that the resource_routes "
+"Config is correct!"
+
+msgid "method参数错误，目前仅支持GET或POST方法"
+msgstr "Method parameter error, currently only GET or POST methods are supported"
+
+#, python-format
+msgid "resource_class参数必须提供Resource的子类, 当前类型: %s"
+msgstr "Resource_class parameter must provide a subclass of Resource, current "
+"type:%s"
+
+msgid "method仅支持GET或POST"
+msgstr "method only supports GET or POST"
+
+msgid "接口返回结果超时"
+msgstr "Interface returns the result timeout"
+
+#, python-format
+msgid "【模块：%s】请求APIGW错误：%s，请求url: %s "
+msgstr "[Module:%s] request APIGW error:%s, request URL:%s"
+
+#, python-format
+msgid "【模块：%s】接口【%s】返回结果错误：%s"
+msgstr "[Module:%s] [Interface:%s] Results returned error:%s"
+
+msgid "API请求错误"
+msgstr "API request error"
+
+msgid "请求系统'{system_name}'错误，"
+msgstr "System Request '{system_name}' error,"
+
+msgid "返回错误码: {code}，"
+msgstr "Returns Error code: {code},"
+
+msgid "返回消息: {message}，"
+msgstr "Return message: {message},"
+
+msgid "请求URL: {url}"
+msgstr "Request URL: {url}"
+
+msgid "空"
+msgstr "Empty"
+
+msgid "采集配置模块错误"
+msgstr "Acquisition module configuration error"
+
+msgid "采集配置模块错误：{msg}"
+msgstr "Acquisition configuration module error: {msg}"
+
+msgid "采集配置ID不存在"
+msgstr "Acquisition Configuration ID does not exist"
+
+msgid "采集配置ID不存在：{msg}"
+msgstr "Collection configuration ID does not exist: {msg}"
+
+msgid "采集配置需要升级"
+msgstr "Collection configuration needs to be upgraded"
+
+msgid "采集配置需要升级：{msg}"
+msgstr "Collecting configuration need to be upgraded: {msg}"
+
+msgid "采集配置不需要升级"
+msgstr "Collection configuration does not require upgrades"
+
+msgid "采集配置不需要升级：{msg}"
+msgstr "Collecting configuration does not require upgrading: {msg}"
+
+msgid "指标不存在"
+msgstr "Metric does not exist"
+
+msgid "指标不存在：{metric}"
+msgstr "Metric does not exist: {metric}"
+
+msgid "删除采集配置失败"
+msgstr "Delete collection configuration failed"
+
+msgid "删除采集配置失败: {msg}"
+msgstr "Remove collection configuration failed: {msg}"
+
+msgid "获取采集配置锁超时"
+msgstr "Gets collection configuration lock timeout"
+
+msgid "请求节点管理出现错误"
+msgstr "The requesting node management errors"
+
+msgid "请求节点管理出现错误: {msg}"
+msgstr "Error Management requesting node: {msg}"
+
+msgid "采集配置状态切换错误"
+msgstr "Collecting configuration state switching error"
+
+msgid "采集配置状态切换错误: {msg}"
+msgstr "Collecting configuration state switching error: {msg}"
+
+msgid "采集配置无法回滚"
+msgstr "Collection configuration can not be rolled back"
+
+msgid "采集配置无法回滚：{msg}"
+msgstr "Collector configuration can not rollback: {msg}"
+
+msgid "自定义异常"
+msgstr "Custom exception"
+
+msgid "未知错误"
+msgstr "unknown mistake"
+
+msgid "REST API返回错误"
+msgstr "REST API returns an error."
+
+msgid "错误消息解析错误"
+msgstr "Error message parsing error"
+
+msgid "找不到"
+msgstr "Not Found"
+
+msgid "无权限"
+msgstr "No permission"
+
+msgid "权限配置错误"
+msgstr "Permission configuration error"
+
+msgid "权限配置错误：{msg}"
+msgstr "Permission configuration error: {msg}"
+
+msgid "没有修改权限"
+msgstr "No permission to modify"
+
+msgid "{permission}的权限不允许修改"
+msgstr "{permission} modify permission does not allow"
+
+msgid " 数据源模块错误"
+msgstr "Data Source Module Error"
+
+msgid "数据源模块错误：{msg}"
+msgstr "Data Source Module Error: {msg}"
+
+msgid "数据源不存在"
+msgstr "Data source does not exist."
+
+msgid "数据源不存在：{data_name}"
+msgstr "Data source does not exist: {data_name}"
+
+msgid "结果表"
+msgstr "Results table"
+
+msgid "不存在"
+msgstr "Not exist"
+
+msgid "告警事件模块错误"
+msgstr "Alarm Event Module error"
+
+msgid "告警事件模块错误：{msg}"
+msgstr "Alarm event module error: {msg}"
+
+msgid "告警事件不存在"
+msgstr "Alarm event does not exist"
+
+msgid "告警事件不存在：{event_id}"
+msgstr "Alarm event does not exist: {event_id}"
+
+msgid "非时序数据类型"
+msgstr "Non-sequential data types"
+
+msgid "{event_id}事件关联的数据类型非时序数据类型"
+msgstr "{event_id} event associated with non-sequential data type Data type"
+
+msgid "聚合方法是实时"
+msgstr "Polymerization process is a real-time"
+
+msgid "{event_id}实时监控无关联图表"
+msgstr "{event_id} real-time monitoring unassociated Chart"
+
+msgid "导入导出模块错误"
+msgstr "Import Export Module error"
+
+msgid "导入导出模块错误：{msg}"
+msgstr "Import Export Module Error: {msg}"
+
+msgid "导入历史不存在"
+msgstr "Import history does not exist."
+
+msgid "导入历史不存在，检查导入历史ID"
+msgstr "Import history does not exist, check the import history ID"
+
+msgid "添加统一监控目标失败"
+msgstr "Adding unified control target failure"
+
+msgid "添加统一监控目标失败: {msg}"
+msgstr "Adding unified control target failed: {msg}"
+
+msgid "上传导入包失败"
+msgstr "Upload of import package failed"
+
+msgid "上传导入包失败: {msg}"
+msgstr "Package Failed Import Upload: {msg}"
+
+msgid "导入配置失败"
+msgstr "Import configuration failed"
+
+msgid "导入配置失败: {msg}"
+msgstr "Import configuration failed: {msg}"
+
+msgid "上传导入包失败: 该包已导入过，请选择其他导入包"
+msgstr "Upload package Import failed: This package has been imported before, please choose another import packages"
+
+msgid "内置指标元数据错误"
+msgstr "Built index metadata error"
+
+msgid "指标元数据错误：{msg}"
+msgstr "Metadata error Metric: {msg}"
+
+msgid "该内置指标不存在"
+msgstr "The built-in metric does not exist"
+
+msgid "该内置指标不存在：{metric_id}"
+msgstr "The built-in metric does not exist: {metric_id}"
+
+msgid "metric_id格式错误"
+msgstr "Metric_id format error"
+
+msgid "metric_id格式错误：{metric_id}"
+msgstr "Metric_id Malformed: {metric_id}"
+
+msgid "获取指标元信息参数错误"
+msgstr "Get metric meta-information parameter error"
+
+msgid "获取指标元信息参数错误: metric_id和(result_table_id, metric_name)不可同时为空"
+msgstr "Get metric meta-information parameter error: metric_id and (result_table_id, metric_name) can not be both empty."
+
+msgid "指标单位id无效"
+msgstr "Metric Unit id is invalid"
+
+msgid "指标单位id无效：{unit_id}"
+msgstr "Invalid Metric Unit id: {unit_id}"
+
+msgid "指标单位id对应分类不存在"
+msgstr "Id corresponding to the index unit classification does not exist."
+
+msgid "指标单位id对应分类不存在：{unit_id}"
+msgstr "Id metric corresponding to the classification unit does not exist: {unit_id}"
+
+msgid "通知组模块错误"
+msgstr "Notification group Module error"
+
+msgid "通知组模块错误：{msg}"
+msgstr "Module error notification group: {msg}"
+
+msgid "通知组ID不存在"
+msgstr "Notification group ID does not exist"
+
+msgid "通知组ID错误: 不存在的通知组，{msg}"
+msgstr "Error notification group ID: notice group does not exist, {msg}"
+
+msgid "通知组名称已存在"
+msgstr "Notification group name already exists."
+
+msgid "通知组名称重复错误: 通知组名称已存在"
+msgstr "Notification group name duplication error: Notice Group name already exists."
+
+msgid "通知组无法删除"
+msgstr "Notification group can not be deleted."
+
+msgid "通知组无法删除: 通知组存在关联策略"
+msgstr "Notification group can not be deleted: an association group policy notice"
+
+msgid "创建通知组失败"
+msgstr "Creating a notification group failed"
+
+msgid "创建通知组失败：填写内容不合规范"
+msgstr "Create a notification group failed: filled out irregularities"
+
+msgid "插件模块错误"
+msgstr "Plugin Module Error"
+
+msgid "插件模块错误：{msg}"
+msgstr "Error plugin module: {msg}"
+
+msgid "插件包解析错误"
+msgstr "Plugin package Parse Error"
+
+msgid "插件包解析错误: {msg}"
+msgstr "Plugin package Parse Error: {msg}"
+
+msgid "插件ID已存在"
+msgstr "Plugin ID already exists"
+
+msgid "插件ID错误: 已存在的插件ID({msg})"
+msgstr "Widget ID Error: existing widget ID ({msg})"
+
+msgid "插件ID不存在"
+msgstr "Plugin ID does not exist"
+
+msgid "插件ID错误: 不存在的plugin_id"
+msgstr "Plugin ID Error: does not exist plugin_id"
+
+msgid "打包失败"
+msgstr "Packaging Failure"
+
+msgid "打包失败: {msg}"
+msgstr "Package Failed: {msg}"
+
+msgid "注册插件失败"
+msgstr "Plug-registration failed"
+
+msgid "注册插件失败: {msg}"
+msgstr "Plug-registration failed: {msg}"
+
+msgid "插件版本不存在"
+msgstr "Plugin version does not exist."
+
+msgid "插件版本不存在: 不存在的插件版本"
+msgstr "Plugin version does not exist: plugin version that does not exist."
+
+msgid "插件签名格式无效"
+msgstr "Plug-signature format is invalid"
+
+msgid "插件签名解析失败，无效的签名格式"
+msgstr "Plugin signatures resolution fails, the invalid signature format"
+
+msgid "插件签名协议不存在"
+msgstr "Plug-signature protocol does not exist"
+
+msgid "{plugin}插件签名协议: {protocol} 不存在"
+msgstr "{plugin} plug-signature protocol: {protocol} does not exist"
+
+msgid "不支持签名的插件类型"
+msgstr "I do not support plugin type signatures"
+
+msgid "不支持签名的插件类型: {plugin_type}"
+msgstr "I do not support plugin type signatures: {plugin_type}"
+
+msgid "无插件编辑权限"
+msgstr "No permission to edit plugins"
+
+msgid "编辑失败！无插件编辑权限: {plugin_id}"
+msgstr "Edit failed No permission to edit plugins:! {plugin_id}"
+
+msgid "无插件删除权限"
+msgstr "No plugins delete privileges."
+
+msgid "删除失败！无插件删除权限: {plugin_id}"
+msgstr "Delete failed No plugins delete permissions:! {plugin_id}"
+
+msgid "不支持的插件类型"
+msgstr "Unsupported Plug-type"
+
+msgid "不支持的插件类型: {plugin_type}"
+msgstr "Unsupported plug type: {plugin_type}"
+
+msgid "插件存在关联项"
+msgstr "Being associations plugin"
+
+msgid "插件存在关联项: {msg}"
+msgstr "Widget association exists: {msg}"
+
+msgid "插件导出错误"
+msgstr "Export plugin error"
+
+msgid "插件导出错误: {msg}"
+msgstr "Plug-export errors: {msg}"
+
+msgid "是否支持远程采集冲突"
+msgstr "Whether to support remote collection conflict"
+
+msgid "是否支持远程采集冲突: {msg}"
+msgstr "Whether to support remote capture conflict: {msg}"
+
+msgid "节点管理导出超时"
+msgstr "Node Manager Export Timeout"
+
+msgid "节点管理导出超时，请联系管理员检查后台环境"
+msgstr "Node Manager Export timeout, contact the administrator to check the background environment"
+
+msgid "节点管理删除插件失败"
+msgstr "Delete Node Manager plug failure"
+
+msgid "节点管理删除插件失败，请联系管理员检查后台环境"
+msgstr "Node Manager remove the plug fails, contact your administrator to check the background environment"
+
+msgid "插件业务切换错误"
+msgstr "Plug-service switching error"
+
+msgid "不支持单业务之间的互相切换"
+msgstr "Unsupported switch between each single business"
+
+msgid "告警屏蔽模块错误"
+msgstr "Alarm masking module error"
+
+msgid "告警屏蔽模块错误：{msg}"
+msgstr "Alarm error masking module: {msg}"
+
+msgid "告警屏蔽ID不存在"
+msgstr "Alarm screen ID does not exist."
+
+msgid "告警屏蔽ID不存在：{msg}"
+msgstr "Alarm screen ID does not exist: {msg}"
+
+msgid "重复屏蔽"
+msgstr "Repeat shield"
+
+msgid "该{category}已经被快捷屏蔽，请勿重复操作"
+msgstr "The quick {category} has been shielded, do not repeat"
+
+msgid "策略配置模块错误"
+msgstr "Policy Configuration Module error"
+
+msgid "策略配置模块错误：{msg}"
+msgstr "Policy Module Configuration Error: {msg}"
+
+msgid "StrategyConfig实例初始化错误"
+msgstr "StrategyConfig instance initialization error."
+
+msgid "实例化StrategyConfig的参数须为策略配置id"
+msgstr "Instantiation StrategyConfig parameters shall be the policy configuration id"
+
+msgid "策略配置不存在"
+msgstr "Policy Configuration does not exist"
+
+msgid "监控对象数据结构错误"
+msgstr "Monitoring object data structure error"
+
+msgid "监控对象数据结构错误: {target}"
+msgstr "Monitoring Error object data structure: {target}"
+
+msgid "监控目标解析失败"
+msgstr "Monitoring target parse failed"
+
+msgid "监控目标解析失败: {target}"
+msgstr "Monitoring target parsing failed: {target}"
+
+msgid "监控目标为空"
+msgstr "Monitoring empty goal."
+
+msgid "获取一级标签失败"
+msgstr "Get a label failed"
+
+msgid "获取一级标签失败：{scenario} not in {tag_list}"
+msgstr "Get a tag failed: {scenario} not in {tag_list}"
+
+msgid "创建策略配置失败"
+msgstr "Creating a policy configuration failed"
+
+msgid "创建策略配置失败：{msg}"
+msgstr "Creating policy configuration failed: {msg}"
+
+msgid "修改策略配置失败"
+msgstr "Modifying Policy Configuration failure"
+
+msgid "修改策略配置失败：{msg}"
+msgstr "Modify the policy configuration failed: {msg}"
+
+msgid "升级模块错误"
+msgstr "Upgrade Module error"
+
+msgid "升级模块错误：{msg}"
+msgstr "Upgrade Module Error: {msg}"
+
+msgid "当前不允许数据迁移"
+msgstr "Data Migration is not currently allowed."
+
+msgid "当前不允许数据迁移，请确认并存版本号为 3.0.x 或 3.1.x"
+msgstr "Current data does not allow migration, make sure the version number is the coexistence 3.0.x or 3.1.x"
+
+msgid "获取待迁移内容失败"
+msgstr "Get content to be migrated failed"
+
+msgid "获取待迁移内容失败：{msg}"
+msgstr "Get content to be migrated failed: {msg}"
+
+msgid "数据迁移失败"
+msgstr "Data Migration failed"
+
+msgid "数据迁移失败：{msg}"
+msgstr "Data Migration Failure: {msg}"
+
+msgid "同步旧版本文件失败"
+msgstr "Synchronize old version of the file failed"
+
+msgid "同步旧版本文件失败：{msg}"
+msgstr "Synchronize old version of the file failed: {msg}"
+
+msgid "插件导出失败"
+msgstr "Plug-export failed"
+
+msgid "插件导出失败：{msg}"
+msgstr "Plug-Export Failed: {msg}"
+
+msgid "创建默认策略失败"
+msgstr "Creating a default policy failed."
+
+msgid "创建默认策略失败：{msg}"
+msgstr "Creating a default policy failed: {msg}"
+
+msgid "拨测模块错误"
+msgstr "Uptimecheck module error"
+
+msgid "拨测模块错误：{msg}"
+msgstr "Uptimecheck module error: {msg}"
+
+msgid "bkmonitorbeat进程异常或版本小于1.4.10，请至节点管理处理"
+msgstr "bkmonitorbeat abnormal or less than version 1.4.10, please go to the node_man process."
+
+msgid "未知的拨测协议类型"
+msgstr "Unknown protocol type"
+
+msgid "未知的拨测协议类型:{msg}"
+msgstr "Unknown protocol type: {msg}"
+
+msgid ""
+"### 错误码文档\n"
+"\n"
+"[TOC]\n"
+"\n"
+msgstr "### error code documentation\n"
+"\n"
+"[TOC]\n"
+"\n"
+
+msgid "含义："
+msgstr "meaning:"
+
+#, python-format
+msgid "请求%s解析业务id失败"
+msgstr "%s request id parsed service failed"
+
+msgid "网络"
+msgstr "Network"
+
+msgid "内存"
+msgstr "Memory"
+
+msgid "磁盘"
+msgstr "Disk"
+
+msgid "进程"
+msgstr "Process"
+
+msgid "系统"
+msgstr "System"
+
+msgid "告警标识"
+msgstr "Alarm logo"
+
+msgid "基础告警名称"
+msgstr "Alarm name basis."
+
+msgid "基础告警描述"
+msgstr "Basic Alarm Description"
+
+msgid "基础"
+msgstr "basis"
+
+msgid "聚合方法"
+msgstr "Aggregation methods"
+
+msgid "聚合周期"
+msgstr "Polymerization cycle"
+
+msgid "聚合维度"
+msgstr "Polymerization dimension"
+
+msgid "聚合条件"
+msgstr "The polymerization conditions"
+
+msgid "字段"
+msgstr "Field"
+
+msgid "单位"
+msgstr "Unit"
+
+msgid "单位转换"
+msgstr "Unit Conversion"
+
+msgid "扩展字段"
+msgstr "no"
+
+msgid "SQL类结果表查询配置"
+msgstr "SQL Query Results Table class configuration"
+
+msgid "监控条件"
+msgstr "Monitoring Conditions"
+
+msgid "关键字查询条件"
+msgstr "Keyword query"
+
+msgid "组合方式"
+msgstr "Combinations"
+
+msgid "组合字段"
+msgstr "A combination of field"
+
+msgid "DSL类结果表查询配置"
+msgstr "DSL class results table query configuration"
+
+msgid "自定义事件分组ID"
+msgstr "Custom event packet ID"
+
+msgid "自定义事件ID"
+msgstr "Custom Event ID"
+
+msgid "自定义事件查询配置"
+msgstr "Custom event query configuration"
+
+msgid "监控项名称"
+msgstr "Monitoring item name"
+
+msgid "数据来源标签"
+msgstr "Source label"
+
+msgid "数据类型标签"
+msgstr "Data type label"
+
+msgid "查询配置ID"
+msgstr "Query configuration ID"
+
+msgid "无数据配置"
+msgstr "Numerous config"
+
+msgid "关联策略ID"
+msgstr "Associated policy ID"
+
+msgid "监控目标"
+msgstr "Monitoring target"
+
+msgid "策略监控项配置"
+msgstr "Policy Monitoring item configuration"
+
+msgid "策略名称"
+msgstr "Policy name"
+
+msgid "来源系统"
+msgstr "Source System"
+
+msgid "监控场景"
+msgstr "Monitoring scene"
+
+msgid "策略配置"
+msgstr "Policy Configuration"
+
+msgid "静态阈值算法"
+msgstr "Static threshold algorithm"
+
+msgid "简易环比算法"
+msgstr "Easy chain algorithm"
+
+msgid "高级环比算法"
+msgstr "Advanced chain algorithm"
+
+msgid "简易同比算法"
+msgstr "Easy an algorithm"
+
+msgid "高级同比算法"
+msgstr "Senior year algorithm"
+
+msgid "部分节点数算法"
+msgstr "Section nodes algorithm"
+
+msgid "主机重启算法"
+msgstr "Host restart algorithm"
+
+msgid "进程端口算法"
+msgstr "Process Port algorithm"
+
+msgid "同比振幅算法"
+msgstr "An amplitude algorithm"
+
+msgid "同比区间算法"
+msgstr "An interval algorithm"
+
+msgid "环比振幅算法"
+msgstr "Ring than the amplitude algorithm"
+
+msgid "算法类型"
+msgstr "Algorithm type"
+
+msgid "算法配置"
+msgstr "Algorithm config"
+
+msgid "触发条件配置"
+msgstr "Trigger condition Configuration"
+
+msgid "恢复条件配置"
+msgstr "Restore condition Configuration"
+
+msgid "算法描述模板配置"
+msgstr "Algorithm description template configuration"
+
+msgid "监控等级"
+msgstr "Monitor level"
+
+msgid "关联监控项ID"
+msgstr "Associated monitoring item ID"
+
+msgid "检测算法配置"
+msgstr "Detect algorithm config"
+
+msgid "动作类型"
+msgstr "Action Types"
+
+msgid "动作配置"
+msgstr "Action Configuration"
+
+msgid "异常通知模板"
+msgstr "Exception Notification Template"
+
+msgid "恢复通知模板"
+msgstr "Recovery Notification Template"
+
+msgid "关联动作ID"
+msgstr "Related action ID"
+
+msgid "通知模板配置"
+msgstr "Notification Template Configuration"
+
+msgid "通知组名称"
+msgstr "Notification group name"
+
+msgid "通知对象"
+msgstr "Notification object"
+
+msgid "通知方式"
+msgstr "method to informe"
+
+msgid "回调地址"
+msgstr "Callback address"
+
+msgid "说明/备注"
+msgstr "Description / Remarks"
+
+msgid "通知组配置"
+msgstr "Notice Group Configuration"
+
+msgid "关联通知组ID"
+msgstr "Related notice group ID"
+
+msgid "异常ID"
+msgstr "Exception ID"
+
+msgid "异常时间"
+msgstr "Unusual times"
+
+msgid "创建时间"
+msgstr "Creation time"
+
+msgid "原始的异常内容"
+msgstr "The original abnormal content"
+
+msgid "关联事件ID"
+msgstr "Associated event ID"
+
+msgid "异常"
+msgstr "Exception"
+
+msgid "致命"
+msgstr "Emergency"
+
+msgid "预警"
+msgstr "Critical"
+
+msgid "提醒"
+msgstr "Warning"
+
+msgid "已修复"
+msgstr "already fixed"
+
+msgid "异常中"
+msgstr "Exception"
+
+msgid "已关闭"
+msgstr "closed"
+
+msgid "事件ID"
+msgstr "Event ID"
+
+msgid "事件产生时间"
+msgstr "Event generation time"
+
+msgid "事件结束时间"
+msgstr "Events End Time"
+
+msgid "告警策略原始配置"
+msgstr "Alarm Policy original configuration."
+
+msgid "状态"
+msgstr "Status"
+
+msgid "是否确认"
+msgstr "Are you sure"
+
+msgid "父事件ID"
+msgstr "Parent Event ID"
+
+msgid "是否处于屏蔽状态"
+msgstr "Whether is masked"
+
+msgid "屏蔽类型"
+msgstr "Shielding type"
+
+msgid "目标标识符"
+msgstr "Object Identifier"
+
+msgid "通知状态"
+msgstr "Notifications"
+
+msgid "告警确认"
+msgstr "Alarm acknowledgment"
+
+msgid "告警通知"
+msgstr "Alarm notification"
+
+msgid "恢复通知"
+msgstr "Recovery Notice"
+
+msgid "触发告警"
+msgstr "Alarm is triggered."
+
+msgid "告警收敛"
+msgstr "Alarm convergence"
+
+msgid "告警恢复"
+msgstr "Alarm restore"
+
+msgid "告警关闭"
+msgstr "Alarm Off"
+
+msgid "生成工单"
+msgstr "Generate work orders."
+
+msgid "消息队列"
+msgstr "message queue"
+
+msgid "运行中"
+msgstr "In the operation of the"
+
+msgid "成功"
+msgstr "Successful"
+
+msgid "部分成功"
+msgstr "Partially successful"
+
+msgid "失败"
+msgstr "failed"
+
+msgid "屏蔽"
+msgstr "mute"
+
+msgid "操作时间"
+msgstr "Operation time"
+
+msgid "操作人"
+msgstr "Operator"
+
+msgid "操作"
+msgstr "operating"
+
+msgid "事件确认评论"
+msgstr "Confirm Event Review"
+
+msgid "拓展信息"
+msgstr "Building Information"
+
+msgid "操作状态"
+msgstr "Operation state"
+
+msgid "事件动作日志"
+msgstr "Event Action Log"
+
+msgid "通知中"
+msgstr "Notification"
+
+msgid "通知成功"
+msgstr "Notice success"
+
+msgid "通知失败"
+msgstr "Notice failure"
+
+msgid "通知接收人"
+msgstr "Notification recipient"
+
+msgid "通知接收人角色"
+msgstr "Inform the recipient role"
+
+msgid "通知时间"
+msgstr "Notification time"
+
+msgid "(失败|屏蔽)原因"
+msgstr "(Failure | shield) cause"
+
+msgid "动作ID"
+msgstr "Action ID"
+
+msgid "汇总ID"
+msgstr "Summary ID"
+
+msgid "通知动作"
+msgstr "Notification action"
+
+msgid "同维度汇总"
+msgstr "The same dimension Summary"
+
+msgid "同策略汇总"
+msgstr "The same strategy summary"
+
+msgid "同业务汇总"
+msgstr "The same business summary"
+
+msgid "汇总key"
+msgstr "Summary key"
+
+msgid "汇总类型"
+msgstr "Summary Type"
+
+msgid "汇总原因"
+msgstr "Summary cause"
+
+msgid "汇总时间"
+msgstr "Summary Time"
+
+msgid "其他信息"
+msgstr "other information"
+
+msgid "汇总记录"
+msgstr "Summary record"
+
+msgid "范围屏蔽"
+msgstr "Mute scope"
+
+msgid "策略屏蔽"
+msgstr "Mute rules"
+
+msgid "事件屏蔽"
+msgstr "Mute event"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "屏蔽范围类型"
+msgstr "Scope type"
+
+msgid "屏蔽内容快照"
+msgstr "Mute Snapshot"
+
+msgid "屏蔽开始时间"
+msgstr "Start time"
+
+msgid "屏蔽结束时间"
+msgstr "Ending time"
+
+msgid "屏蔽失效时间"
+msgstr "Mute deadline"
+
+msgid "屏蔽维度"
+msgstr "Muete dimension"
+
+msgid "屏蔽周期"
+msgstr "Mute period"
+
+msgid "通知配置"
+msgstr "Notification Setting"
+
+msgid "屏蔽原因"
+msgstr "The reason"
+
+msgid "是否是快捷屏蔽"
+msgstr "Whether it is a shortcut shield"
+
+msgid "屏蔽配置"
+msgstr "Block Configuration"
+
+msgid "整数"
+msgstr "Integer"
+
+msgid "字符串"
+msgstr "String"
+
+msgid "布尔值"
+msgstr "Boolean value"
+
+msgid "列表"
+msgstr "List"
+
+msgid "单选"
+msgstr "Radio"
+
+msgid "多选"
+msgstr "Multiple choice"
+
+msgid "配置名"
+msgstr "Deployment name"
+
+msgid "配置信息"
+msgstr "Config information"
+
+msgid "更新时间"
+msgstr "Updated time"
+
+msgid "描述"
+msgstr "Description"
+
+msgid "数据类型"
+msgstr "Data type"
+
+msgid "字段选项"
+msgstr "Field Options"
+
+msgid "是否为高级选项"
+msgstr "Whether the Advanced Options"
+
+msgid "是否为内置配置"
+msgstr "Whether as a built-in configuration"
+
+msgid "动态配置信息"
+msgstr "Dynamic Configuration Information"
+
+msgid "节点描述"
+msgstr "Node Description"
+
+msgid "指标别名"
+msgstr "Metric alias"
+
+msgid "采集结果"
+msgstr "Acquisition result"
+
+msgid "最后更新"
+msgstr "latest update"
+
+msgid "服务器ip"
+msgstr "Server ip"
+
+msgid "后台"
+msgstr "Backstage"
+
+msgid "指标描述"
+msgstr "Description"
+
+msgid "指标分类"
+msgstr "Metric classification"
+
+msgid "采集指标"
+msgstr "Collect metric"
+
+msgid "采集参数"
+msgstr "Parameters"
+
+msgid "采集类型"
+msgstr "Collector type"
+
+msgid "采集周期"
+msgstr "Collect period"
+
+msgid "解决方案"
+msgstr "Solution"
+
+msgid "主机性能指标按CMDB动态节点聚合暂不可用(原因：维度未使用云区域ID + IP，目标又选择了CMDB节点)"
+msgstr "Host performance by the polymerization is not yet available dynamic node "
+"CMDB (Cause: the dimension is not yet selected node using the cloud "
+"region CMDB ID + IP, destination)."
+
+msgid "不可对拆分结果表再次拆分"
+msgstr "Not to split the results table again split"
+
+#, python-format
+msgid "[Cache]不支持序列化的类型: %s"
+msgstr "[Cache] does not support the type of sequence:%s"
+
+#, python-format
+msgid ""
+"存缓存[key:%s]时报错：%s\n"
+" value: %r\n"
+"url: %s"
+msgstr "Memory cache: when given [key%s]:%s \\ n value:%r \\ nurl:%s"
+
+msgid "业务及人员相关"
+msgstr "Business and personnel-related"
+
+msgid "主机信息相关"
+msgstr "Host-related information."
+
+msgid "CC模块和Set相关"
+msgstr "CC module and related Set"
+
+msgid "数据平台接口相关"
+msgstr "Data Platform Interface related"
+
+msgid "首页接口相关"
+msgstr "Home Interface related"
+
+msgid "日志平台相关"
+msgstr "Logs platform-dependent"
+
+#, python-format
+msgid "权限不通过！ 当前请求的业务ID为%s，而对象[%s](%s)所属业务ID为%s"
+msgstr "Permission not through! Request service ID is currently%s, and the object"
+" [%s] (%s) belongs the service ID of%s"
+
+msgid "tsdb库名不支持下划线"
+msgstr "TSDB library name does not support underscores"
+
+msgid "联通"
+msgstr "Link"
+
+msgid "移动"
+msgstr "mobile"
+
+msgid "电信"
+msgstr "telecommunications"
+
+msgid "北京"
+msgstr "Beijing"
+
+msgid "天津"
+msgstr "Tianjin"
+
+msgid "河北"
+msgstr "Hebei"
+
+msgid "邯郸"
+msgstr "Handan"
+
+msgid "邢台"
+msgstr "Xingtai"
+
+msgid "承德"
+msgstr "Chengde"
+
+msgid "保定"
+msgstr "Baoding"
+
+msgid "唐山"
+msgstr "Tangshan"
+
+msgid "张家口"
+msgstr "Zhangjiakou"
+
+msgid "石家庄"
+msgstr "Shijiazhuang"
+
+msgid "廊坊"
+msgstr "Langfang"
+
+msgid "秦皇岛"
+msgstr "Qinhuangdao"
+
+msgid "省直辖县级行政区划"
+msgstr "Province directly under the county-level administrative divisions."
+
+msgid "沧州"
+msgstr "Cangzhou"
+
+msgid "衡水"
+msgstr "Hengshui"
+
+msgid "山西"
+msgstr "Shanxi"
+
+msgid "忻州"
+msgstr "Xinzhou"
+
+msgid "运城"
+msgstr "Yuncheng"
+
+msgid "吕梁"
+msgstr "Luliang"
+
+msgid "临汾"
+msgstr "Linfen"
+
+msgid "大同"
+msgstr "Datong"
+
+msgid "朔州"
+msgstr "Shuozhou"
+
+msgid "太原"
+msgstr "Taiyuan"
+
+msgid "晋城"
+msgstr "Jincheng"
+
+msgid "长治"
+msgstr "Changzhi"
+
+msgid "阳泉"
+msgstr "Yangquan"
+
+msgid "晋中"
+msgstr "Jinzhong"
+
+msgid "内蒙古"
+msgstr "Inner Mongolia"
+
+msgid "赤峰"
+msgstr "Chifeng."
+
+msgid "呼和浩特"
+msgstr "Hohhot"
+
+msgid "通辽"
+msgstr "Tongliao"
+
+msgid "乌兰察布"
+msgstr "Wulanchabu"
+
+msgid "鄂尔多斯"
+msgstr "Erdos"
+
+msgid "兴安盟"
+msgstr "Hing'an"
+
+msgid "呼伦贝尔"
+msgstr "Hulunbeier"
+
+msgid "乌海"
+msgstr "Wuhai"
+
+msgid "阿拉善盟"
+msgstr "Alashan"
+
+msgid "巴彦淖尔"
+msgstr "Bayannaoer"
+
+msgid "包头"
+msgstr "Header"
+
+msgid "锡林郭勒盟"
+msgstr "Xilin Gol League"
+
+msgid "辽宁"
+msgstr "Liaoning"
+
+msgid "阜新"
+msgstr "Fuxin"
+
+msgid "营口"
+msgstr "Yingkou"
+
+msgid "朝阳"
+msgstr "Sunrise"
+
+msgid "大连"
+msgstr "Dalian"
+
+msgid "辽阳"
+msgstr "Liaoyang"
+
+msgid "盘锦"
+msgstr "Panjin"
+
+msgid "丹东"
+msgstr "Dandong"
+
+msgid "沈阳"
+msgstr "Shenyang"
+
+msgid "本溪"
+msgstr "Benxi"
+
+msgid "葫芦岛"
+msgstr "Huludao"
+
+msgid "铁岭"
+msgstr "Tieling"
+
+msgid "抚顺"
+msgstr "Fushun"
+
+msgid "鞍山"
+msgstr "Anshan"
+
+msgid "锦州"
+msgstr "Jinzhou"
+
+msgid "吉林"
+msgstr "Jilin"
+
+msgid "白山"
+msgstr "Hakusan"
+
+msgid "辽源"
+msgstr "Liaoyuan"
+
+msgid "延边朝鲜族自治州"
+msgstr "Yanbian Korean Autonomous Prefecture"
+
+msgid "四平"
+msgstr "Siping"
+
+msgid "白城"
+msgstr "White City."
+
+msgid "长春"
+msgstr "Evergreen"
+
+msgid "松原"
+msgstr "Matsubara"
+
+msgid "通化"
+msgstr "Tonghua"
+
+msgid "黑龙江"
+msgstr "Heilongjiang"
+
+msgid "齐齐哈尔"
+msgstr "Qiqihar"
+
+msgid "大兴安岭地区"
+msgstr "Daxinganling region."
+
+msgid "绥化"
+msgstr "Suihua"
+
+msgid "鹤岗"
+msgstr "Hegang"
+
+msgid "鸡西"
+msgstr "Jixi"
+
+msgid "牡丹江"
+msgstr "Mudanjiang"
+
+msgid "黑河"
+msgstr "Black River"
+
+msgid "七台河"
+msgstr "Qitaihe"
+
+msgid "大庆"
+msgstr "Daqing"
+
+msgid "伊春"
+msgstr "Yichun"
+
+msgid "哈尔滨"
+msgstr "Harbin"
+
+msgid "佳木斯"
+msgstr "Jiamusi"
+
+msgid "双鸭山"
+msgstr "Shuangyashan"
+
+msgid "上海"
+msgstr "Shanghai"
+
+msgid "江苏"
+msgstr "Jiangsu"
+
+msgid "徐州"
+msgstr "Xuzhou"
+
+msgid "镇江"
+msgstr "Zhenjiang"
+
+msgid "泰州"
+msgstr "Taizhou"
+
+msgid "扬州"
+msgstr "Yangzhou"
+
+msgid "无锡"
+msgstr "Wuxi"
+
+msgid "盐城"
+msgstr "Yancheng"
+
+msgid "连云港"
+msgstr "Lianyungang"
+
+msgid "淮安"
+msgstr "Huai'an"
+
+msgid "南通"
+msgstr "Nantong"
+
+msgid "苏州"
+msgstr "Suzhou"
+
+msgid "南京"
+msgstr "Nanjing"
+
+msgid "常州"
+msgstr "Changzhou"
+
+msgid "宿迁"
+msgstr "Suqian"
+
+msgid "浙江"
+msgstr "Zhejiang"
+
+msgid "金华"
+msgstr "Jinhua"
+
+msgid "温州"
+msgstr "Wenzhou"
+
+msgid "嘉兴"
+msgstr "Jiaxing"
+
+msgid "台州"
+msgstr "Taizhou"
+
+msgid "杭州"
+msgstr "Hangzhou"
+
+msgid "丽水"
+msgstr "Lishui"
+
+msgid "绍兴"
+msgstr "Shaoxing"
+
+msgid "宁波"
+msgstr "Ningbo"
+
+msgid "衢州"
+msgstr "Quzhou"
+
+msgid "舟山"
+msgstr "Zhoushan"
+
+msgid "湖州"
+msgstr "Huzhou"
+
+msgid "安徽"
+msgstr "Anhui"
+
+msgid "蚌埠"
+msgstr "Bengbu"
+
+msgid "亳州"
+msgstr "Bozhou"
+
+msgid "安庆"
+msgstr "Anqing"
+
+msgid "铜陵"
+msgstr "Tongling"
+
+msgid "阜阳"
+msgstr "Fuyang"
+
+msgid "芜湖"
+msgstr "Wuhu"
+
+msgid "宣城"
+msgstr "Xuancheng"
+
+msgid "淮北"
+msgstr "Huaibei"
+
+msgid "滁州"
+msgstr "Chuzhou"
+
+msgid "合肥"
+msgstr "Hefei"
+
+msgid "马鞍山"
+msgstr "Ma'anshan"
+
+msgid "六安"
+msgstr "Luan"
+
+msgid "黄山"
+msgstr "Huangshan"
+
+msgid "宿州"
+msgstr "Suzhou"
+
+msgid "池州"
+msgstr "Chizhou"
+
+msgid "淮南"
+msgstr "Huainan"
+
+msgid "福建"
+msgstr "Fujian"
+
+msgid "莆田"
+msgstr "Putian"
+
+msgid "龙岩"
+msgstr "Longyan"
+
+msgid "福州"
+msgstr "Fuzhou"
+
+msgid "南平"
+msgstr "Nanping"
+
+msgid "泉州"
+msgstr "Quanzhou"
+
+msgid "厦门"
+msgstr "Xiamen"
+
+msgid "宁德"
+msgstr "Ningde"
+
+msgid "漳州"
+msgstr "Zhangzhou"
+
+msgid "三明"
+msgstr "Sanming"
+
+msgid "江西"
+msgstr "Jiangxi"
+
+msgid "萍乡"
+msgstr "Pingxiang"
+
+msgid "景德镇"
+msgstr "Jingdezhen"
+
+msgid "上饶"
+msgstr "Shangrao"
+
+msgid "抚州"
+msgstr "Fuzhou"
+
+msgid "南昌"
+msgstr "Nanchang"
+
+msgid "新余"
+msgstr "Xinyu"
+
+msgid "九江"
+msgstr "Jiujiang"
+
+msgid "吉安"
+msgstr "Gian"
+
+msgid "赣州"
+msgstr "Ganzhou"
+
+msgid "鹰潭"
+msgstr "Yingtan"
+
+msgid "宜春"
+msgstr "Yichun"
+
+msgid "山东"
+msgstr "Shandong"
+
+msgid "济宁"
+msgstr "Jining"
+
+msgid "聊城"
+msgstr "Liaocheng"
+
+msgid "淄博"
+msgstr "Zibo"
+
+msgid "日照"
+msgstr "sunshine"
+
+msgid "潍坊"
+msgstr "Weifang"
+
+msgid "泰安"
+msgstr "Tai"
+
+msgid "德州"
+msgstr "Texas"
+
+msgid "枣庄"
+msgstr "Zaozhuang"
+
+msgid "威海"
+msgstr "Weihai"
+
+msgid "菏泽"
+msgstr "Heze"
+
+msgid "济南"
+msgstr "Jinan"
+
+msgid "临沂"
+msgstr "Linyi"
+
+msgid "东营"
+msgstr "Dongying"
+
+msgid "滨州"
+msgstr "Binzhou"
+
+msgid "青岛"
+msgstr "Qingdao"
+
+msgid "莱芜"
+msgstr "Laiwu"
+
+msgid "烟台"
+msgstr "Yantai"
+
+msgid "河南"
+msgstr "Henan"
+
+msgid "洛阳"
+msgstr "Luoyang"
+
+msgid "商丘"
+msgstr "Shangqiu"
+
+msgid "焦作"
+msgstr "Jiaozuo"
+
+msgid "新乡"
+msgstr "Xinxiang"
+
+msgid "三门峡"
+msgstr "Sanmenxia"
+
+msgid "开封"
+msgstr "Kaifeng"
+
+msgid "鹤壁"
+msgstr "Hebi"
+
+msgid "驻马店"
+msgstr "Zhumadian"
+
+msgid "漯河"
+msgstr "Luohe"
+
+msgid "郑州"
+msgstr "Zhengzhou"
+
+msgid "安阳"
+msgstr "Anyang"
+
+msgid "信阳"
+msgstr "Xinyang"
+
+msgid "周口"
+msgstr "Zhoukou"
+
+msgid "许昌"
+msgstr "Xuchang"
+
+msgid "濮阳"
+msgstr "Puyang"
+
+msgid "南阳"
+msgstr "Nanyang"
+
+msgid "平顶山"
+msgstr "Pingdingshan"
+
+msgid "湖北"
+msgstr "Hubei"
+
+msgid "十堰"
+msgstr "Shiyan"
+
+msgid "鄂州"
+msgstr "Ezhou"
+
+msgid "随州"
+msgstr "Suizhou"
+
+msgid "宜昌"
+msgstr "Yichang"
+
+msgid "黄石"
+msgstr "Yellowstone"
+
+msgid "咸宁"
+msgstr "Xianning"
+
+msgid "襄阳"
+msgstr "Yangyang"
+
+msgid "荆门"
+msgstr "Jingmen"
+
+msgid "黄冈"
+msgstr "Huanggang"
+
+msgid "孝感"
+msgstr "Xiaogan"
+
+msgid "荆州"
+msgstr "Jingzhou"
+
+msgid "武汉"
+msgstr "Wuhan"
+
+msgid "恩施土家族苗族自治州"
+msgstr "Enshi Tujia and Miao Autonomous Prefecture"
+
+msgid "湖南"
+msgstr "Hunan"
+
+msgid "湘潭"
+msgstr "Xiangtan"
+
+msgid "株洲"
+msgstr "Zhuzhou"
+
+msgid "湘西土家族苗族自治州"
+msgstr "Xiangxi Tujia and Miao Autonomous Prefecture"
+
+msgid "永州"
+msgstr "Yongzhou"
+
+msgid "郴州"
+msgstr "Chenzhou"
+
+msgid "怀化"
+msgstr "Huaihua"
+
+msgid "长沙"
+msgstr "Changsha"
+
+msgid "邵阳"
+msgstr "Shaoyang"
+
+msgid "娄底"
+msgstr "Loudi"
+
+msgid "衡阳"
+msgstr "Hengyang"
+
+msgid "张家界"
+msgstr "Zhangjiajie"
+
+msgid "常德"
+msgstr "Changde"
+
+msgid "岳阳"
+msgstr "Yueyang"
+
+msgid "益阳"
+msgstr "Yiyang"
+
+msgid "广东"
+msgstr "Guangdong"
+
+msgid "河源"
+msgstr "Heyuan"
+
+msgid "江门"
+msgstr "Jiangmen"
+
+msgid "中山"
+msgstr "Zhongshan"
+
+msgid "深圳"
+msgstr "Shenzhen"
+
+msgid "湛江"
+msgstr "Zhanjiang"
+
+msgid "梅州"
+msgstr "Meizhou"
+
+msgid "珠海"
+msgstr "Zhuhai"
+
+msgid "肇庆"
+msgstr "Zhaoqing"
+
+msgid "清远"
+msgstr "Qingyuan"
+
+msgid "惠州"
+msgstr "Huizhou"
+
+msgid "茂名"
+msgstr "Maoming"
+
+msgid "汕尾"
+msgstr "Shanwei"
+
+msgid "云浮"
+msgstr "Yunfu"
+
+msgid "汕头"
+msgstr "Shantou"
+
+msgid "东莞"
+msgstr "Dongguan"
+
+msgid "潮州"
+msgstr "Chaozhou"
+
+msgid "广州"
+msgstr "Guangzhou"
+
+msgid "佛山"
+msgstr "Foshan"
+
+msgid "揭阳"
+msgstr "Jieyang"
+
+msgid "韶关"
+msgstr "Shaoguan"
+
+msgid "阳江"
+msgstr "Yangjiang"
+
+msgid "广西"
+msgstr "Guangxi"
+
+msgid "贺州"
+msgstr "Hezhou"
+
+msgid "贵港"
+msgstr "Guigang"
+
+msgid "北海"
+msgstr "North Sea"
+
+msgid "来宾"
+msgstr "guest"
+
+msgid "百色"
+msgstr "Baise"
+
+msgid "梧州"
+msgstr "Wuzhou"
+
+msgid "崇左"
+msgstr "Chongzuo"
+
+msgid "玉林"
+msgstr "Yulin"
+
+msgid "钦州"
+msgstr "Qinzhou"
+
+msgid "桂林"
+msgstr "Guilin"
+
+msgid "防城港"
+msgstr "Fangchenggang"
+
+msgid "河池"
+msgstr "Hechi"
+
+msgid "柳州"
+msgstr "Liuzhou"
+
+msgid "南宁"
+msgstr "Nanning"
+
+msgid "海南"
+msgstr "Hainan"
+
+msgid "儋州"
+msgstr "Danzhou"
+
+msgid "海口"
+msgstr "Haikou"
+
+msgid "三亚"
+msgstr "Sanya"
+
+msgid "三沙"
+msgstr "Sansha"
+
+msgid "重庆"
+msgstr "Chongqing"
+
+msgid "四川"
+msgstr "Sichuan"
+
+msgid "广元"
+msgstr "Guangyuan"
+
+msgid "宜宾"
+msgstr "Yibin"
+
+msgid "自贡"
+msgstr "Zigong"
+
+msgid "凉山彝族自治州"
+msgstr "Liangshan Yi Autonomous Prefecture"
+
+msgid "乐山"
+msgstr "Leshan"
+
+msgid "绵阳"
+msgstr "Mianyang"
+
+msgid "遂宁"
+msgstr "Suining"
+
+msgid "眉山"
+msgstr "Meishan"
+
+msgid "攀枝花"
+msgstr "Panzhihua"
+
+msgid "巴中"
+msgstr "Bazhong"
+
+msgid "内江"
+msgstr "Neijiang"
+
+msgid "达州"
+msgstr "Florida"
+
+msgid "成都"
+msgstr "Chengdu"
+
+msgid "南充"
+msgstr "Nanchong"
+
+msgid "泸州"
+msgstr "Luzhou"
+
+msgid "阿坝藏族羌族自治州"
+msgstr "Aba Tibetan and Qiang Autonomous Prefecture"
+
+msgid "雅安"
+msgstr "Ya'an"
+
+msgid "广安"
+msgstr "Guang'an"
+
+msgid "资阳"
+msgstr "Ziyang"
+
+msgid "甘孜藏族自治州"
+msgstr "Ganzi Tibetan Autonomous Prefecture"
+
+msgid "德阳"
+msgstr "Deyang"
+
+msgid "贵州"
+msgstr "Guizhou"
+
+msgid "遵义"
+msgstr "Zunyi"
+
+msgid "贵阳"
+msgstr "Guiyang"
+
+msgid "毕节"
+msgstr "Bijie"
+
+msgid "黔东南苗族侗族自治州"
+msgstr "Miao and Dong Autonomous Prefecture"
+
+msgid "六盘水"
+msgstr "Liupanshui"
+
+msgid "黔西南布依族苗族自治州"
+msgstr "Southwest Guizhou Buyi and Miao Autonomous Prefecture"
+
+msgid "铜仁"
+msgstr "Tongren"
+
+msgid "黔南布依族苗族自治州"
+msgstr "Miao Autonomous Prefecture"
+
+msgid "安顺"
+msgstr "Anshun"
+
+msgid "云南"
+msgstr "Yunnan"
+
+msgid "怒江傈僳族自治州"
+msgstr "Nujiang Lisu Autonomous Prefecture"
+
+msgid "曲靖"
+msgstr "Qujing"
+
+msgid "普洱"
+msgstr "Puer"
+
+msgid "丽江"
+msgstr "Lijiang"
+
+msgid "红河哈尼族彝族自治州"
+msgstr "Honghe Hani and Yi Autonomous Prefecture"
+
+msgid "临沧"
+msgstr "Lincang"
+
+msgid "西双版纳傣族自治州"
+msgstr "Xishuangbanna Dai Autonomous Prefecture"
+
+msgid "德宏傣族景颇族自治州"
+msgstr "Dehong Dai-Jingpo Autonomous Prefecture"
+
+msgid "玉溪"
+msgstr "Yuxi"
+
+msgid "文山壮族苗族自治州"
+msgstr "Wenshan Zhuang and Miao Autonomous Prefecture"
+
+msgid "昆明"
+msgstr "Kunming"
+
+msgid "大理白族自治州"
+msgstr "Dali Bai Autonomous Prefecture"
+
+msgid "保山"
+msgstr "Baoshan"
+
+msgid "迪庆藏族自治州"
+msgstr "Diqing Tibetan Autonomous Prefecture"
+
+msgid "昭通"
+msgstr "Zhaotong"
+
+msgid "楚雄彝族自治州"
+msgstr "Chuxiong Yi Autonomous Prefecture"
+
+msgid "西藏"
+msgstr "Tibet"
+
+msgid "昌都"
+msgstr "Qamdo"
+
+msgid "阿里地区"
+msgstr "Ali region"
+
+msgid "日喀则"
+msgstr "Shigatse"
+
+msgid "山南"
+msgstr "Shannan"
+
+msgid "那曲地区"
+msgstr "Nagqu"
+
+msgid "拉萨"
+msgstr "Lhasa"
+
+msgid "林芝"
+msgstr "Nyingchi"
+
+msgid "陕西"
+msgstr "Shaanxi"
+
+msgid "咸阳"
+msgstr "Xianyang"
+
+msgid "延安"
+msgstr "Yan'an"
+
+msgid "安康"
+msgstr "Ankang"
+
+msgid "商洛"
+msgstr "Shangluo"
+
+msgid "铜川"
+msgstr "Tongchuan"
+
+msgid "渭南"
+msgstr "Weinan"
+
+msgid "汉中"
+msgstr "Hanzhong"
+
+msgid "西安"
+msgstr "Xi'an"
+
+msgid "榆林"
+msgstr "Yulin"
+
+msgid "宝鸡"
+msgstr "Baoji"
+
+msgid "甘肃"
+msgstr "Gansu"
+
+msgid "武威"
+msgstr "Wuwei"
+
+msgid "嘉峪关"
+msgstr "Jiayuguan"
+
+msgid "张掖"
+msgstr "Zhangye"
+
+msgid "庆阳"
+msgstr "Qingyang"
+
+msgid "金昌"
+msgstr "Jinchang"
+
+msgid "临夏回族自治州"
+msgstr "Linxia Hui Autonomous Prefecture"
+
+msgid "定西"
+msgstr "Dingxi"
+
+msgid "兰州"
+msgstr "Lanzhou"
+
+msgid "酒泉"
+msgstr "Jiuquan"
+
+msgid "甘南藏族自治州"
+msgstr "Gannan Tibetan Autonomous Prefecture"
+
+msgid "陇南"
+msgstr "Longnan"
+
+msgid "白银"
+msgstr "silver"
+
+msgid "天水"
+msgstr "Tianshui"
+
+msgid "平凉"
+msgstr "Pingliang"
+
+msgid "青海"
+msgstr "Qinghai"
+
+msgid "海南藏族自治州"
+msgstr "Hainan Tibetan Autonomous Prefecture"
+
+msgid "玉树藏族自治州"
+msgstr "Yushu Tibetan Autonomous Prefecture"
+
+msgid "海东"
+msgstr "Haidong"
+
+msgid "黄南藏族自治州"
+msgstr "Huangnan Tibetan Autonomous Prefecture"
+
+msgid "果洛藏族自治州"
+msgstr "Golog Tibetan Autonomous Prefecture"
+
+msgid "海西蒙古族藏族自治州"
+msgstr "Haixi Mongolian-Tibetan Autonomous Prefecture"
+
+msgid "西宁"
+msgstr "Xining"
+
+msgid "海北藏族自治州"
+msgstr "Haibei Tibetan Autonomous Prefecture"
+
+msgid "宁夏"
+msgstr "Ningxia"
+
+msgid "银川"
+msgstr "Yinchuan"
+
+msgid "石嘴山"
+msgstr "Shizuishan"
+
+msgid "吴忠"
+msgstr "Wuzhong"
+
+msgid "固原"
+msgstr "Guyuan"
+
+msgid "中卫"
+msgstr "Defender"
+
+msgid "新疆"
+msgstr "Xinjiang"
+
+msgid "自治区直辖县级行政区划"
+msgstr "Autonomous region directly under the county-level administrative divisions."
+
+msgid "巴音郭楞蒙古自治州"
+msgstr "Bayinguoleng Mongol Autonomous Prefecture"
+
+msgid "阿勒泰地区"
+msgstr "Altay region."
+
+msgid "塔城地区"
+msgstr "Tacheng"
+
+msgid "克拉玛依"
+msgstr "Karamay"
+
+msgid "乌鲁木齐"
+msgstr "Urumqi"
+
+msgid "克孜勒苏柯尔克孜自治州"
+msgstr "Kirgiz Autonomous Prefecture"
+
+msgid "阿克苏地区"
+msgstr "Aksu Prefecture"
+
+msgid "哈密"
+msgstr "Hami"
+
+msgid "昌吉回族自治州"
+msgstr "Changji Hui Autonomous Prefecture"
+
+msgid "博尔塔拉蒙古自治州"
+msgstr "Boertala Mongol Autonomous Prefecture"
+
+msgid "吐鲁番"
+msgstr "Turpan"
+
+msgid "喀什地区"
+msgstr "Kashi Prefecture"
+
+msgid "和田地区"
+msgstr "Wada district"
+
+msgid "伊犁哈萨克自治州"
+msgstr "Ili Kazak Autonomous Prefecture"
+
+msgid "台湾"
+msgstr "Taiwan"
+
+msgid "香港"
+msgstr "Hong Kong"
+
+msgid "澳门"
+msgstr "Macao"
+
+msgid "中国"
+msgstr "China"
+
+msgid "美国"
+msgstr "United States"
+
+msgid "阿根廷"
+msgstr "Argentina"
+
+msgid "安道尔"
+msgstr "Andorra"
+
+msgid "阿联酋"
+msgstr "UAE"
+
+msgid "阿富汗"
+msgstr "Afghanistan"
+
+msgid "安提瓜和巴布达"
+msgstr "Antigua and Barbuda"
+
+msgid "安圭拉"
+msgstr "Anguilla"
+
+msgid "阿尔巴尼亚"
+msgstr "Albania"
+
+msgid "亚美尼亚"
+msgstr "Armenia"
+
+msgid "安哥拉"
+msgstr "Angola"
+
+msgid "南极洲"
+msgstr "Antarctica"
+
+msgid "美属萨摩亚"
+msgstr "Samoa"
+
+msgid "奥地利"
+msgstr "Austria"
+
+msgid "澳大利亚"
+msgstr "Australia"
+
+msgid "阿鲁巴"
+msgstr "Aruba"
+
+msgid "奥兰群岛"
+msgstr "Aland Islands"
+
+msgid "阿塞拜疆"
+msgstr "Azerbaijan"
+
+msgid "波黑"
+msgstr "Bosnia and Herzegovina"
+
+msgid "巴巴多斯"
+msgstr "Barbados"
+
+msgid "孟加拉"
+msgstr "Bengal"
+
+msgid "比利时"
+msgstr "Belgium"
+
+msgid "布基纳法索"
+msgstr "Burkina Faso"
+
+msgid "保加利亚"
+msgstr "Bulgaria"
+
+msgid "巴林"
+msgstr "Bahrain"
+
+msgid "布隆迪"
+msgstr "Burundi"
+
+msgid "贝宁"
+msgstr "Benin"
+
+msgid "圣巴泰勒米岛"
+msgstr "St. Barthelemy"
+
+msgid "百慕大"
+msgstr "Bermuda"
+
+msgid "文莱"
+msgstr "Brunei"
+
+msgid "玻利维亚"
+msgstr "Bolivia"
+
+msgid "荷兰加勒比区"
+msgstr "Dutch Caribbean"
+
+msgid "巴西"
+msgstr "Brazil"
+
+msgid "巴哈马"
+msgstr "Bahamas"
+
+msgid "不丹"
+msgstr "Bhutan"
+
+msgid "布韦岛"
+msgstr "Bouvet Island"
+
+msgid "博茨瓦纳"
+msgstr "Botswana"
+
+msgid "白俄罗斯"
+msgstr "Belarus"
+
+msgid "伯利兹"
+msgstr "Belize"
+
+msgid "加拿大"
+msgstr "Canada"
+
+msgid "科科斯群岛"
+msgstr "Cocos Islands"
+
+msgid "刚果（金）"
+msgstr "Congo (DRC)"
+
+msgid "中非"
+msgstr "Africa"
+
+msgid "刚果（布）"
+msgstr "Republic of Congo)"
+
+msgid "瑞士"
+msgstr "Switzerland"
+
+msgid "科特迪瓦"
+msgstr "Côte d'Ivoire"
+
+msgid "库克群岛"
+msgstr "Island"
+
+msgid "智利"
+msgstr "Chile"
+
+msgid "喀麦隆"
+msgstr "Cameroon"
+
+msgid "哥伦比亚"
+msgstr "Colombia"
+
+msgid "哥斯达黎加"
+msgstr "Costa Rica"
+
+msgid "古巴"
+msgstr "Cuba"
+
+msgid "佛得角"
+msgstr "Cape Verde"
+
+msgid "库拉索"
+msgstr "Curacao"
+
+msgid "圣诞岛"
+msgstr "Christmas Island"
+
+msgid "塞浦路斯"
+msgstr "Cyprus"
+
+msgid "捷克"
+msgstr "Czech"
+
+msgid "德国"
+msgstr "Germany"
+
+msgid "吉布提"
+msgstr "Djibouti"
+
+msgid "丹麦"
+msgstr "Denmark"
+
+msgid "多米尼克"
+msgstr "Dominique"
+
+msgid "多米尼加"
+msgstr "Dominica"
+
+msgid "阿尔及利亚"
+msgstr "Algeria"
+
+msgid "厄瓜多尔"
+msgstr "Ecuador"
+
+msgid "爱沙尼亚"
+msgstr "Estonia"
+
+msgid "埃及"
+msgstr "Egypt"
+
+msgid "西撒哈拉"
+msgstr "Western Sahara"
+
+msgid "厄立特里亚"
+msgstr "Eritrea"
+
+msgid "西班牙"
+msgstr "Spain"
+
+msgid "埃塞俄比亚"
+msgstr "Ethiopia"
+
+msgid "芬兰"
+msgstr "Finland"
+
+msgid "斐济群岛"
+msgstr "Fiji Islands"
+
+msgid "马尔维纳斯群岛（福克兰）"
+msgstr "Malvinas Islands (Falkland)"
+
+msgid "密克罗尼西亚联邦"
+msgstr "Federated States of Micronesia"
+
+msgid "法罗群岛"
+msgstr "Faroe Islands"
+
+msgid "法国 法国"
+msgstr "French French"
+
+msgid "加蓬"
+msgstr "Gabon"
+
+msgid "英国"
+msgstr "United Kingdom"
+
+msgid "格林纳达"
+msgstr "Grenada"
+
+msgid "格鲁吉亚"
+msgstr "Georgia"
+
+msgid "法属圭亚那"
+msgstr "French Guiana"
+
+msgid "根西岛"
+msgstr "Guernsey"
+
+msgid "加纳"
+msgstr "Ghana"
+
+msgid "直布罗陀"
+msgstr "Gibraltar"
+
+msgid "格陵兰"
+msgstr "Greenland"
+
+msgid "冈比亚"
+msgstr "Gambia"
+
+msgid "几内亚"
+msgstr "Guinea"
+
+msgid "瓜德罗普"
+msgstr "Guadeloupe"
+
+msgid "赤道几内亚"
+msgstr "Equatorial Guinea"
+
+msgid "希腊"
+msgstr "Greece"
+
+msgid "南乔治亚岛和南桑威奇群岛"
+msgstr "South Georgia and the South Sandwich Islands."
+
+msgid "危地马拉"
+msgstr "Guatemala"
+
+msgid "关岛"
+msgstr "Guam"
+
+msgid "几内亚比绍"
+msgstr "Guinea-Bissau"
+
+msgid "圭亚那"
+msgstr "Guyana"
+
+msgid "赫德岛和麦克唐纳群岛"
+msgstr "Heard Island and McDonald Islands"
+
+msgid "洪都拉斯"
+msgstr "Honduras"
+
+msgid "克罗地亚"
+msgstr "Croatia"
+
+msgid "海地"
+msgstr "Haiti"
+
+msgid "匈牙利"
+msgstr "Hungary"
+
+msgid "印尼"
+msgstr "Indonesia"
+
+msgid "爱尔兰"
+msgstr "Ireland"
+
+msgid "以色列"
+msgstr "Israel"
+
+msgid "马恩岛"
+msgstr "Isle of Man"
+
+msgid "印度"
+msgstr "India"
+
+msgid "英属印度洋领地"
+msgstr "British Indian Ocean Territory"
+
+msgid "伊拉克"
+msgstr "Iraq"
+
+msgid "伊朗"
+msgstr "Iran"
+
+msgid "冰岛"
+msgstr "Iceland"
+
+msgid "意大利"
+msgstr "Italy"
+
+msgid "泽西岛"
+msgstr "Jersey"
+
+msgid "牙买加"
+msgstr "Jamaica"
+
+msgid "约旦"
+msgstr "Jordan"
+
+msgid "日本"
+msgstr "Japan"
+
+msgid "肯尼亚"
+msgstr "Kenya"
+
+msgid "吉尔吉斯斯坦"
+msgstr "Kyrgyzstan"
+
+msgid "柬埔寨"
+msgstr "Cambodia"
+
+msgid "基里巴斯"
+msgstr "Kiribati"
+
+msgid "科摩罗"
+msgstr "Comoros"
+
+msgid "圣基茨和尼维斯"
+msgstr "Saint Kitts and Nevis"
+
+msgid "朝鲜"
+msgstr "Korea"
+
+msgid "韩国"
+msgstr "Korea"
+
+msgid "科威特"
+msgstr "Kuwait"
+
+msgid "开曼群岛"
+msgstr "Cayman Islands"
+
+msgid "哈萨克斯坦"
+msgstr "Kazakhstan"
+
+msgid "老挝"
+msgstr "Laos"
+
+msgid "黎巴嫩"
+msgstr "Lebanon"
+
+msgid "圣卢西亚"
+msgstr "Lucia"
+
+msgid "列支敦士登"
+msgstr "Liechtenstein"
+
+msgid "斯里兰卡"
+msgstr "Sri Lanka"
+
+msgid "利比里亚"
+msgstr "Liberia"
+
+msgid "莱索托"
+msgstr "Lesotho"
+
+msgid "立陶宛"
+msgstr "Lithuania"
+
+msgid "卢森堡"
+msgstr "Luxembourg"
+
+msgid "拉脱维亚"
+msgstr "Latvia"
+
+msgid "利比亚"
+msgstr "Libya"
+
+msgid "摩洛哥"
+msgstr "Morocco"
+
+msgid "摩纳哥"
+msgstr "Monaco"
+
+msgid "摩尔多瓦"
+msgstr "Moldova"
+
+msgid "黑山"
+msgstr "Montenegro"
+
+msgid "法属圣马丁"
+msgstr "Saint Martin"
+
+msgid "马达加斯加"
+msgstr "Madagascar"
+
+msgid "马绍尔群岛"
+msgstr "Marshall Islands"
+
+msgid "马其顿"
+msgstr "Macedonian"
+
+msgid "马里"
+msgstr "Mali"
+
+msgid "缅甸"
+msgstr "Myanmar"
+
+msgid "蒙古国"
+msgstr "Mongolia"
+
+msgid "北马里亚纳群岛"
+msgstr "Northern Mariana Islands"
+
+msgid "马提尼克"
+msgstr "Martinique"
+
+msgid "毛里塔尼亚"
+msgstr "Mauritania"
+
+msgid "蒙塞拉特岛"
+msgstr "Montserrat"
+
+msgid "马耳他"
+msgstr "Malta"
+
+msgid "毛里求斯"
+msgstr "Mauritius"
+
+msgid "马尔代夫"
+msgstr "Maldives"
+
+msgid "马拉维"
+msgstr "Malawi"
+
+msgid "墨西哥"
+msgstr "Mexico"
+
+msgid "马来西亚"
+msgstr "Malaysia"
+
+msgid "莫桑比克"
+msgstr "Mozambique"
+
+msgid "纳米比亚"
+msgstr "Namibia"
+
+msgid "新喀里多尼亚"
+msgstr "New Caledonia"
+
+msgid "尼日尔"
+msgstr "Niger"
+
+msgid "诺福克岛"
+msgstr "Norfolk Island"
+
+msgid "尼日利亚"
+msgstr "Nigerian"
+
+msgid "尼加拉瓜"
+msgstr "Nicaragua"
+
+msgid "荷兰"
+msgstr "Netherlands"
+
+msgid "挪威"
+msgstr "Norway"
+
+msgid "尼泊尔"
+msgstr "Nepal"
+
+msgid "瑙鲁"
+msgstr "Nauru"
+
+msgid "纽埃"
+msgstr "Niue"
+
+msgid "新西兰"
+msgstr "new Zealand"
+
+msgid "阿曼"
+msgstr "Oman"
+
+msgid "巴拿马"
+msgstr "Panama"
+
+msgid "秘鲁"
+msgstr "Peru"
+
+msgid "法属波利尼西亚"
+msgstr "French Polynesia"
+
+msgid "巴布亚新几内亚"
+msgstr "Papua New Guinea"
+
+msgid "菲律宾"
+msgstr "Philippines"
+
+msgid "巴基斯坦"
+msgstr "Pakistan"
+
+msgid "波兰"
+msgstr "Poland"
+
+msgid "圣皮埃尔和密克隆"
+msgstr "Saint Pierre and Miquelon"
+
+msgid "皮特凯恩群岛"
+msgstr "Pitcairn Islands"
+
+msgid "波多黎各"
+msgstr "Puerto Rico"
+
+msgid "巴勒斯坦"
+msgstr "Palestine"
+
+msgid "葡萄牙"
+msgstr "Portugal"
+
+msgid "帕劳"
+msgstr "Palau"
+
+msgid "巴拉圭"
+msgstr "Paraguay"
+
+msgid "卡塔尔"
+msgstr "Qatar"
+
+msgid "留尼汪"
+msgstr "Reunion"
+
+msgid "罗马尼亚"
+msgstr "Romania"
+
+msgid "塞尔维亚"
+msgstr "Serbia"
+
+msgid "俄罗斯"
+msgstr "Russia"
+
+msgid "卢旺达"
+msgstr "Rwanda"
+
+msgid "沙特阿拉伯"
+msgstr "Saudi Arabia"
+
+msgid "所罗门群岛"
+msgstr "Solomon Islands"
+
+msgid "塞舌尔"
+msgstr "Seychelles"
+
+msgid "苏丹"
+msgstr "Sudan"
+
+msgid "瑞典"
+msgstr "Sweden"
+
+msgid "新加坡"
+msgstr "Singapore"
+
+msgid "圣赫勒拿"
+msgstr "St. Helena"
+
+msgid "斯洛文尼亚"
+msgstr "Slovenia"
+
+msgid "斯瓦尔巴群岛和扬马延岛"
+msgstr "Svalbard and Jan Mayen"
+
+msgid "斯洛伐克"
+msgstr "Slovakia"
+
+msgid "塞拉利昂"
+msgstr "Sierra Leone"
+
+msgid "圣马力诺"
+msgstr "San Marino"
+
+msgid "塞内加尔"
+msgstr "Senegal"
+
+msgid "索马里"
+msgstr "Somalia"
+
+msgid "苏里南"
+msgstr "Suriname"
+
+msgid "南苏丹"
+msgstr "South Sudan"
+
+msgid "圣多美和普林西比"
+msgstr "Sao Tome and Principe"
+
+msgid "萨尔瓦多"
+msgstr "El Salvador"
+
+msgid "荷属圣马丁"
+msgstr "Sint Maarten"
+
+msgid "叙利亚"
+msgstr "Syria"
+
+msgid "斯威士兰"
+msgstr "Swaziland"
+
+msgid "特克斯和凯科斯群岛"
+msgstr "Turks and Caicos Islands"
+
+msgid "乍得"
+msgstr "Chad"
+
+msgid "法属南部领地"
+msgstr "French Southern Territories"
+
+msgid "多哥"
+msgstr "Togo"
+
+msgid "泰国"
+msgstr "Thailand"
+
+msgid "塔吉克斯坦"
+msgstr "Tajikistan"
+
+msgid "托克劳"
+msgstr "Tokelau"
+
+msgid "东帝汶"
+msgstr "East Timor"
+
+msgid "土库曼斯坦"
+msgstr "Turkmenistan"
+
+msgid "突尼斯"
+msgstr "Tunisia"
+
+msgid "汤加"
+msgstr "Tonga"
+
+msgid "土耳其"
+msgstr "Turkey"
+
+msgid "特立尼达和多巴哥"
+msgstr "Trinidad and Tobago"
+
+msgid "图瓦卢"
+msgstr "Tuvalu"
+
+msgid "坦桑尼亚"
+msgstr "Tanzania"
+
+msgid "乌克兰"
+msgstr "Ukraine"
+
+msgid "乌干达"
+msgstr "Uganda"
+
+msgid "美国本土外小岛屿"
+msgstr "United States Minor Outlying Islands"
+
+msgid "乌拉圭"
+msgstr "Uruguay"
+
+msgid "乌兹别克斯坦"
+msgstr "Uzbekistan"
+
+msgid "梵蒂冈"
+msgstr "Vatican"
+
+msgid "圣文森特和格林纳丁斯"
+msgstr "Saint Vincent and the Grenadines"
+
+msgid "委内瑞拉"
+msgstr "Venezuela"
+
+msgid "英属维尔京群岛"
+msgstr "The British Virgin Islands"
+
+msgid "美属维尔京群岛"
+msgstr "United States Virgin Islands"
+
+msgid "越南"
+msgstr "Vietnam"
+
+msgid "瓦努阿图"
+msgstr "Vanuatu"
+
+msgid "瓦利斯和富图纳"
+msgstr "Wallis and Futuna"
+
+msgid "萨摩亚"
+msgstr "Samoa"
+
+msgid "也门"
+msgstr "Yemen"
+
+msgid "马约特"
+msgstr "Mayotte"
+
+msgid "南非"
+msgstr "South Africa"
+
+msgid "赞比亚"
+msgstr "Zambia"
+
+msgid "津巴布韦"
+msgstr "Zimbabwe"
+
+msgid "默认"
+msgstr "default"
+
+msgid "云区域"
+msgstr "Cloud area"
+
+msgid "是否删除"
+msgstr "Delete or not"
+
+msgid "创建人"
+msgstr "Creator"
+
+msgid "最后修改人"
+msgstr "Last modifier"
+
+msgid "最后修改时间"
+msgstr "Last modification time"
+
+#, python-format
+msgid "接口请求超时: %s"
+msgstr "Interface Request Timeout:%s"
+
+msgid "接口请求网络超时"
+msgstr "Interface request network timeout"
+
+#, python-format
+msgid "接口请求异常: %s"
+msgstr "Exception Interface Request:%s"
+
+msgid "接口请求异常"
+msgstr "Interface request exception"
+
+#, python-format
+msgid "调用接口异常，返回：%s"
+msgstr "Calling interface exception, returned: %s"
+
+#, python-format
+msgid "调用接口异常：%s"
+msgstr "Calling interface exception: %s"
+
+#, python-format
+msgid "接口请求网络异常: %s"
+msgstr "Network interface requests exception:%s"
+
+msgid "接口请求网络异常"
+msgstr "Interface request network exception"
+
+msgid "字段描述"
+msgstr "Field Description"
+
+msgid "字段类型"
+msgstr "Field type"
+
+msgid "指标类型"
+msgstr "Metric type"
+
+msgid "单位"
+msgstr "Unit"
+
+msgid "字段名"
+msgstr "The field name"
+
+msgid "换算单位"
+msgstr "Conversion Unit"
+
+msgid "是否为差值指标"
+msgstr "Whether the difference between the Metric"
+
+msgid "原指标名"
+msgstr "Original name"
+
+msgid "聚合维度"
+msgstr "Polymerization dimension"
+
+msgid "表名"
+msgstr "table name"
+
+msgid "表描述"
+msgstr " table describes"
+
+msgid "指标项"
+msgstr "Metric item"
+
+msgid "指标配置"
+msgstr "Metric Configuration"
+
+msgid "指标维度不能为空"
+msgstr " metric/dimension can not be empty"
+
+msgid "非与保留关键字重名字段不允许以'_'开头"
+msgstr "Non-reserved keyword with the same name are not allowed to field '_' "
+"beginning"
+
+msgid "指标维度不允许与保留关键字重名"
+msgstr "Metric / Dimension does not allow duplicate names and reserved keyword"
+
+msgid "指标维度中同一张表维度名不允许重名"
+msgstr "Metric / Dimension with a dimension table name does not allow duplicate names"
+
+msgid "表名不允许与保留关键字重名"
+msgstr "Table name does not allow duplicate names and reserved keyword"
+
+msgid "指标维度中指标名不允许重名"
+msgstr "Metrics / Dimension index name does not allow duplicate names"
+
+msgid "指标维度中表名不允许重名"
+msgstr "Metrics / Dimension table name does not allow duplicate names"
+
+msgid "策略名称：{}"
+msgstr "Rule name: {}"
+
+msgid "该策略已经被删除"
+msgstr "This strategy has been deleted"
+
+msgid "次"
+msgstr "Times"
+
+msgid "天"
+msgstr "day"
+
+msgid "周"
+msgstr "weeks"
+
+msgid "月"
+msgstr "month"
+
+msgid "<1小时/{}"
+msgstr "<1 hour / {}"
+
+msgid "{}小时/{}"
+msgstr "{}hour/{}"
+
+msgid "告警事件屏蔽"
+msgstr "Mute by event"
+
+msgid "服务实例"
+msgstr "Service instance"
+
+msgid "主机"
+msgstr "Host"
+
+msgid "make_userinfo: 获取用户信息失败"
+msgstr "Make_userinfo: failed to get user info"
+
+msgid "CPU总使用率"
+msgstr "Total CPU utilization"
+
+msgid "磁盘I/O使用率"
+msgstr "Disk I / O Utilization"
+
+msgid "磁盘使用率"
+msgstr "Disk utilization"
+
+msgid "应用内存使用率"
+msgstr "Application memory utilization"
+
+msgid "Agent心跳丢失"
+msgstr "Agent Heartbeat-Loss"
+
+msgid "磁盘只读"
+msgstr "disk read only"
+
+msgid "Corefile产生"
+msgstr "Corefile produce"
+
+msgid "PING不可达告警"
+msgstr "PING unreachable alarm"
+
+msgid "主机重启"
+msgstr "Host restart"
+
+msgid "自定义字符型告警"
+msgstr "Custom Alarm of Character Type"
+
+msgid "进程端口"
+msgstr "Process Port"
+
+msgid "主备负责人"
+msgstr "Standby responsible person"
+
+msgid "运维"
+msgstr "Operator"
+
+msgid "开发"
+msgstr "Development"
+
+msgid "测试"
+msgstr "test"
+
+msgid "产品"
+msgstr "product"
+
+msgid "产品人员"
+msgstr "PM"
+
+msgid "测试人员"
+msgstr "Tester"
+
+msgid "开发人员"
+msgstr "Developer"
+
+msgid "主负责人"
+msgstr "Main operator"
+
+msgid "备份负责人"
+msgstr "Backup operator"
+
+msgid "Resource[{}] 请求参数格式错误：{}"
+msgstr "The Resource [{}] malformed request parameter: {}"
+
+msgid "Resource[{}] 返回参数格式错误：{}"
+msgstr "The Resource [{}] Return parameter format error: {}"
+
+msgid "名称"
+msgstr "Name"
+
+msgid "结束事件"
+msgstr "End event"
+
+msgid "请求参数"
+msgstr "Request parameter"
+
+msgid "响应参数"
+msgstr "Response Parameters"
+
+msgid "序列化器错误信息格式化失败，原因: {}"
+msgstr "Serialization Error message format failed, because: {}"
+
+#, python-format
+msgid "【模块：%s】接口【%s】(%s)返回结果错误：%s"
+msgstr "[Module:%s%s] [Interface (%s) returns the result of the error:%s"
+
+msgid "基础错误"
+msgstr "Basic error"
+
+msgid "系统异常，请联系管理员"
+msgstr "System abnormalities, please contact the administrator."
+
+msgid "缺少用户信息"
+msgstr "Lack of user information."
+
+msgid "事件分组名称校验不通过"
+msgstr "Event Group name check does not pass"
+
+msgid "仪表盘错误"
+msgstr "Dashboard Error"
+
+msgid "创建Grafana用户失败"
+msgstr "Creating a user Grafana failed"
+
+msgid "获取Grafana用户失败"
+msgstr "Get Grafana user failed"
+
+msgid "创建Grafana组织失败"
+msgstr "Creating Grafana organizational failure"
+
+msgid "获取Grafana组织失败"
+msgstr "Get Grafana organizational failure"
+
+msgid "获取组织中的用户失败"
+msgstr "Get users in an organization failed"
+
+msgid "tsdb表名解析异常"
+msgstr "Tsdb table to resolve anomalies"
+
+msgid "tsdb表名解析异常：{rt_id}"
+msgstr "Tsdb name resolution table exception: {rt_id}"
+
+msgid "sql查询异常"
+msgstr "Sql query exception"
+
+msgid "sql查询无数据"
+msgstr "Sql query no data"
+
+msgid "data id不存在"
+msgstr "Data id does not exist"
+
+msgid "data_id: {data_id}不存在"
+msgstr "Data_id: {data_id} does not exist."
+
+msgid "插件ID错误: 已存在的plugin_id"
+msgstr "Plugin ID Error: existing plugin_id"
+
+msgid "采集配置不存在"
+msgstr "Collect configuration does not exist."
+
+msgid "告警后台服务错误"
+msgstr "Alarm background service error"
+
+msgid "告警后台服务错误：{msg}"
+msgstr "Alarm background service error: {msg}"
+
+msgid "数据接入服务错误"
+msgstr "Data Access Service Error"
+
+msgid "数据接入服务错误：{msg}"
+msgstr "Data access error: {msg}"
+
+msgid "异常检测服务错误"
+msgstr "Anomaly Detection Service error"
+
+msgid "异常检测服务错误：{msg}"
+msgstr "Service abnormality detection error: {msg}"
+
+msgid "异常触发服务错误"
+msgstr "Throw service error"
+
+msgid "异常触发服务错误：{msg}"
+msgstr "Throw service error: {msg}"
+
+msgid "分布式锁错误"
+msgstr "Distributed Lock Error"
+
+msgid "分布式锁错误：{msg}"
+msgstr "Distributed Lock Error: {msg}"
+
+msgid "策略配置快照找不到"
+msgstr "Configure snapshot can not be found"
+
+msgid "策略配置快照找不到，key: {key}"
+msgstr "Configure snapshot can not be found, key: {key}"
+
+msgid "策略对应的监控项找不到"
+msgstr "Strategy corresponding monitoring item can not be found"
+
+msgid "策略对应的监控项找不到，策略ID: {strategy_id}，监控项ID：{item_id}"
+msgstr "Policy corresponding monitored item can not be found, the policy ID: {strategy_id}, monitored item ID: {item_id}"
+
+msgid "无效的自定义异常数据"
+msgstr "Invalid custom exception data"
+
+msgid "无效的自定义异常数据：{event_data}"
+msgstr "Invalid custom exception data: {event_data}"
+
+msgid "无效的检测数据"
+msgstr "Invalid test data."
+
+msgid "无效的检测数据：{data_point}"
+msgstr "Invalid test data: {data_point}"
+
+msgid "无效的检测算法配置"
+msgstr "Invalid detection algorithm Configuration"
+
+msgid "无效的检测算法配置：{config}"
+msgstr "Invalid configuration detection algorithm: {config}"
+
+msgid "无效的静态阈值算法配置"
+msgstr "Invalid static threshold algorithm Configuration"
+
+msgid "无效的静态阈值算法配置：{config}"
+msgstr "Invalid static thresholding algorithm configuration: {config}"
+
+msgid "无效的简易环比算法配置"
+msgstr "Invalid simple sequential algorithm Configuration"
+
+msgid "无效的简易环比算法配置：{config}"
+msgstr "Invalid simple chain configuration algorithm: {config}"
+
+msgid "无效的简易同比算法配置"
+msgstr "Invalid simple algorithms as an"
+
+msgid "无效的简易同比算法配置：{config}"
+msgstr "Invalid simple configuration an algorithm: {config}"
+
+msgid "无效的高级环比算法配置"
+msgstr "Invalid advanced algorithms chain configuration"
+
+msgid "无效的高级环比算法配置：{config}"
+msgstr "Invalid advanced algorithms chain configuration: {config}"
+
+msgid "无效的高级同比算法配置"
+msgstr "Invalid advanced algorithms as an"
+
+msgid "无效的高级同比算法配置：{config}"
+msgstr "Invalid advanced up the algorithms: {config}"
+
+msgid "历史数据不存在"
+msgstr "Historical data does not exist"
+
+msgid "历史数据不存在：item:{item_id}, timestamp:{timestamp}"
+msgstr "Historical data is not present: item: {item_id}, timestamp: {timestamp}"
+
+msgid "移动端事件模块错误"
+msgstr "Mobile terminal event module error"
+
+msgid "移动端事件模块错误：{msg}"
+msgstr "Error moving end event module: {msg}"
+
+msgid "告警汇总记录不存在"
+msgstr "Alarm Summary record does not exist"
+
+msgid "告警汇总记录({alert_collect_id})不存在"
+msgstr "Alarm Summary Record ({alert_collect_id}) does not exist."
+
+msgid "告警事件({event_id})不存在"
+msgstr "Alarm Event ({event_id}) does not exist."
+
+msgid "微信"
+msgstr "WeChat"
+
+msgid "邮件"
+msgstr "Email"
+
+msgid "短信"
+msgstr "SMS"
+
+msgid "语音"
+msgstr "voice"
+
+msgid "自定义"
+msgstr "Custom"
+
+msgid "子网ID"
+msgstr "Subnet ID"
+
+msgid "用户名"
+msgstr "Username"
+
+msgid "业务id"
+msgstr "Business ID"
+
+msgid "删除成功"
+msgstr "Delete success"
+
+msgid "排序字段"
+msgstr "Sort Field"
+
+msgid "查询参数"
+msgstr "Query parameters"
+
+msgid "二级标签"
+msgstr "Two labels"
+
+msgid "页码"
+msgstr "page number"
+
+msgid "每页条数"
+msgstr "Article per page"
+
+msgid "告警组名称"
+msgstr "Alarm group name"
+
+msgid "服务分类"
+msgstr "Service Categories"
+
+msgid "IP筛选"
+msgstr "IP selector"
+
+msgid "指标ID"
+msgstr "Metric"
+
+msgid "ID列表"
+msgstr "ID list"
+
+msgid "所需字段"
+msgstr "Required fields"
+
+msgid "策略ID列表"
+msgstr "Policy ID list"
+
+msgid "字段类型，指标或维度"
+msgstr "Field types, metrics or dimensions"
+
+msgid "字段单位"
+msgstr "Units"
+
+msgid "字段别名"
+msgstr "Aliases"
+
+msgid "字段选项"
+msgstr "Field Options"
+
+msgid "数据源名称"
+msgstr "Data Source"
+
+msgid "清洗模板配置"
+msgstr "Cleaning template configuration"
+
+msgid "数据源使用的消息集群"
+msgstr "Message data source cluster"
+
+msgid "数据源描述"
+msgstr "Data Source Description"
+
+msgid "是否用户自定义数据源"
+msgstr "Whether the user-defined data source"
+
+msgid "数据源标签"
+msgstr "Data Sources tab"
+
+msgid "数据源配置项"
+msgstr "Data Source Configuration Item"
+
+msgid "自定义标签"
+msgstr "Custom label"
+
+msgid "结果表中文名"
+msgstr "Results Table Chinese name"
+
+msgid "是否用户自定义结果表"
+msgstr "Whether the results of user-defined tables"
+
+msgid "结果表字段配置方案"
+msgstr "Results Field Configuration Scheme"
+
+msgid "默认存储方案"
+msgstr "The default storage scheme"
+
+msgid "默认存储参数"
+msgstr "The default storage parameters"
+
+msgid "字段列表"
+msgstr "Field list"
+
+msgid "结果表所属ID"
+msgstr "Results Table ID belongs"
+
+msgid "结果表标签"
+msgstr "Results Table tag"
+
+msgid "额外存储配置"
+msgstr "Additional storage configuration"
+
+msgid "是否仅需要提供时间默认字段"
+msgstr "If only you need to provide time default fields"
+
+msgid "结果表选项内容"
+msgstr "Results Table Options content"
+
+msgid "时间节点"
+msgstr "time frame"
+
+msgid "时间字段选项配置"
+msgstr "Time field configuration options"
+
+msgid "过滤的结果表类型"
+msgstr "Results filter table type"
+
+msgid "获取指定业务下的结果表信息"
+msgstr "Getting Results table under the specified business information"
+
+msgid "是否需要包含非用户定义的结果表"
+msgstr "Whether to include the results of non-user-defined tables"
+
+msgid "默认字段仅有time"
+msgstr "Default field only time"
+
+msgid "额外存储"
+msgstr "Additional storage"
+
+msgid "是否启用结果表"
+msgstr "Whether to enable the results table"
+
+msgid "找不到请求参数，请确认后重试"
+msgstr "Not find the requested parameters, please confirm retry"
+
+msgid "数据源不存在，请确认后重试"
+msgstr "Data source does not exist, please try again confirm"
+
+msgid "结果表ID列表"
+msgstr "Results Table ID list"
+
+msgid "CMDB拆分层级目标"
+msgstr "CMDB split-level target"
+
+msgid "结果表不存在，请确认后重试"
+msgstr "The results table does not exist, please try again confirm"
+
+msgid "标签类型"
+msgstr "Label Type"
+
+msgid "是否明文展示"
+msgstr "Whether expressly show"
+
+msgid "结果表列表"
+msgstr "Results Table List"
+
+msgid "存储类型"
+msgstr "Storage type"
+
+msgid "是否明文显示链接信息"
+msgstr "Whether the information in plain text link"
+
+msgid "请求存储类型暂不支持，请确认"
+msgstr "Request storage type is not supported, make sure"
+
+msgid "集群名"
+msgstr "Set name"
+
+msgid "集群类型"
+msgstr "Cluster types"
+
+msgid "集群域名"
+msgstr "Cluster domain"
+
+msgid "集群端口"
+msgstr "Cluster port"
+
+msgid "集群描述数据"
+msgstr "Cluster Description Data"
+
+msgid "身份认证信息"
+msgstr "Authentication information"
+
+msgid "版本信息"
+msgstr "Version Information"
+
+msgid "链接协议"
+msgstr "Link protocol"
+
+msgid "是否需要SSL验证"
+msgstr "The need for SSL authentication"
+
+msgid "存储集群ID"
+msgstr "Storage cluster ID"
+
+msgid "存储集群名"
+msgstr "Storage cluster name"
+
+msgid "存储集群描述"
+msgstr "Storage cluster description"
+
+msgid "集群自定义标签"
+msgstr "Cluster custom label"
+
+msgid "集群链接协议"
+msgstr "Clusters link protocol"
+
+msgid "是否需要强制SSL/TLS认证"
+msgstr "Whether you need to force SSL / TLS authentication"
+
+msgid "需要至少提供集群ID或集群名"
+msgstr "ID required to provide at least a cluster or a cluster name"
+
+msgid "找不到指定的集群配置，请确认后重试"
+msgstr "Can not find the specified cluster configuration, make sure that after "
+"retries"
+
+msgid "存储集群类型"
+msgstr "Storage cluster type"
+
+msgid "是否需要明文显示登陆信息"
+msgstr "The need for clear text login information"
+
+msgid "事件分组标签"
+msgstr "Event packet label"
+
+msgid "事件分组名称"
+msgstr "Event group name"
+
+msgid "创建者"
+msgstr "Created by"
+
+msgid "修改者"
+msgstr "editor"
+
+msgid "是否启用事件分组"
+msgstr "Whether the event packet enabled"
+
+msgid "事件分组不存在，请确认后重试"
+msgstr "Event packet does not exist, make sure that after retries"
+
+msgid "是否需要带结果表信息"
+msgstr "Need a table with the results of information"
+
+msgid "标签ID"
+msgstr "ID tag"
+
+msgid "标签名"
+msgstr "Tag name"
+
+msgid "是否只允许管理员配置使用"
+msgstr "It is only allows administrators to configure the use of"
+
+msgid "父级标签ID"
+msgstr "Parent tag ID"
+
+msgid "标签排序"
+msgstr "Sort label"
+
+msgid "option对应类型"
+msgstr "option corresponding type"
+
+msgid "option配置内容"
+msgstr "option to configure content"
+
+msgid "上报校验token"
+msgstr "Reports the check token"
+
+msgid "消息队列集群ID"
+msgstr "Message Queue cluster ID"
+
+msgid "消息队列配置ID"
+msgstr "Configuration Message Queue ID"
+
+msgid "ETL配置"
+msgstr "ETL configuration"
+
+msgid "是否自定义数据源"
+msgstr "Whether custom data source"
+
+msgid "最后更新者"
+msgstr "Last Updated By"
+
+msgid "最后更新时间"
+msgstr "Last updated"
+
+msgid "自定义标签信息"
+msgstr "Custom label information"
+
+msgid "请求来源的系统"
+msgstr "Request source systems"
+
+msgid "数据源管理"
+msgstr "Data Source Manager"
+
+msgid "数据源管理表"
+msgstr "Data source management table"
+
+msgid "标签[{} | {}]不存在，请确认后重试"
+msgstr "Label [{} | {}] does not exist, please try again confirm"
+
+#, python-format
+msgid "数据源名称[%s]已经存在，请确认后重试"
+msgstr "Data Source name [%s] already exists, please try again confirm"
+
+msgid "缺少数据源MQ集群信息，请联系管理员协助处理"
+msgstr "Lack of data source MQ cluster information, please contact the "
+"administrator to help deal with"
+
+msgid "数据源ID生成异常，请联系管理员协助处理"
+msgstr "Data Source ID generates an exception, please contact the administrator "
+"to help deal with"
+
+msgid "数据源ID分配达到最大上限，请联系管理员协助处理"
+msgstr "Data Source ID assigned reaches the maximum limit, please contact the "
+"administrator to help deal with"
+
+msgid "集群配置不存在，请确认"
+msgstr "Cluster configuration does not exist, make sure"
+
+msgid "数据源名称已存在，请确认"
+msgstr "Data source name already exists, please confirm"
+
+msgid "option名称"
+msgstr "option name"
+
+msgid "数据源已存在[{}]选项"
+msgstr "Data Source [{}] option exists"
+
+msgid "结果表名"
+msgstr "Results table"
+
+msgid "数据源-结果表关系配置"
+msgstr "Data Source - Results Table Relationship Configuration"
+
+msgid "数据源-结果表关系配置表"
+msgstr "Data Source - Relationship between configuration table result table"
+
+msgid "分组ID"
+msgstr "Packet ID"
+
+msgid "事件标签"
+msgstr "Events tab"
+
+msgid "标签[{}]不存在，请确认后重试"
+msgstr "Label [{}] does not exist, please try again confirm"
+
+msgid "数据源[{}]已经被其他事件注册使用，请更换数据源"
+msgstr "Data Source [{}] Other events have been registered, and replace the Data Source"
+
+msgid "事件组名称已存在，请确认后重试"
+msgstr "Event Group name already exists. Please confirm retry"
+
+msgid "事件组已删除，请确认后重试"
+msgstr "Event group has been deleted. Please confirm retry"
+
+msgid "事件所属分组ID"
+msgstr "The event belongs packet ID"
+
+msgid "事件名称"
+msgstr "Event Name"
+
+msgid "维度列表"
+msgstr "List of dimensions"
+
+msgid "事件描述记录"
+msgstr "Event Description Record"
+
+msgid "事件描述记录表"
+msgstr "Event Description record form"
+
+msgid "事件组ID[{}]不存在，请确认后重试"
+msgstr "Event Group ID [{}] does not exist"
+
+msgid "事件列表配置有误，请确认后重试"
+msgstr "The event list is configured incorrectly. Please confirm retry"
+
+msgid "节点管理订阅ID"
+msgstr "Node Manager subscription ID"
+
+msgid "订阅配置"
+msgstr "Subscribe Configuration"
+
+msgid "自定义上报订阅配置"
+msgstr "Custom Configuration reported subscribe"
+
+msgid "主机名"
+msgstr "Host name"
+
+msgid "归属集群名"
+msgstr "Ownership of the cluster name"
+
+msgid "是否在该集群中可读"
+msgstr "Is readable in the cluster."
+
+msgid "influxDB集群信息"
+msgstr "influxDB cluster information"
+
+msgid "influxDB集群信息表"
+msgstr "influxDB cluster information table"
+
+msgid "端口"
+msgstr "Port"
+
+msgid "密码"
+msgstr "Password"
+
+msgid "集群备注说明信息"
+msgstr "Remarks cluster information"
+
+msgid "influxDB主机信息"
+msgstr "influxDB host information"
+
+msgid "influxDB主机信息表"
+msgstr "influxDB host information table"
+
+#, python-format
+msgid "主机信息[%s]已经存在，请确认"
+msgstr "Host information [%s] already exists"
+
+msgid "无固定字段"
+msgstr "No fixed field"
+
+msgid "动态字段"
+msgstr "Dynamic Field"
+
+msgid "固定字段"
+msgstr "Fixed Field"
+
+msgid "是否自定义结果表"
+msgstr "Custom whether the results table"
+
+msgid "schema配置方案"
+msgstr "schema configuration scheme"
+
+msgid "结果表所属业务"
+msgstr "Results Table owned business"
+
+msgid "结果表是否已经禁用"
+msgstr "Results Table is already disabled"
+
+msgid "逻辑结果表"
+msgstr "Logic Results Table"
+
+msgid "标签[{}]不存在，请确认"
+msgstr "Label [{}] is not present, make sure"
+
+msgid "数据源ID不存在，请确认"
+msgstr "Data source ID is not present, make sure"
+
+msgid "结果表ID已经存在，请确认"
+msgstr "Results Table ID already exists, make sure"
+
+#, python-format
+msgid "结果表[%s]不符合命名规范，请确认后重试"
+msgstr "Results Table [%s] does not meet the naming conventions, please try again"
+" confirm"
+
+msgid "全业务结果表不可以数字及下划线开头，请确认后重试"
+msgstr "Table numbers can not begin with an underscore, and the whole business "
+"results, make sure that after retries"
+
+msgid "存储[{}]暂不支持，请确认后重试"
+msgstr "Storage [{}] is not supported. Please try again confirm"
+
+#, python-format
+msgid "结果表[%s]字段不可变更"
+msgstr "[%s] field in the result table cannot be changed"
+
+#, python-format
+msgid "存储类型[%s]暂不支持，请确认后重试"
+msgstr "Storage type [%s] is not supported. Please try again confirm"
+
+#, python-format
+msgid "结果表[%s]不存在存储类型[%s]，请确认"
+msgstr "Results Table [%s] does not exist storage type [%s], make sure"
+
+msgid "结果表不可操作，请确认后重试"
+msgstr "Results Table inoperable, please try again confirm"
+
+msgid "结果表[{}]不存在关联数据源"
+msgstr "Results Table [{}] associated data source does not exist."
+
+msgid "公共数据源不允许配置拆分任务"
+msgstr "Public data sources can not be configured to split the task."
+
+msgid "结果表不存在该字段拆分记录"
+msgstr "This field splitting results in Table record does not exist"
+
+msgid "整型"
+msgstr "Integer"
+
+msgid "浮点型"
+msgstr "Float"
+
+msgid "字符型"
+msgstr "Character Type"
+
+msgid "布尔型"
+msgstr "Boolean"
+
+msgid "未知类型字段"
+msgstr "Unknown type field"
+
+msgid "维度字段"
+msgstr "Dimension field"
+
+msgid "指标字段"
+msgstr "metric field"
+
+msgid "时间戳字段"
+msgstr "Timestamp field"
+
+msgid "标签字段"
+msgstr "Label field"
+
+msgid "常量"
+msgstr "constant"
+
+msgid "字段标签"
+msgstr "Field labels"
+
+msgid "是否用户确认字段"
+msgstr "Whether a user acknowledgment field"
+
+msgid "字段默认值"
+msgstr "Field Default Value"
+
+msgid "字段映射前（上传时）名"
+msgstr "Before field mapping (upload) name"
+
+msgid "结果表字段"
+msgstr "Results Table field"
+
+msgid "结果表字段表"
+msgstr "Results Table Fields Table"
+
+#, python-format
+msgid "字段[%s]为保留字段，不可创建"
+msgstr "Field [%s] is a reserved field, cannot be created"
+
+#, python-format
+msgid "字段[%s]已在表[%s]中存在，请确认"
+msgstr "Field [%s] already exists in the table [%s]"
+
+msgid "维度字段列表"
+msgstr "Dimensions field list"
+
+msgid "是否生效"
+msgstr "Is in effect"
+
+msgid "部分维度或者指标字段不存在，请确认"
+msgstr "Some dimensions or metric field does not exist, make sure"
+
+msgid "来源结果表"
+msgstr "Sources Results Table"
+
+msgid "落地结果表"
+msgstr "Floor Results Table"
+
+msgid "数据源配置ID"
+msgstr "ID data source configuration"
+
+msgid "拆解CMDB的层级名"
+msgstr "The dismantling of the hierarchy name CMDB"
+
+msgid "记录是否已经废弃"
+msgstr "Whether the record has been abandoned"
+
+msgid "CMDB层级拆分记录"
+msgstr "Split-level CMDB record"
+
+msgid "CMDB层级拆分记录表"
+msgstr "Split-level CMDB record form"
+
+msgid "找不到结果表配置"
+msgstr "No results Table Configuration"
+
+msgid "结果表配置已失效，请确认后重试"
+msgstr "Results Table configuration is invalid. Please confirm retry"
+
+msgid "结果表已存在[{}]选项"
+msgstr "Results Table [{}] option exists"
+
+msgid "结果表字段[{}]已存在[{}]选项"
+msgstr "Results Field [{}] already has option->[{}], maybe something go wrong"
+
+msgid "集群ID"
+msgstr "Cluster ID"
+
+msgid "集群名称"
+msgstr "Cluster Name"
+
+msgid "是否默认集群"
+msgstr "Whether the default cluster"
+
+msgid "存储集群版本"
+msgstr "Storage  version"
+
+msgid "访问协议"
+msgstr "Access Protocol"
+
+msgid "SSL验证是否强验证"
+msgstr "Strong authentication SSL Verify"
+
+msgid "注册来源系统"
+msgstr "Registration Source System"
+
+msgid "集群配置信息"
+msgstr "Cluster configuration information"
+
+msgid "集群名【{}】与已有集群冲突，请确认后重试"
+msgstr "Cluster name [{}] conflict with existing cluster, make sure that after "
+"retries"
+
+msgid "存储集群【{}】暂不支持，请确认后重试"
+msgstr "[{}] Storage cluster does not support, please try again confirm"
+
+msgid "存在同样配置集群，请确认后重试"
+msgstr "Also there is retried after a cluster configuration, make sure"
+
+msgid "kafka topic"
+msgstr "kafka topic"
+
+msgid "分区数量"
+msgstr "The number of partitions"
+
+msgid "Kafka消息队列配置"
+msgstr "Kafka configuration message queue"
+
+msgid "Kafka消息队列配置表"
+msgstr "Kafka message queue configuration table"
+
+msgid "数据源已经配置，请确认"
+msgstr "Data source has been configured, confirm"
+
+msgid "实际存储表名"
+msgstr "The actual storage table name"
+
+msgid "数据库名"
+msgstr "data storage name"
+
+msgid "原始数据保留时间"
+msgstr "Raw data retention time"
+
+msgid "降样结果表名"
+msgstr "Drop-like results table"
+
+msgid "降样聚合区间"
+msgstr "Drop-like polymerisation zones"
+
+msgid "降样数据的保存时间"
+msgstr "Save time drop-like data"
+
+msgid "实际存储集群名字"
+msgstr "The actual storage cluster name"
+
+msgid "是否使用默认RP配置"
+msgstr "RP whether to use the default configuration"
+
+msgid "TSDB物理表配置"
+msgstr "TSDB physical configuration table"
+
+msgid "存储集群配置有误，请确认或联系管理员处理"
+msgstr "Storage cluster configuration error, please contact the administrator to "
+"confirm or processing"
+
+#, python-format
+msgid "请求集群[%s]不存在，请确认后重试"
+msgstr "Requesting cluster [%s] does not exist, please try again confirm"
+
+#, python-format
+msgid "创建数据库[%s]失败，请联系管理员"
+msgstr "Create a database [%s] failed, please contact the administrator"
+
+msgid "创建集群信息非结果表配置，请确认"
+msgstr "Create a non-clustered result information table configuration, make sure"
+
+msgid "写入消息的命令"
+msgstr "Command to write the message"
+
+msgid "存储键值"
+msgstr "Memory key"
+
+msgid "redis DB配置"
+msgstr "redis DB configuration"
+
+msgid "是否哨兵模式"
+msgstr "Whether Sentinel mode"
+
+msgid "哨兵模式master名字"
+msgstr "Sentinel mode master name"
+
+#, python-format
+msgid "结果表[%s]配置已存在，请确认后重试"
+msgstr "Results Table [%s] configuration already exists, please try again confirm"
+
+msgid "topic"
+msgstr "topic"
+
+msgid "topic分区数量"
+msgstr "topic number of partitions"
+
+msgid "保存数据超时时间"
+msgstr "Save data timeout"
+
+msgid "Kafka存储配置"
+msgstr "Kafka storage configuration"
+
+msgid "日期格式化配置"
+msgstr "Date Format Configuration"
+
+msgid "index大小切分阈值"
+msgstr "Segmentation size threshold index"
+
+msgid "index分片时间间隔"
+msgstr "slice interval index"
+
+msgid "index保存时间"
+msgstr "Save time index"
+
+msgid "索引配置信息"
+msgstr "Index configuration information"
+
+msgid "别名配置信息"
+msgstr "Alias ​​configuration information"
+
+msgid "时间格式不允许包含非数字格式"
+msgstr "Time format must not contain non-numeric format"
+
+#, python-format
+msgid "活跃业务激活失败, biz_id:%(biz_id)s, error:%(error)s"
+msgstr "Active business activation failed, biz_id:%(biz_id)s, error:%(error)s"
+
+#, python-format
+msgid "CheckXssMiddleware 转换失败！%s"
+msgstr "CheckXssMiddleware conversion failed!%s"
+
+#, python-format
+msgid "CheckXssMiddleware GET/POST参数 转换失败！%s"
+msgstr "CheckXssMiddleware GET / POST parameter conversion failed!%s"
+
+#, python-format
+msgid "CheckXssMiddleware 特殊path处理失败！%s"
+msgstr "CheckXssMiddleware special path processing failed!%s"
+
+msgid "Gse_data状态"
+msgstr "Gse_data state"
+
+msgid "Pre_kafka状态"
+msgstr "Pre_kafka state"
+
+msgid "Etl状态"
+msgstr "Etl state"
+
+msgid "Tsdb_proxy状态"
+msgstr "Tsdb_proxy state"
+
+msgid "Influxdb状态"
+msgstr "Influxdb state"
+
+msgid "Redis状态"
+msgstr "Redis state"
+
+msgid "Kafkaa状态"
+msgstr "Kafkaa state"
+
+msgid "Mysql状态"
+msgstr "Mysql state"
+
+msgid "Consul状态"
+msgstr "Consul state"
+
+msgid "Server状态"
+msgstr "Server Status"
+
+msgid "Supervisor状态"
+msgstr "Supervisor status"
+
+msgid "RabbitMQ状态"
+msgstr "RabbitMQ state"
+
+msgid "指标获取"
+msgstr "Metric obtaining"
+
+msgid "指标获取状态"
+msgstr "Get Status Metrics"
+
+msgid "无数据检测"
+msgstr "No data detection"
+
+msgid "无数据检测状态"
+msgstr "No data detection state"
+
+msgid "告警检测"
+msgstr "Alarm detection"
+
+msgid "告警检测状态"
+msgstr "Alarm Detection Status"
+
+msgid "告警拉取"
+msgstr "Alarm pull"
+
+msgid "告警拉取状态"
+msgstr "Alarm Status pull"
+
+msgid "告警匹配"
+msgstr "Alarm matching"
+
+msgid "告警匹配状态"
+msgstr "Alarm matching state."
+
+msgid "收敛"
+msgstr "convergence"
+
+msgid "收敛状态"
+msgstr "Convergence state"
+
+msgid "告警处理"
+msgstr "Alarm handling"
+
+msgid "告警处理状态"
+msgstr "Alarm handling state"
+
+msgid "告警恢复状态"
+msgstr "Alarm restore state"
+
+msgid "监控web服务"
+msgstr "Monitoring web service"
+
+msgid "监控web服务状态"
+msgstr "Monitoring web service status"
+
+msgid "清洗前kafka状态"
+msgstr "Before cleaning kafka state"
+
+msgid "清洗前kafka副本配置"
+msgstr "Before cleaning kafka copies of the configuration"
+
+msgid "[{\"reason\": \"清洗前kafka副本配置出错\",\"solution\": \"查看kafka副本配置是否正确\"}]"
+msgstr "[{\" Reason \": \" before cleaning kafka copy of the configuration error \", \" solution \": \" View kafka copy of the configuration is correct \"}]"
+
+msgid "清洗前kafka的topic数据"
+msgstr "The topic of data before cleaning kafka"
+
+msgid ""
+"[{\"reason\": \"清洗前kafka的topic数据出错\",\"solution\": "
+"\"查看kafka的topic数据是否正确\"}]"
+msgstr "[{\" Reason \": \" kafka before cleaning the topic data error \", \" solution \": \" View kafka the topic data is correct \"}]"
+
+msgid "图片导出服务状态"
+msgstr "Picture Export Service Status"
+
+msgid ""
+"[{\"reason\": \"graph_exporter库依赖的phantomjs无法启动\",\"solution\": "
+"\"监控后台执行：yum install libXext libXrender fontconfig libfontconfig.so.1 "
+"-y\"}]"
+msgstr "[{\" Reason \": \" graph_exporter library dependencies of phantomjs not start \", \" solution \": \" monitor the background: yum install libXext libXrender fontconfig libfontconfig.so.1 -y \"}]"
+
+msgid "Redis 状态"
+msgstr "Redis state"
+
+msgid "Redis 可读状态"
+msgstr "The Redis readable state"
+
+msgid "Redis 可写状态"
+msgstr "Redis writable state."
+
+msgid "Redis内存碎片使用率"
+msgstr "Redis memory fragmentation usage"
+
+msgid "transfer状态"
+msgstr "Transfer state."
+
+msgid "goroutine数量"
+msgstr "The number of goroutine"
+
+msgid "系统线程数量"
+msgstr "The number of system threads"
+
+msgid "influxdb_proxy启动状态"
+msgstr "Influxdb_proxy start state"
+
+msgid "Backend连接状态"
+msgstr "Backend connection status"
+
+msgid "Kafka连接状态"
+msgstr "Kafka connection status"
+
+msgid "Consul连接状态"
+msgstr "Consul connection status"
+
+msgid "Kafka状态"
+msgstr "Kafka state"
+
+msgid "Kafka集群数"
+msgstr "Kafka number of clusters"
+
+msgid "数据库状态"
+msgstr "Database state"
+
+msgid "最后告警时间"
+msgstr "The last time the alarm"
+
+msgid "Consul 状态"
+msgstr "Consul state"
+
+msgid "celery beat 状态"
+msgstr "Celery beat status"
+
+msgid "celery worker 任务执行测试"
+msgstr "Celery worker task execution test"
+
+msgid "celery worker 进程状态"
+msgstr "Celery worker process state"
+
+msgid "可用内存"
+msgstr "Available Memory"
+
+msgid "CPU核数"
+msgstr "CPU core number"
+
+msgid "磁盘使用量"
+msgstr "Disk Usage"
+
+msgid "总内存"
+msgstr "Total Memory"
+
+msgid "磁盘空闲量"
+msgstr "The amount of free disk"
+
+msgid "系统状态"
+msgstr "system status"
+
+msgid "空闲内存"
+msgstr "Free memory"
+
+msgid "已用内存"
+msgstr "Used Memory"
+
+msgid "磁盘总量"
+msgstr "Amount of disk"
+
+msgid "磁盘IO使用率"
+msgstr "Disk IO usage."
+
+msgid "内存使用率"
+msgstr "Memory Usage"
+
+msgid "CPU使用率"
+msgstr "CPU usage"
+
+msgid "各核CPU使用率"
+msgstr "Each core CPU usage."
+
+msgid "Supervisor 自身状态"
+msgstr "Supervisor own state."
+
+msgid "Supervisor 进程状态"
+msgstr "Supervisor Process Status"
+
+msgid "Supervisor 逃逸进程"
+msgstr "Supervisor escape process"
+
+msgid "进程状态"
+msgstr "Process Status"
+
+msgid "待检测信号队列长度"
+msgstr "Queue length signal to be detected"
+
+msgid "待处理信号队列长度"
+msgstr "Queue length signals to be processed."
+
+msgid "待处理队列长度"
+msgstr "Pending Queue Length"
+
+msgid "等待处理的事件个数"
+msgstr "The number of events waiting to be processed."
+
+msgid "待通知的事件个数"
+msgstr "The number of events to be notified."
+
+msgid "待推送队列的事件个数"
+msgstr "The number of events to be pushed in the queue."
+
+msgid "待回调队列的事件个数"
+msgstr "The number of pending callback queue event"
+
+#, python-format
+msgid "进程：%s未启动或连接不上"
+msgstr "Process:%s is not started or connected"
+
+#, python-format
+msgid "确保进程：%s状态正常"
+msgstr "Ensure process: %s state is normal"
+
+msgid "最近几小时"
+msgstr "Recently a few hours."
+
+msgid "条件字段"
+msgstr "Field conditions"
+
+msgid "条件字段取值"
+msgstr "Conditions field value"
+
+msgid "额外过滤参数"
+msgstr "Extra filtering parameters"
+
+msgid "日期"
+msgstr "date"
+
+msgid "api名称"
+msgstr "Api name"
+
+msgid "返回状态"
+msgstr "Return Status"
+
+msgid "接口名称"
+msgstr "Interface Name"
+
+msgid "返回信息"
+msgstr "returned messages"
+
+msgid "返回结果"
+msgstr "Returned result"
+
+msgid "所依赖api"
+msgstr "Depends api"
+
+msgid "父接口名称"
+msgstr "Father Interface Name"
+
+msgid "通知设置"
+msgstr "Notification Settings"
+
+#, python-format
+msgid "第三方组件%s异常"
+msgstr "The third party components(%s) exception"
+
+msgid "请检查esb及对应组件服务是否正常"
+msgstr "Check esb and the corresponding component service is normal"
+
+msgid "description"
+msgstr "description"
+
+msgid "cc 不存在对应的测试用例"
+msgstr "cc absence of the corresponding test cases"
+
+msgid "cc中不存在{method_name}"
+msgstr "Does not exist {method_name} in cc"
+
+msgid "接口不具有依赖关系"
+msgstr "Interface does not have a dependency relationship"
+
+msgid "cc中没有此接口"
+msgstr "This interface is not cc"
+
+msgid "job不存在对应的测试用例"
+msgstr "the absence of the corresponding test job"
+
+msgid "job 中不存在接口 fast_execute_script 的相关参数"
+msgstr "job-related parameters of the interface does not exist fast_execute_script"
+
+msgid "job中不存在{method_name}"
+msgstr "job does not exist in {method_name}"
+
+#, python-format
+msgid "查找业务下主机失败,主机查询结果:%s"
+msgstr "Find a Business Host fails, the host query results: %s"
+
+msgid "job中没有此接口"
+msgstr "This interface is not job"
+
+msgid "bk_data中不存在对应的测试用例"
+msgstr "bk_data absence of the corresponding test"
+
+msgid "saas的celery状态阻塞"
+msgstr "saas blocking state of celery"
+
+msgid "重启saas的celery服务"
+msgstr "Saas restart of celery service"
+
+msgid "rabbitmq服务未开启"
+msgstr "rabbitmq service is not open"
+
+#, python-format
+msgid "请检查服务[%s]是否启动"
+msgstr "Check the service [%s] whether to start"
+
+msgid "账户无权限访问rabbitmq"
+msgstr "Account no access rabbitmq"
+
+#, python-format
+msgid "创建账户及v_host: %s"
+msgstr "Create an account and v_host: %s"
+
+msgid "gse上传文件失败"
+msgstr "gse file failed to upload"
+
+msgid "请检查源主机和目标主机上的gse agent是否正常"
+msgstr "Please check whether gse agent on the source and destination hosts normal"
+
+msgid "没有可供测试的节点"
+msgstr "Not available for testing node"
+
+msgid "legacy"
+msgstr "legacy"
+
+msgid "求和"
+msgstr "Sum"
+
+msgid "最大"
+msgstr "maximum"
+
+msgid "最小"
+msgstr "Min"
+
+msgid "平均"
+msgstr "average"
+
+msgid "静态阈值"
+msgstr "Static threshold"
+
+msgid "同比策略（简易）"
+msgstr "Year strategy (Easy)"
+
+msgid "环比策略（简易）"
+msgstr "Sequential strategy (Easy)"
+
+msgid "同比策略（高级）"
+msgstr "Year strategy (Advanced)"
+
+msgid "环比策略（高级）"
+msgstr "Sequential strategy (Advanced)"
+
+msgid "同比振幅"
+msgstr "An amplitude"
+
+msgid "同比区间"
+msgstr "An interval"
+
+msgid "环比振幅"
+msgstr "Ring than the amplitude"
+
+msgid "关键字匹配"
+msgstr "Keyword matching"
+
+msgid "进程端口监控检测策略"
+msgstr "Process monitor port detection strategy"
+
+msgid "系统重新启动监控策略"
+msgstr "System restart monitoring strategy"
+
+msgid ""
+"<i class=\" text-primary data-tip\" "
+"style=\"background:url({STATIC_URL}alert/img/mail.png) no-"
+"repeat;padding:0px 12px;display:inline-block;height:19px; background-"
+"size:22px 20px\" data-html=\"true\" data-trigger=\"hover\" data-"
+"placement=\"top\" data-content=\"邮件\"></i>"
+msgstr "<i class=\" text-primary data-tip\" style=\"background:url({STATIC_URL}alert/img/mail.png) no-repeat;padding:0px 12px;display:inline-block;height:19px; background-size:22px 20px\" data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\" data-content=\"邮件\"></i>"
+
+msgid ""
+"<i class=\"text-success data-tip\" "
+"style=\"background:url({STATIC_URL}alert/img/wechat.png) no-"
+"repeat;padding:0px 12px;display:inline-block;height:19px;background-"
+"size:22px 20px\"data-html=\"true\" data-trigger=\"hover\" data-"
+"placement=\"top\" data-content=微信></i>"
+msgstr "<i class=\"text-success data-tip\" style=\"background:url({STATIC_URL}alert/img/wechat.png) no-repeat;padding:0px 12px;display:inline-block;height:19px;background-size:22px 20px\"data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\" data-content=微信></i>"
+
+msgid ""
+"<i class=\"text-success data-tip\" "
+"style=\"background:url({STATIC_URL}alert/img/message.png) no-"
+"repeat;padding:0px 12px;display:inline-block;height:19px;background-"
+"size:22px 20px\"data-html=\"true\" data-trigger=\"hover\" data-"
+"placement=\"top\" data-content=短信></i>"
+msgstr "<i class=\"text-success data-tip\" style=\"background:url({STATIC_URL}alert/img/message.png) no-repeat;padding:0px 12px;display:inline-block;height:19px;background-size:22px 20px\"data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\" data-content=短信></i>"
+
+msgid ""
+"<i class=\"text-info data-tip\" "
+"style=\"background:url({STATIC_URL}alert/img/rtx.png) no-"
+"repeat;padding:0px 12px;display:inline-block;height:19px;background-"
+"size:22px 20px\"data-html=\"true\" data-trigger=\"hover\" data-"
+"placement=\"top\" data-content=\"RTX\"></i>"
+msgstr "<i class=\"text-info data-tip\" style=\"background:url({STATIC_URL}alert/img/rtx.png) no-repeat;padding:0px 12px;display:inline-block;height:19px;background-size:22px 20px\"data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\" data-content=\"RTX\"></i>"
+
+msgid ""
+"<i class=\"text-info data-tip\" "
+"style=\"background:url({STATIC_URL}alert/img/phone.png) no-"
+"repeat;padding:0px 12px;display:inline-block;height:19px;background-"
+"size:22px 20px\"data-html=\"true\" data-trigger=\"hover\" data-"
+"placement=\"top\" data-content=电话></i>"
+msgstr "<i class=\"text-info data-tip\" style=\"background:url({STATIC_URL}alert/img/phone.png) no-repeat;padding:0px 12px;display:inline-block;height:19px;background-size:22px 20px\"data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\" data-content=电话></i>"
+
+msgid "电话"
+msgstr "phone"
+
+msgid ""
+"\n"
+"    <img class=\"data-tip\" src=\"{STATIC_URL}alert/img/mail.png\"\n"
+"    data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\"\n"
+"    data-content=\"<span class='word-break'>邮件</span>\">\n"
+"    "
+msgstr "\n    <img class=\"data-tip\" src=\"{STATIC_URL}alert/img/mail.png\"\n    data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\"\n    data-content=\"<span class='word-break'>邮件</span>\">\n    "
+
+msgid ""
+"\n"
+"    <img class=\"data-tip\" src=\"{STATIC_URL}alert/img/wechat.png\"\n"
+"    data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\"\n"
+"    data-content=\"<span class='word-break'>微信</span>\">\n"
+"    "
+msgstr "\n    <img class=\"data-tip\" src=\"{STATIC_URL}alert/img/wechat.png\"\n    data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\"\n    data-content=\"<span class='word-break'>微信</span>\">\n    "
+
+msgid ""
+"\n"
+"    <img class=\"data-tip\" src=\"{STATIC_URL}alert/img/message.png\"\n"
+"    data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\"\n"
+"    data-content=\"<span class='word-break'>短信</span>\">\n"
+"    "
+msgstr "\n    <img class=\"data-tip\" src=\"{STATIC_URL}alert/img/message.png\"\n    data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\"\n    data-content=\"<span class='word-break'>短信</span>\">\n    "
+
+msgid ""
+"\n"
+"    <img class=\"data-tip\" src=\"{STATIC_URL}alert/img/phone.png\"\n"
+"    data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\"\n"
+"    data-content=\"<span class='word-break'>电话</span>\">\n"
+"    "
+msgstr "\n    <img class=\"data-tip\" src=\"{STATIC_URL}alert/img/phone.png\"\n    data-html=\"true\" data-trigger=\"hover\" data-placement=\"top\"\n    data-content=\"<span class='word-break'>电话</span>\">\n    "
+
+msgid "大区"
+msgstr "Region"
+
+msgid "平台"
+msgstr "platform"
+
+msgid "路径"
+msgstr "path"
+
+msgid "时间戳"
+msgstr "Timestamp"
+
+msgid "上报IP"
+msgstr "Reported IP"
+
+msgid "总延迟"
+msgstr "Total delay"
+
+msgid "净延迟"
+msgstr "Net Delay"
+
+msgid "|(管道线)"
+msgstr "| (Pipe line)."
+
+msgid ",(逗号)"
+msgstr ",(comma)"
+
+msgid "每小时1个文件"
+msgstr "One file per hour"
+
+msgid "每天1个文件"
+msgstr "Every day a file"
+
+msgid "每月1个文件"
+msgstr "Monthly a file"
+
+msgid "单文件"
+msgstr "Single-file"
+
+msgid "的"
+msgstr " "
+
+#, python-format
+msgid "%(title)s由 [%(ori_val)s] 被修改为 [%(dst_val)s] \t"
+msgstr "%(title)s is changed from [%(ori_val)s] to [%(dst_val)s] \t"
+
+msgid "业务cc_id"
+msgstr "Business cc_id"
+
+msgid "配置类型"
+msgstr "Config type"
+
+msgid "操作config_id"
+msgstr "Operation config_id"
+
+msgid "配置标题"
+msgstr "Configure the title"
+
+msgid "操作人昵称"
+msgstr "Operator's nickname"
+
+msgid "具体操作"
+msgstr "Specific procedure"
+
+msgid "数据(JSON)"
+msgstr "Data (JSON)"
+
+msgid "修改前数据(JSON)"
+msgstr "Data before modification (JSON)"
+
+msgid "操作说明"
+msgstr "Operation instruction"
+
+msgid "操作记录"
+msgstr "Operation record"
+
+msgid "实例IP"
+msgstr "Examples of IP"
+
+msgid "组件名称"
+msgstr "Component name"
+
+msgid "组件配置"
+msgstr "Component config"
+
+msgid "实例名称"
+msgstr "Instance name"
+
+msgid "标签"
+msgstr "label"
+
+msgid "组件实例关系"
+msgstr "Component Instance relationship"
+
+msgid "组件（{}），IP（{}）"
+msgstr "Component ({}), IP ({})"
+
+msgid "启动中"
+msgstr "Starting up"
+
+msgid "正在运行"
+msgstr "Running"
+
+msgid "停止中"
+msgstr "Stoping"
+
+msgid "未启动"
+msgstr "Not started"
+
+msgid "关联数据接入配置"
+msgstr "Associated data access Config"
+
+msgid "模版ID"
+msgstr "Template ID"
+
+msgid "模版参数"
+msgstr "Template parameter"
+
+msgid "子项目ID"
+msgstr "Subproject ID"
+
+msgid "对应的作业ID"
+msgstr "Corresponding job ID"
+
+msgid "bksql描述"
+msgstr "bksql Description"
+
+msgid "作业状态"
+msgstr "Job status"
+
+msgid "数据源类型"
+msgstr "Data source type"
+
+msgid "数据接入配置信息"
+msgstr "Data access Config information"
+
+msgid "下发data id"
+msgstr "Issue data ID"
+
+msgid "数据描述"
+msgstr "Data Description"
+
+msgid "平台ID"
+msgstr "Platform ID"
+
+msgid "主机IP"
+msgstr "Host IP"
+
+msgid "cc业务id"
+msgstr "cc business id"
+
+msgid "组名不能为空"
+msgstr "Group name cannot be empty"
+
+msgid "组名已存在，无法新增相同分组"
+msgstr "Group name already exists, and the same group can not be added"
+
+msgid "组名长度不能超过20个字符，一个中文算2个字符。"
+msgstr "The length of group name can not exceed 20 characters, and one Chinese "
+"count 2 characters."
+
+msgid "无效的请求"
+msgstr "Invalid request"
+
+msgid "同名分组已存在"
+msgstr "Group of the same name already exists"
+
+msgid "关注"
+msgstr "Attention"
+
+msgid "默认分组"
+msgstr "Default group"
+
+msgid "系统菜单栏"
+msgstr "System menu bar"
+
+msgid "菜单名"
+msgstr "Menu name"
+
+msgid "菜单顺序"
+msgstr "Menu order"
+
+msgid "左侧菜单"
+msgstr "Left menu"
+
+#, python-format
+msgid "自定义监控分组(%s)"
+msgstr "Customize monitor group (%s)"
+
+msgid "菜单id"
+msgstr "Menu ID"
+
+msgid "监控id"
+msgstr "Monitoring ID"
+
+msgid "图表所在栏目位置"
+msgstr "Location of column where the chart is in"
+
+msgid "宽度"
+msgstr "Width"
+
+msgid "监控映射"
+msgstr "Monitor the mapping"
+
+msgid "默认仪表盘"
+msgstr "Default dashboard"
+
+msgid "CPU使用率 均值"
+msgstr "CPU utilization (AVG)"
+
+msgid "CPU使用率 TOP5"
+msgstr "TOP 5 of CPU utilization"
+
+msgid "应用内存使用率 均值"
+msgstr "Application memory utilization (AVG)"
+
+msgid "应用内存使用率 TOP5"
+msgstr "TOP 5 of Application memory utilization"
+
+msgid "磁盘IO使用率 均值"
+msgstr "Disk IO utilization (AVG)"
+
+msgid "磁盘使用率 TOP5"
+msgstr "TOP 5 of Disk utilization"
+
+msgid "磁盘IO使用率 TOP5"
+msgstr "TOP 5 of Disk IO utilization"
+
+msgid "磁盘使用率 均值"
+msgstr "Disk utilization (AVG)"
+
+msgid "全服磁盘大小 均值"
+msgstr "Disk size (AVG)"
+
+msgid "全服物理内存 均值"
+msgstr "Physical memory (AVG)"
+
+msgid "仪表盘名称"
+msgstr "Dashboard name"
+
+#, python-format
+msgid "仪表盘菜单（%s）"
+msgstr "Dashboard menu (%s)"
+
+msgid "时间序列"
+msgstr "Time sequence"
+
+msgid "TOP排行"
+msgstr "Top ranking"
+
+msgid "状态值"
+msgstr "Status value"
+
+msgid "别名"
+msgstr "alias"
+
+msgid "group by 字段列表"
+msgstr "group by fields"
+
+msgid "图形类型"
+msgstr "Graphic type"
+
+msgid "索引"
+msgstr "index"
+
+msgid "顺序"
+msgstr "order"
+
+msgid "显示类型"
+msgstr "view type"
+
+msgid "图表类型"
+msgstr "Chart type"
+
+msgid "where字句"
+msgstr "where clause"
+
+msgid "视图名称"
+msgstr "View Name"
+
+msgid "标记"
+msgstr "Mark"
+
+#, python-format
+msgid "仪表盘视图（%s）"
+msgstr "Dashboard view (%s)"
+
+#, python-format
+msgid " 指标%s被创建"
+msgstr "%s metric is created."
+
+#, python-format
+msgid " 指标%s被删除"
+msgstr "%s metric is deleted."
+
+#, python-format
+msgid "%(title)s由 [%(ori_val)s] 被修改为 [%(dst_val)s]"
+msgstr "%(title)s was changed from [%(ori_val)s] to [%(dst_val)s]"
+
+#, python-format
+msgid " 指标%s的"
+msgstr "Metric of %s"
+
+msgid "视图展示顺序"
+msgstr "Order"
+
+msgid "视图大小"
+msgstr "Size"
+
+msgid "仪表盘视图"
+msgstr "Dashboard"
+
+msgid "仪表盘菜单"
+msgstr " menu"
+
+msgid "属性"
+msgstr "Attribute"
+
+msgid "属性展示名称"
+msgstr "Display name"
+
+msgid "必选"
+msgstr "Required"
+
+msgid "勾选"
+msgstr "Check"
+
+msgid "已删除"
+msgstr "Deleted"
+
+msgid "排列顺序"
+msgstr "Sort"
+
+msgid "属性列表"
+msgstr "Attribute list"
+
+msgid "角色"
+msgstr "Role"
+
+msgid "权限"
+msgstr "Permission"
+
+msgid "角色权限修改"
+msgstr "Role permission change"
+
+msgid "权限类型"
+msgstr "Permission type"
+
+msgid "查询,变更"
+msgstr "Query, Change"
+
+msgid "查询"
+msgstr "Query"
+
+#, python-format
+msgid "%(who)s的%(title)s由 [%(ori_val)s] 修改为 [%(dst_val)s]\n"
+msgstr "%(who)s's %(title)s changes from  [%(ori_val)s] to [%(dst_val)s]\n"
+
+msgid "指标大类"
+msgstr "Metric category"
+
+msgid "指标id"
+msgstr "Metric ID"
+
+msgid "指标分类"
+msgstr "Metric category"
+
+msgid "指标说明"
+msgstr "Description"
+
+msgid "指标详细展示"
+msgstr "Metric details"
+
+msgid "指标顺序index"
+msgstr "Metric order"
+
+msgid "换算除数"
+msgstr "Conversion divisor"
+
+msgid "转换单位"
+msgstr "Conversion unit"
+
+msgid "仪表盘视图id"
+msgstr "Dashboard view ID"
+
+msgid "监控项id"
+msgstr "Monitoring item ID"
+
+msgid "取值区间"
+msgstr "Value range"
+
+msgid "颜色"
+msgstr "Color"
+
+msgid "方案标签"
+msgstr "Scheme label"
+
+msgid "用户配置信息"
+msgstr "User Config information"
+
+msgid "业务配置信息"
+msgstr "Business Config information"
+
+msgid "全局配置信息"
+msgstr "Global Config information"
+
+msgid "配置 [{}] 停用执行结果：{}"
+msgstr "Configuration [{}] Disable execution result: {}"
+
+msgid "配置 [{}] 停用失败，原因：{}"
+msgstr "Configuration [{}] Disable failed because: {}"
+
+msgid "脚本"
+msgstr "Script"
+
+msgid "命令行"
+msgstr "Command Line"
+
+msgid "新建未保存"
+msgstr "New not saved"
+
+msgid "已保存"
+msgstr "Saved"
+
+msgid "创建的data id"
+msgstr "created data id"
+
+msgid "数据表名"
+msgstr "Datasheet name"
+
+msgid "数据表中文含义"
+msgstr "Datasheet Chinese meaning"
+
+msgid "字符集"
+msgstr "Charset"
+
+msgid "字段信息(json)"
+msgstr "FieldInfo(json)"
+
+msgid "脚本格式"
+msgstr "Script format"
+
+msgid "脚本参数模型"
+msgstr "Script parameter model"
+
+msgid "启动命令（脚本模式）"
+msgstr "Start a command (script mode)"
+
+msgid "启动命令（命令行模式）"
+msgstr "Start a command (Command Line Mode)"
+
+msgid "采集周期(分钟)"
+msgstr "Collection cycle(min)"
+
+msgid "原始数据保存周期(天)"
+msgstr "Raw data storage cycle(day)"
+
+msgid "当前状态"
+msgstr "Current status"
+
+msgid "脚本采集配置"
+msgstr "Shell Collector config"
+
+#, python-format
+msgid "脚本内容解析失败：%s"
+msgstr "Failed to parse the contents of the script:%s"
+
+msgid "拓扑"
+msgstr "Topology"
+
+msgid "实例类型"
+msgstr "Examples of the type of"
+
+msgid "拓扑对象ID"
+msgstr "Topology ID"
+
+msgid "拓扑对象实例ID"
+msgstr "instance ID"
+
+msgid "配置 [{}] 停用失败：{}"
+msgstr "Configuration [{}] Disable failed: {}"
+
+msgid "配置"
+msgstr "Config"
+
+msgid "脚本执行参数"
+msgstr "Script execution parameters"
+
+msgid "脚本采集实例"
+msgstr "Examples of script collection"
+
+msgid "IP列表(json)"
+msgstr "IP list(json)"
+
+msgid "大区信息(json)"
+msgstr "Regional information(json)"
+
+msgid "趋势数据保存周期(天)"
+msgstr "Trend data storage cycle(day)"
+
+msgid "编辑未保存"
+msgstr "Edit not saved"
+
+msgid "删除失败"
+msgstr "Delete failed"
+
+msgid "定义表结构"
+msgstr "Define table structure"
+
+msgid "编写采集脚本"
+msgstr "Write collection script"
+
+msgid "选择服务器"
+msgstr "Select server"
+
+msgid "下发采集测试"
+msgstr "collection test"
+
+msgid "设置采集周期"
+msgstr "Set collection cycle"
+
+msgid "完成"
+msgstr "Completed"
+
+msgid "当前步骤(1-6)"
+msgstr "Current step (1-6)"
+
+msgid "任务创建成功"
+msgstr "Task created successful"
+
+msgid "任务正在执行"
+msgstr "Task in progress"
+
+msgid "任务执行成功"
+msgstr "Task success"
+
+msgid "任务执行失败"
+msgstr "Task failed"
+
+msgid "任务执行过程异常"
+msgstr "Task encountered exception"
+
+msgid "任务就绪"
+msgstr "Task ready"
+
+msgid "检查并创建结果表"
+msgstr "Check and create result table"
+
+msgid "检查并创建DataSet"
+msgstr "Check and create DataSet"
+
+msgid "检查并生成清洗配置"
+msgstr "Check and generate cleaning config"
+
+msgid "检查并创建TSDB"
+msgstr "Check and create TSDB"
+
+msgid "启动入库程序"
+msgstr "Start storaging"
+
+msgid "创建脚本托管任务"
+msgstr "Create script hosting task"
+
+msgid "取消老版本配置的IP托管"
+msgstr "Cancel IP hosting of old version"
+
+msgid "任务流程完成"
+msgstr "Task flow completed"
+
+msgid "所属配置"
+msgstr "Config belonging"
+
+msgid "任务当前流程"
+msgstr "Task current process"
+
+msgid "任务执行结果(JSON)"
+msgstr "Task result (JSON)"
+
+msgid "任务异常信息"
+msgstr "Task exception info"
+
+msgid "脚本采集托管任务"
+msgstr "Shell Collector Tasks"
+
+msgid "虚拟结果表名(列表)"
+msgstr "Virtual result table (list)"
+
+msgid "实体结果表名"
+msgstr "Entity result table"
+
+msgid "组件中文含义"
+msgstr "Component Chinese meaning"
+
+msgid "组件详细描述(md)"
+msgstr "Component Description (md)"
+
+msgid "指标项(json)"
+msgstr "Metrics (json)"
+
+msgid "上传的Exporter文件信息(Linux)"
+msgstr "Exporter uploaded file information (Linux)"
+
+msgid "上传的Exporter文件信息(Windows)"
+msgstr "Uploaded Exporter file information (Windows)"
+
+msgid "上传的Exporter文件信息(AIX)"
+msgstr "Exporter uploaded file information (AIX)"
+
+msgid "logo的base64编码"
+msgstr "logo base64 encoding"
+
+msgid "小logo的base64编码"
+msgstr "mini logo base64 encoding"
+
+msgid "配置模型(json)"
+msgstr "Config model (json)"
+
+msgid "参数填写配置"
+msgstr "Param fill-out config"
+
+msgid "参数配置"
+msgstr "Param config"
+
+msgid "上传的配置文件详情列表"
+msgstr "Uploaded config file detail"
+
+msgid "指标值"
+msgstr "Value"
+
+msgid "未保存"
+msgstr "Unsaved"
+
+msgid "是否为内置组件"
+msgstr "If built-in component"
+
+msgid "组件版本号（仅限内置组件）"
+msgstr "Component version(built-in components only)"
+
+msgid "自定义组件"
+msgstr "Custom Components"
+
+#, python-format
+msgid ""
+"%(name)s\n"
+"\n"
+"单位：%(unit)s\n"
+"\n"
+"含义：%(desc)s"
+msgstr "%(name)s\n"
+"\n"
+"unit：%(unit)s\n"
+"\n"
+"meaning：%(desc)s"
+
+#, python-format
+msgid "%s 参数不能为空"
+msgstr "%s Parameters cannot be empty"
+
+#, python-format
+msgid "该组件暂不支持 %s 系统"
+msgstr "The component does not support the %s system"
+
+#, python-format
+msgid "自定义组件配置（%s）"
+msgstr "Customize component config (%s)"
+
+msgid "Logo做了修改 \t"
+msgstr "Logo was changed \t"
+
+msgid "正在托管exporter"
+msgstr "Hosting exporter"
+
+msgid "所属组件"
+msgstr "Owning components"
+
+msgid "Exporter托管任务"
+msgstr "Exporter managed task"
+
+#, python-format
+msgid "自定义组件Export采集托管任务（%s）"
+msgstr "Customize component Export collector task (%s)"
+
+msgid "分类显示名称"
+msgstr "Category display name"
+
+msgid "组件分类"
+msgstr "Components Category"
+
+msgid "所属分类"
+msgstr "category"
+
+msgid "组件名称（内置组件专用）"
+msgstr "Component Name (built-in components only)"
+
+msgid "自定义组件（非内置组件专用）"
+msgstr "Custom components (non-specific built-in components)"
+
+msgid "当前用户无操作权限"
+msgstr "The current user does not have permission to operate"
+
+msgid "组件分类关系"
+msgstr "Component classification relationships"
+
+msgid "图表"
+msgstr "Chart"
+
+msgid "过期时间"
+msgstr "Expiration time"
+
+msgid "启用"
+msgstr "Enable"
+
+msgid "服务类型"
+msgstr "Service type"
+
+msgid "服务id"
+msgstr "Service id"
+
+msgid "命名空间"
+msgstr "Namespace"
+
+msgid "授权码"
+msgstr "Authorization Code"
+
+msgid "扩展选项"
+msgstr "Extra option"
+
+msgid "解压文件"
+msgstr "UnZip File"
+
+msgid "校验组件名称"
+msgstr "Verify component name"
+
+msgid "校验组件描述"
+msgstr "Verify component Description"
+
+msgid "校验指标项文件"
+msgstr "Check index item file"
+
+msgid "校验配置项文件"
+msgstr "Verify config item file"
+
+msgid "读取并压缩LOGO"
+msgstr "Read and UnZip LOGO"
+
+msgid "校验二进制exporter"
+msgstr "Check binary exporter"
+
+msgid "保存组件配置"
+msgstr "Save component config"
+
+msgid "任务流程中间数据(json)"
+msgstr "Task intermediate data (json)"
+
+msgid "组件导入任务"
+msgstr "Component imported task"
+
+msgid "启用中"
+msgstr "Enabling"
+
+msgid "停用中"
+msgstr "Disabling"
+
+msgid "正常"
+msgstr "Normal"
+
+msgid "停用"
+msgstr "Disable"
+
+msgid "数据源表名"
+msgstr "Data source table name"
+
+msgid "数据源中文名"
+msgstr "Data source Chinese name"
+
+msgid "字符编码"
+msgstr "Character encoding"
+
+msgid "数据分隔符"
+msgstr "Data delimiter"
+
+msgid "日志路径"
+msgstr "Log path"
+
+msgid "字段配置"
+msgstr "Field config"
+
+msgid "采集对象ip列表"
+msgstr "Collect object IP list"
+
+msgid "采集条件"
+msgstr "Collection conditions"
+
+msgid "日志生成频率"
+msgstr "Log generation frequency"
+
+msgid "日志采集配置不合法：缺少时间字段"
+msgstr "Log collection configuration is not legitimate: the lack of time field"
+
+msgid "日志接入配置"
+msgstr "Log access config"
+
+#, python-format
+msgid "日志采集（%s）"
+msgstr "Log collector (%s)"
+
+msgid "当第{}列的值等于{}"
+msgstr "When the value of column {} equal to {}"
+
+msgid "所属采集器"
+msgstr "Attached collector"
+
+msgid "采集对象IP"
+msgstr "Config object IP"
+
+msgid "数据上报状态"
+msgstr "Data reporting status"
+
+msgid "日志接入主机状态"
+msgstr "Log access host status"
+
+msgid "是否为通用节点"
+msgstr "Is it a universal node"
+
+msgid "地区"
+msgstr "Region"
+
+msgid "外网运营商"
+msgstr "External network operator"
+
+#, python-format
+msgid "安装采集器时部分IP失败: %s"
+msgstr "Partial IP failure when installing collector: %s"
+
+#, python-format
+msgid "下发配置文件时部分IP失败:%s"
+msgstr "Part of the IP failed when issuing the Config file :%s"
+
+#, python-format
+msgid "安装采集器时部分IP失败：%s"
+msgstr "Partial IP failure when installing collector: %s"
+
+#, python-format
+msgid "删除拨测节点时部分IP失败: %s"
+msgstr "Partial IP failure when deleting the node: %s"
+
+#, python-format
+msgid "该节点存在以下运行中的拨测任务：%s，"
+msgstr "The following uptimecheck task has running at this module:%s,"
+
+msgid "请先暂停或删除相关联的任务"
+msgstr "Please pause or delete the associated tasks"
+
+#, python-format
+msgid "保存拨测节点失败，主机%(ip)s已存在：name=%(name)s"
+msgstr "Failed to save the uptimecheck node, the host %(ip)s already exists: "
+"name=%(name)s"
+
+#, python-format
+msgid "保存拨测节点失败，节点名称%(name)s已存在"
+msgstr "Save the uptimecheck node fails, the node name %(name)s already exists"
+
+#, python-format
+msgid "保存拨测节点失败，不存在id为%(id)s的节点"
+msgstr "Failed to save the uptimecheck node, no node with id %(id)s exists"
+
+#, python-format
+msgid "保存拨测节点失败，节点名称'%(name)s'已存在"
+msgstr "Save Failed, node name '%(name)s' already exists"
+
+msgid "拨测节点"
+msgstr "Uptimecheck nodes"
+
+#, python-format
+msgid "拨测节点（%s）"
+msgstr "Uptimecheck node (%s)"
+
+msgid "未启用"
+msgstr "Disabled"
+
+msgid "启动失败"
+msgstr "Boot failure"
+
+msgid "停止失败"
+msgstr "Failure to stop"
+
+msgid "协议"
+msgstr "Protocol"
+
+msgid "拨测周期(分钟)"
+msgstr "Uptimecheck cycle (min)"
+
+msgid "拨测配置"
+msgstr "Uptimecheck config"
+
+#, python-format
+msgid "拨测任务已删除,ID:%d"
+msgstr "Uptimecheck task has been deleted, ID:%d"
+
+#, python-format
+msgid "订阅任务已更新，订阅ID:%d,任务ID:%d"
+msgstr "Subscription task has been updated, subscribe ID:%d, task ID:%d"
+
+#, python-format
+msgid "订阅任务已删除，ID:%d"
+msgstr "Subscription task has been deleted, ID:%d"
+
+#, python-format
+msgid "订阅任务已关闭，ID:%d"
+msgstr "Subscribe mission has been closed, ID:%d"
+
+#, python-format
+msgid "订阅任务已启动，ID:%d"
+msgstr "Subscription task has started, ID:%d"
+
+#, python-format
+msgid "订阅任务执行STOP，ID:%d"
+msgstr "Subscribe to task execution STOP, ID:%d"
+
+#, python-format
+msgid "订阅任务执行START，ID:%d"
+msgstr "Subscribe to task execution START, ID:%d"
+
+#, python-format
+msgid "订阅任务已创建，ID:%d"
+msgstr "Subscription task has been created, ID:%d"
+
+#, python-format
+msgid "重启采集器时部分IP失败: %s"
+msgstr "Partial IP failed when restarting the collector: %s"
+
+#, python-format
+msgid "拨测任务启用失败：%s"
+msgstr "Uptimecheck task enable failed:%s"
+
+#, python-format
+msgid "拨测任务停用失败：%s"
+msgstr "Uptimecheck task deactivation failed: %s"
+
+msgid "更改拨测任务状态：目标状态为空"
+msgstr "Change the state of the uptime check task: the target state is empty"
+
+#, python-format
+msgid "更改拨测任务状态：无效的目标状态：%s"
+msgstr "Change the state of the uptime check task: invalid target state: %s"
+
+msgid "拨测任务"
+msgstr "Uptimecheck task"
+
+#, python-format
+msgid "拨测任务（%s）"
+msgstr "Uptimecheck task (%s)"
+
+msgid "拨测任务ID"
+msgstr "Uptimecheck task ID"
+
+msgid "错误日志"
+msgstr "Error Log"
+
+msgid "节点管理任务ID"
+msgstr "Node Management Task ID"
+
+msgid "图片base64形式"
+msgstr "Pictures base64 form"
+
+msgid "拨测分组"
+msgstr "Uptimecheck packet"
+
+msgid "原始文件名"
+msgstr "The original file name"
+
+msgid "文件名"
+msgstr "file name"
+
+msgid "文件相对路径"
+msgstr "File relative path"
+
+#, python-format
+msgid "不存在的文件，获取文件类型失败：%s"
+msgstr "The file does not exist, failed to obtain the file type:%s"
+
+msgid "该仪表盘已存在，请重新命名"
+msgstr "dashboard already exists. Please rename"
+
+#, python-format
+msgid "已存在名称为%s的仪表盘，请重新命名"
+msgstr "Dashboard named %s already exists, please rename it"
+
+#, python-format
+msgid "不存在的仪表盘 ID=%s"
+msgstr "Dashboard not exist ID=%s"
+
+msgid "仪表盘不存在！"
+msgstr "Dashboard doesn't exist!"
+
+msgid "系统模板不能被删除"
+msgstr "System templates cannot be deleted"
+
+#, python-format
+msgid "无效的指标项，指标项[%s]不存在"
+msgstr "Invalid metric, item [%s] does not exist"
+
+msgid "已存在同名的视图，请重命名"
+msgstr "view with the same name already exists, please rename"
+
+msgid "请至少配置一个指标"
+msgstr "Configure at least one metric"
+
+msgid "删除失败，仪表盘视图不存在"
+msgstr "Deletion failed and the dashboard view did not exist"
+
+msgid "无效的location_id"
+msgstr "invalid location_id"
+
+msgid "无效的视图id"
+msgstr "Invalid view id"
+
+msgid "权限不通过！ 请求项不属于当前业务"
+msgstr "Permission not passed!request item does not belong to the current business"
+
+#, python-format
+msgid "用户:%s 没有任何业务权限."
+msgstr "User:%s without any business authority."
+
+msgid "CPU"
+msgstr "CPU"
+
+msgid "网卡"
+msgstr "Network card"
+
+msgid "系统环境"
+msgstr "System Environment)"
+
+msgid "主机监控"
+msgstr "Host Monitor"
+
+msgid "组件"
+msgstr "Component"
+
+msgid "物理机"
+msgstr "Physics machine"
+
+msgid "脚本采集"
+msgstr "Shell Collector"
+
+msgid "自定义监控"
+msgstr "Custom Monitor"
+
+msgid "服务拨测"
+msgstr "Synthetics"
+
+msgid "系统重新启动"
+msgstr "System Restart"
+
+msgid "监控源名称"
+msgstr "Monitor source name"
+
+msgid "备注"
+msgstr "Notes"
+
+msgid "监控源分类"
+msgstr "Monitor source type"
+
+msgid "监控场景"
+msgstr "Monitoring scene"
+
+msgid "监控分类"
+msgstr "Tag"
+
+msgid "监控指标"
+msgstr "Metric"
+
+msgid "统计源分类"
+msgstr "Source type"
+
+msgid "统计源信息（JSON）"
+msgstr "Source info(JSON)"
+
+msgid "监控源ID"
+msgstr "Source ID"
+
+msgid "监控等级"
+msgstr "Severity"
+
+msgid "告警策略ID"
+msgstr "Rule ID"
+
+msgid "告警策略组ID"
+msgstr "Rule group ID"
+
+msgid "不处理，仅通知"
+msgstr "No processing, notification only"
+
+msgid "作业平台"
+msgstr "Job System"
+
+msgid "等于"
+msgstr "="
+
+msgid "大于等于"
+msgstr ">="
+
+msgid "小于等于"
+msgstr "<="
+
+msgid "大于"
+msgstr ">"
+
+msgid "小于"
+msgstr "<"
+
+msgid "正则"
+msgstr "Regular"
+
+msgid "不等于"
+msgstr "not equal to"
+
+msgid "当前所有维度"
+msgstr "current dimensions"
+
+msgid "筛选条件异常"
+msgstr "Filtering criteria exception"
+
+msgid "{check_window}个周期内，满足{count}次检测算法, 且告警产生后未恢复，{alarm_window}小时内不再告警"
+msgstr "within {check_window} cycles to meet {count} times after detection "
+"algorithm, and the alarm generation is not recovered, the alarm is no "
+"longer {alarm_window}h"
+
+msgid "监控范围"
+msgstr "Monitoring scope"
+
+msgid "无数据告警开关"
+msgstr "Numerous alarm switches"
+
+msgid "恢复告警开关"
+msgstr "Restore alarm switch"
+
+msgid "分级告警开关"
+msgstr "Level alarms switch"
+
+msgid "告警源ID"
+msgstr "Alarm source ID"
+
+msgid "告警名称"
+msgstr "Alarm name"
+
+msgid "告警源分类"
+msgstr "Alarm source classification"
+
+msgid "告警分类"
+msgstr "alert classification"
+
+msgid "监控对象"
+msgstr "Monitoring object"
+
+msgid "告警来源信息"
+msgstr "Alarm source info"
+
+msgid "告警范围"
+msgstr "Alarm scope"
+
+msgid "超时时间"
+msgstr "timeout period"
+
+msgid "监控系统内的监控ID"
+msgstr "Monitor ID"
+
+msgid "清洗策略ID"
+msgstr "Cleaning rule ID"
+
+msgid "汇总策略ID"
+msgstr "Summary rule ID"
+
+msgid "处理策略ID"
+msgstr "Processing rule ID"
+
+msgid "通知策略ID"
+msgstr "Notice strategy ID"
+
+msgid "算法ID"
+msgstr "Algorithm ID"
+
+msgid "监控项ID"
+msgstr "Monitoring items ID"
+
+msgid "检测算法"
+msgstr "Detection algorithm"
+
+#, python-format
+msgid "告警策略(%s)的检测算法"
+msgstr "Alarm policy (%s)'s detection algorithm"
+
+#, python-format
+msgid "当前值%(cur_val)s阈值:%(threshold)s%(unit)s"
+msgstr "Current value %(cur_val)s threshold:%(threshold)s%(unit)s"
+
+msgid " 或 "
+msgstr "Or"
+
+msgid "指标当前值"
+msgstr "current "
+
+msgid "较上周同一时刻值"
+msgstr "Value compared to the value at the same time of last week"
+
+msgid "较前一时刻值"
+msgstr "Compared to the value of previous time"
+
+#, python-format
+msgid "较%s天内同一时刻绝对值的均值"
+msgstr "The average value of absolute values at the same time compared to %s days"
+
+#, python-format
+msgid "较%s个时间点的均值"
+msgstr "The average value of %s time points"
+
+#, python-format
+msgid "上升%s%%"
+msgstr "Increased by %s%%"
+
+#, python-format
+msgid "下降%s%%"
+msgstr "decreased by %s%%"
+
+#, python-format
+msgid "-前一时刻值%(method)s过去%(num_of_day)s天内任一天同时刻差值* %(times)s + (%(shock)s)"
+msgstr "-Previous moment value %(method)s difference at the same time of anyday "
+"in the past %(num_of_day)s days * %(times)s + (%(shock)s)"
+
+#, python-format
+msgid "%(method)s过去%(num_of_day)s天内同一时刻绝对值* %(ratio)s%% + (%(shock)s)"
+msgstr "%(method)s absolute value at the same moment in the past %(num_of_day)s "
+"days * %(ratio)s%% + (%(shock)s)"
+
+#, python-format
+msgid "和前一时刻均>=%(threshold)s,且之间差值>=前一时刻值 *%(ratio)s%% + (%(shock)s)"
+msgstr ">=%(threshold)s compared to previous time,and difference >= Previous "
+"moment value *%(ratio)s%% + (%(shock)s)"
+
+#, python-format
+msgid "%(num)s分钟内%(method)s%(threshold)s次"
+msgstr "in %(num)s minutes %(method)s%(threshold)s times"
+
+msgid "默认参数"
+msgstr "Default parameters"
+
+msgid "告警源id"
+msgstr "Alarm source ID"
+
+msgid "处理id"
+msgstr "Process id"
+
+msgid "处理类型"
+msgstr "Process type"
+
+msgid "作业创建者"
+msgstr "Job creator"
+
+msgid "收敛id"
+msgstr "Convergence id"
+
+msgid "通知组类型"
+msgstr "notice group type"
+
+msgid "通知组收件人"
+msgstr "notice group recipients"
+
+msgid "当前用户无查询权限"
+msgstr "The current user does not have authority to query"
+
+msgid "操作失败：用户对当前业务无变更权限"
+msgstr "The operation failed: the user does not have permission to change the "
+"current business"
+
+msgid "操作失败：用户无全局配置变更权限"
+msgstr "The operation failed: no global user permissions configuration changes"
+
+msgid "当前用户无变更权限"
+msgstr "The current user does not have permission to change."
+
+msgid "业务id列表"
+msgstr "Business id list"
+
+msgid "通知接受人"
+msgstr "Notification recipients"
+
+msgid "搜索条件"
+msgstr "search condition"
+
+msgid "天数时间范围"
+msgstr "A few days time"
+
+msgid "事件状态"
+msgstr "Event Status"
+
+msgid "获取的条数"
+msgstr "Gets the number of"
+
+msgid "页数"
+msgstr "Pages"
+
+msgid "排序"
+msgstr "Sequence"
+
+msgid "维度信息：{}"
+msgstr "Dimension: {}"
+
+msgid "告警内容：{}"
+msgstr "Content: {}"
+
+msgid "{}前"
+msgstr "{} ago"
+
+msgid "小时"
+msgstr "hour"
+
+msgid "分钟"
+msgstr "minute"
+
+msgid "秒"
+msgstr "seconds"
+
+msgid "未恢复"
+msgstr "Alert"
+
+msgid "已恢复"
+msgstr "Restore"
+
+msgid "集群({}) "
+msgstr "Cluster ({})."
+
+msgid "模块({}) "
+msgstr "Module ({})."
+
+msgid "回调"
+msgstr "Callback"
+
+msgid "确认信息"
+msgstr "Confirmation"
+
+msgid "主机【{}】"
+msgstr "Host[{}]"
+
+msgid "服务【{}】"
+msgstr "service【{}】"
+
+msgid "解决方法"
+msgstr "Solution"
+
+msgid "上一页最后一条日志ID"
+msgstr "Previous last log ID"
+
+msgid "流转状态"
+msgstr "Circulation state"
+
+msgid "{}确认了该告警事件并备注："
+msgstr "{} Confirmed the event and alarm NOTE:"
+
+msgid "受到相关屏蔽规则影响"
+msgstr "muted by the relevant rules affect"
+
+msgid "主机的运营状态为不告警状态"
+msgstr "Operational status of the host is not alert state"
+
+msgid "存在相同配置的基于静态IP配置的监控策略"
+msgstr "Being the same configuration monitoring strategy based on static IP "
+"configuration"
+
+msgid "受到相关屏蔽策略影响"
+msgstr "muted by rules affect related"
+
+msgid "不在告警时间段内"
+msgstr "Not warning period of time"
+
+msgid "已达到发起告警通知条件（告警未恢复及未关闭，每隔{}分钟发送一次通知），但由于{}，系统已将通知屏蔽"
+msgstr "Condition has been reached to initiate an alarm notification (alarm is "
+"not closed and not restored, sending notification every {} minutes), but "
+"the {}, sent a notification screen"
+
+msgid "已达到发起告警通知的条件（告警未恢复及未关闭，每隔{}分钟发送一次通知），接收通知的告警组"
+msgstr "It has reached the initiated alarm notification condition (alarm is not "
+"closed and not recovered, sending a notification every {} min), receive "
+"the notification alert group"
+
+msgid ", 通知状态"
+msgstr ", notify state"
+
+msgid "达到了触发告警条件（数据连续丢失{}个周期）"
+msgstr "Reached trigger an alarm condition (loss of continuous data cycles {})."
+
+msgid "达到了触发告警条件（{}分钟内满足{}次检测算法）"
+msgstr "Triggering an alarm condition reached (within {} minutes satisfies {} "
+"times)"
+
+msgid "部分失败"
+msgstr "Partial failure"
+
+msgid "已屏蔽"
+msgstr "Muted"
+
+msgid "告警状态"
+msgstr "Notify state"
+
+msgid "未恢复(已确认)"
+msgstr "Alert(confirmed)"
+
+msgid "已关闭"
+msgstr "Closed"
+
+msgid "告警内容"
+msgstr "Alarm Content"
+
+msgid "告警汇总ID"
+msgstr "Alarm ID"
+
+msgid "告警级别"
+msgstr "Severity"
+
+#, python-format
+msgid "业务信息获取失败: %s"
+msgstr "Business information retrieval failed: %s"
+
+#, python-format
+msgid "查询实例信息失败: %s"
+msgstr "Instance's information query failed:%s"
+
+msgid "当前有其他用户正在编辑该采集配置，请稍后重试"
+msgstr "Other users are currently editing the configuration collection, please "
+"try again later"
+
+msgid "是否刷新状态"
+msgstr "Whether refresh state"
+
+msgid "搜索字段"
+msgstr "Search field"
+
+msgid "不需要服务分类"
+msgstr "I do not need the service category"
+
+msgid "请求节点管理主机运行状态接口失败: {}"
+msgstr "Requesting node management host operating status of the interface failed:"
+" {}"
+
+msgid "启停配置"
+msgstr "Start-stop configuration"
+
+msgid "采集配置未处于已启用/已停用状态"
+msgstr "Configuration is not in a collection enabled / disabled state"
+
+msgid "采集配置未停用"
+msgstr "Collection configuration is not disabled"
+
+msgid "需要重试的实例"
+msgstr "Examples needs to be retried"
+
+msgid "重试步骤"
+msgstr "Step Retry"
+
+msgid "主机/实例id"
+msgstr "Host / instance id"
+
+msgid "未找到节点管理的日志"
+msgstr "Node Manager log was not found"
+
+msgid "采集方式"
+msgstr "Acquisition mode"
+
+msgid "远程采集配置"
+msgstr "Configuring remote collection"
+
+msgid "采集配置参数"
+msgstr "Acquisition configuration parameters"
+
+msgid "采集配置id"
+msgstr "Collection configuration id"
+
+msgid "当前操作不支持回滚，或采集配置正处于执行中"
+msgstr "Rollback the current operation is not supported, or gathered "
+"configuration is being executed"
+
+msgid "指标名"
+msgstr "Metric"
+
+msgid "主机信息"
+msgstr "Host Info"
+
+msgid "实例信息"
+msgstr "Examples of information"
+
+msgid "查询无数据"
+msgstr "No data"
+
+msgid "自动运行的任务"
+msgstr "Automatic running tasks"
+
+msgid "请求节点管理任务执行结果接口失败: {}"
+msgstr "Requesting node management task execution result failure Interface: {}"
+
+msgid "采集配置id:{}, 实例状态:{}"
+msgstr "Acquisition configuration id: {}, the instance state: {}"
+
+msgid "无法识别节点"
+msgstr "Does not recognize the node"
+
+msgid "主机内网IP"
+msgstr "Host IP network"
+
+msgid "主机云区域ID"
+msgstr "Host ID cloud area"
+
+msgid "主机云区域名称"
+msgstr "Host cloud zone name"
+
+msgid "主机负责人"
+msgstr "Host Leader"
+
+msgid "主机备份负责人"
+msgstr "Host backup Leader"
+
+msgid "ISP名称"
+msgstr "ISP name"
+
+msgid "操作系统名称"
+msgstr "OS name"
+
+msgid "操作系统版本"
+msgstr "OS version"
+
+msgid "模块ID"
+msgstr "Module ID"
+
+msgid "服务分类ID"
+msgstr "Service category ID"
+
+msgid "进程名称"
+msgstr "Process name"
+
+msgid "进程ID"
+msgstr "Process ID"
+
+msgid "进程别名"
+msgstr "Process Alias"
+
+msgid "绑定IP"
+msgstr "Binding IP"
+
+msgid "功能ID"
+msgstr "Function ID"
+
+msgid "启动用户"
+msgstr "Users start"
+
+msgid "工作路径"
+msgstr "Work path"
+
+msgid "进程数量"
+msgstr "Number of Processes"
+
+msgid "PID文件路径"
+msgstr "PID file path"
+
+msgid "自动启动"
+msgstr "Automatic start"
+
+msgid "拓扑层级"
+msgstr "Topology level"
+
+msgid "拓扑ID"
+msgstr "Topology ID"
+
+msgid "服务类别ID"
+msgstr "Service Type ID"
+
+msgid "不存在指定文件"
+msgstr "Specify the file does not exist"
+
+#, python-format
+msgid "%s模块下不存在指定文件"
+msgstr "The specified file does not exist in module(%s)"
+
+msgid "非法的plugin_id"
+msgstr "Illegal plugin_id"
+
+msgid "文件操作异常"
+msgstr "File operation exception"
+
+msgid "文档路径(md_path)"
+msgstr "Document path (md_path)"
+
+#, python-format
+msgid "全部 [%s]"
+msgstr "All %s"
+
+#, python-format
+msgid "获取大区信息失败，错误详情：%s"
+msgstr "Failed to obtain a large area information, details of the error:%s"
+
+msgid "获取大区信息失败"
+msgstr "Failed to get large area info"
+
+#, python-format
+msgid "获取模块列表失败，错误详情：%s"
+msgstr "Get module list failed, details of the error:%s"
+
+msgid "获取模块列表失败"
+msgstr "Failed to get the module list"
+
+msgid "全部"
+msgstr "All"
+
+msgid "标准属性"
+msgstr "Standard property"
+
+msgid "自定义属性"
+msgstr "Custom property"
+
+msgid "内网"
+msgstr "LAN"
+
+msgid "对象类型"
+msgstr "Object Types"
+
+msgid "是否需要主机/实例的统计信息"
+msgstr "The need for statistics hosts / instances"
+
+msgid "是否需要主机信息"
+msgstr "The need for host information"
+
+msgid "是否删除空节点"
+msgstr "Whether to remove empty node"
+
+msgid "Agent正常"
+msgstr "OK"
+
+msgid "Agent未安装"
+msgstr "not installed"
+
+msgid "获取CC信息"
+msgstr "get CMDB information"
+
+msgid "获取服务分类"
+msgstr "get services categories"
+
+msgid "获取数目"
+msgstr "get "
+
+msgid "监控指标对象"
+msgstr "Monitor target"
+
+msgid "rt表名"
+msgstr "rt table"
+
+msgid "自定义过滤条件"
+msgstr "Custom filter"
+
+msgid "聚合字段"
+msgstr "Aggregated fields"
+
+msgid "转换除数"
+msgstr "Convert divisor"
+
+msgid "采集间隔"
+msgstr "Collection interval"
+
+msgid "指定数据点频率"
+msgstr "Specifies the frequency of data points"
+
+msgid "是否使用短指标名"
+msgstr "Whether to use the short name index"
+
+msgid "日志需要的额外字段"
+msgstr "Extra field logs need."
+
+msgid "获取表字段的中文描述失败"
+msgstr "Get table field describe the failure of the Chinese."
+
+msgid "字段名称"
+msgstr "Field Name"
+
+msgid "是否为维度字段"
+msgstr "Whether the dimension field."
+
+msgid "聚合方法参数"
+msgstr "Polymerization process parameter"
+
+msgid "结果表描述"
+msgstr "Results Table Description"
+
+msgid "监控周期（秒）"
+msgstr "period (s)."
+
+msgid "结果表字段列表"
+msgstr "The result table field list"
+
+msgid "是否为统计结果表"
+msgstr "Whether the statistics table."
+
+msgid "是否需要接入"
+msgstr "Need to access"
+
+msgid "未处理的rt表"
+msgstr "Untreated rt table"
+
+#, python-format
+msgid "获取列表失败：%s"
+msgstr "Get list failed:%s"
+
+msgid "业务 ID"
+msgstr "Business ID"
+
+#, python-format
+msgid "结果表不存在:%s"
+msgstr "The results table does not exist:%s"
+
+msgid "标签类别"
+msgstr "Label category"
+
+msgid "是否展示管理员标签"
+msgstr "Whether to show administrators label"
+
+msgid "获取分类标签失败：{}"
+msgstr "Obtaining classification tags failed: {}"
+
+msgid "获取{}一级标签失败"
+msgstr "Get the first level tag fails {}"
+
+msgid "监控统计节点"
+msgstr "Monitoring statistics node"
+
+msgid "监控节点"
+msgstr "Monitoring nodes"
+
+#, python-format
+msgid "计算任务维度字段 %s"
+msgstr "Computing tasks dimension fields%s"
+
+msgid "传入的路径不合法"
+msgstr "Incoming path is not legitimate"
+
+msgid "文件下发失败"
+msgstr "Document issued fail"
+
+msgid "蓝鲸论坛"
+msgstr "BlueKing Forum"
+
+msgid "蓝鲸官网"
+msgstr "BlueKing Official"
+
+msgid "{bk_cloud_id}:{ip} 主机不属于该业务"
+msgstr "{bk_cloud_id}: {ip} host does not belong to the service"
+
+msgid "{bk_cloud_id}:{ip} 操作系统类型不能为空"
+msgstr "{bk_cloud_id}:{ip} type of operating system can not be empty"
+
+msgid "{bk_cloud_id}:{ip} 不支持的操作系统类型：{bk_os_type}"
+msgstr "{bk_cloud_id}:{ip} does not support the type of operating system: "
+"{bk_os_type}"
+
+msgid "启动任务返回的id"
+msgstr "Start task returned id"
+
+msgid "日志信息"
+msgstr "Log information"
+
+msgid "返回码"
+msgstr "Return code"
+
+msgid "成功IP"
+msgstr "Success IP"
+
+msgid "执行中IP"
+msgstr "Performing in IP"
+
+msgid "失败IP"
+msgstr "Failed IP"
+
+#, python-format
+msgid "【模块：job】执行任务结果查询返回格式异常 %s"
+msgstr "[module: job] execution task result query returns format exception %s"
+
+msgid "任务执行超时"
+msgstr "Task execution timeout"
+
+msgid "任务是否完成"
+msgstr "The job is done."
+
+msgid "任务信息"
+msgstr "Task information"
+
+msgid "全局配置 [{}] 加载异常: {}"
+msgstr "Global Configuration [{}] Load exception: {}"
+
+msgid "必填项"
+msgstr "Required"
+
+msgid "事件分组名称已存在"
+msgstr "Event group name already exists"
+
+msgid "对象"
+msgstr "Object"
+
+msgid "维度字段名称"
+msgstr "Dimension Field Name"
+
+msgid "关联插件不存在"
+msgstr "Associated plugin does not exist"
+
+msgid "关联插件导入失败"
+msgstr "Associated plug-Import Failed"
+
+msgid "关联采集配置未导入成功"
+msgstr "Correlating the collected configuration is not successfully introducing"
+
+msgid "缺少依赖的插件"
+msgstr "Missing Dependency plugin"
+
+msgid "关联插件信息不完整"
+msgstr "The associated plugin information is incomplete"
+
+msgid "无法解析插件类型"
+msgstr "Unable to resolve plugin type"
+
+msgid "关联插件信息解析失败"
+msgstr "Failed to parse the associated plugin information"
+
+msgid "缺少通知组名称"
+msgstr "The lack of notification group name"
+
+msgid "节点信息"
+msgstr "Node information"
+
+msgid "模糊搜索字段"
+msgstr "Fuzzy search field"
+
+msgid "需要导出的采集配置ID列表"
+msgstr "You need to export the collection configuration ID list"
+
+msgid "需要导出的策略配置ID列表"
+msgstr "You need to export policy configuration ID list"
+
+msgid "未选择任何配置"
+msgstr "Do not select any configuration"
+
+msgid "准备文件中..."
+msgstr "Ready to file ..."
+
+msgid "文件打包中..."
+msgstr "File Packing ..."
+
+msgid "导入历史ID"
+msgstr "Import history ID"
+
+msgid "压缩包解压失败: {}"
+msgstr "Unpack the archive failed: {}"
+
+msgid "导入文件格式不正确，需要是.tgz.tz或.tgz格式"
+msgstr "Import file format is not correct, need to be .tgz.tz or .tgz format"
+
+msgid "导入包目录结构不对"
+msgstr "Introducing package directory structure does not"
+
+msgid "关联采集配置未发现"
+msgstr "Correlating the collected configuration No"
+
+msgid "插件包不能大于500M"
+msgstr "Widget package can not be greater than 500M"
+
+msgid "配置的uuid"
+msgstr "Configuration uuid"
+
+msgid "没有找到对应的解析文件内容"
+msgstr "Not parse the contents of the corresponding files found"
+
+msgid "所选目标与配置需求目标不一致"
+msgstr "Selected target different objectives and configuration requirements"
+
+msgid "蓝鲸监控 - 指标数据"
+msgstr "BK Monitor - Metric"
+
+msgid "组织({})创建默认仪表盘失败"
+msgstr "Organization ({}) to create a default dashboard failure"
+
+msgid "私人仪表盘"
+msgstr "Personal dashboard"
+
+msgid "数据格式"
+msgstr "Data Format"
+
+msgid "过滤条件"
+msgstr "Filter"
+
+msgid "时间间隔"
+msgstr "time interval"
+
+msgid "查询类型"
+msgstr "Query type"
+
+msgid "服务实例名"
+msgstr "Services instance name"
+
+msgid "无法解析plugin_id"
+msgstr "Unable to resolve plugin_id"
+
+msgid "meta.yaml不存在，无法解析"
+msgstr "meta.yaml does not exist, can not be resolved"
+
+#, python-format
+msgid "节点%s拨测配置文件迁移完成"
+msgstr "%s dialing test node configuration file migration is complete"
+
+#, python-format
+msgid "节点拨测配置文件迁移失败：%s"
+msgstr "Node dial test profile migration failed:%s"
+
+#, python-format
+msgid "任务 %s 增加订阅流程，创建订阅任务ID:%d"
+msgstr "%s task to increase the subscription process, create a subscription task "
+"ID:%d"
+
+#, python-format
+msgid "不存在节点%s对应的主机，请联系节点管理进行处理"
+msgstr "%s corresponding master node does not exist, a contact node management "
+"process"
+
+msgid "处理建议"
+msgstr "Treatment recommendations"
+
+msgid "修改时间"
+msgstr "Modification time"
+
+msgid "修改人"
+msgstr "Modified by"
+
+msgid "已启用"
+msgstr "activated"
+
+msgid "已停用"
+msgstr "terminated"
+
+msgid "执行中"
+msgstr "Execution"
+
+msgid "升级"
+msgstr "upgrade"
+
+msgid "回滚"
+msgstr "Rollback"
+
+msgid "新增"
+msgstr "Add"
+
+msgid "编辑"
+msgstr "Edit"
+
+msgid "增删目标"
+msgstr "Deletions goal"
+
+msgid "全部成功"
+msgstr "All success"
+
+msgid "全部失败"
+msgstr "Total failure"
+
+msgid "下发中"
+msgstr "Issued in"
+
+msgid "服务"
+msgstr "service"
+
+msgid "配置名称"
+msgstr "Profile name"
+
+msgid "关联插件"
+msgstr "Associated plugin"
+
+msgid "当前的部署配置"
+msgstr "The current deployment configuration"
+
+msgid "缓存数据"
+msgstr "Cache data"
+
+msgid "最近一次操作"
+msgstr "Last Operation"
+
+msgid "最近一次任务结果"
+msgstr "The recent results of a mission."
+
+msgid "关联插件版本"
+msgstr "Associated plugin version"
+
+msgid "父配置ID"
+msgstr "Parent configuration ID"
+
+msgid "所属采集配置ID"
+msgstr "Acquisition belongs Configuration ID"
+
+msgid "采集参数配置"
+msgstr "Acquisition parameters Configuration"
+
+msgid "采集目标节点"
+msgstr "Target node"
+
+msgid "事件组类型"
+msgstr "Group type"
+
+msgid "数据目标"
+msgstr "Target data"
+
+msgid "导入完成"
+msgstr "Import Complete"
+
+msgid "导入中"
+msgstr "Import"
+
+msgid "导入状态"
+msgstr "Import status"
+
+msgid "没有导入成功的配置，无法添加目标"
+msgstr "No import was successful configuration, the target can not be added"
+
+msgid "存在正在导入的配置，无法添加"
+msgstr "There is being imported configuration, can not be added"
+
+msgid "所选配置的监控目标不一致，无法统一添加"
+msgstr "The configuration selected control objectives are inconsistent, can not "
+"be unified to add"
+
+msgid "导入成功"
+msgstr "The import was successful."
+
+msgid "导入失败"
+msgstr "Import failed"
+
+msgid "插件配置"
+msgstr "Plugin configuration"
+
+msgid "采集配置"
+msgstr "Collection configuration"
+
+msgid "对应的导入历史ID"
+msgstr "Corresponding import history ID"
+
+msgid "生成的配置ID"
+msgstr "Generated configuration ID"
+
+msgid "文件错误信息"
+msgstr "File Error Message"
+
+msgid "解析ID"
+msgstr "Analysis ID"
+
+msgid "文件检测成功"
+msgstr "File successfully detected"
+
+msgid "文件检测失败"
+msgstr "File detection failure"
+
+msgid "文件解析内容对应uuid"
+msgstr "File parsing content corresponds uuid"
+
+msgid "是否为正确配置"
+msgstr "Whether it is properly configured."
+
+msgid "文件ID"
+msgstr "File ID"
+
+msgid "配置详情"
+msgstr "Configuration Details"
+
+msgid "文件内容MD5"
+msgstr "Contents of the file MD5"
+
+msgid "是否为目录"
+msgstr "Whether the directory"
+
+msgid "sql查询表"
+msgstr "sql query table"
+
+msgid "表别名"
+msgstr "Table aliases"
+
+msgid "单位换算"
+msgstr "Unit Conversion"
+
+msgid "维度名"
+msgstr "Dimension name"
+
+msgid "插件类型"
+msgstr "Plugin type"
+
+msgid "插件名、拨测任务名"
+msgstr "Plug-name, dial testing task name"
+
+msgid "插件id、拨测任务id"
+msgstr "Plug-id, dial testing task id"
+
+msgid "插件采集关联采集配置"
+msgstr "Plugin configuration collection associated with acquisition"
+
+msgid "插件采集关联采集配置id"
+msgstr "Plugin acquisition related acquisition configuration id"
+
+msgid "表标签"
+msgstr "Table tag"
+
+msgid "数据目标标签"
+msgstr "Data target label"
+
+msgid "默认维度列表"
+msgstr "default dimensions"
+
+msgid "默认监控条件"
+msgstr "default conditions"
+
+msgid "指标含义"
+msgstr "Meaning"
+
+msgid "指标采集周期"
+msgstr "Period"
+
+msgid "分类显示名"
+msgstr "Display name"
+
+msgid "表标签别名"
+msgstr "Alias"
+
+msgid "额外字段"
+msgstr "Additional"
+
+msgid "指标：{metric_field}；指标分类：{result_table_name}；插件名：{related_name}；数据来源：监控采集"
+msgstr "Metirc: {metric_field}; Classification: {result_table_name}; Plugin name: {related_name}; Source: Collector"
+
+msgid "数据来源：系统事件"
+msgstr "Data Source: System Events"
+
+msgid "数据来源：采集配置"
+msgstr "Data Source: Collect task"
+
+msgid "版本签名"
+msgstr "Version signature"
+
+msgid "版本修改日志"
+msgstr "Modified version of the journal"
+
+msgid "是否已上传到节点管理"
+msgstr "Has been uploaded to the management node"
+
+msgid "操作系统类型ID"
+msgstr "Operating system type ID"
+
+msgid "操作系统类型"
+msgstr "OS Type"
+
+msgid "用户"
+msgstr "user"
+
+msgid "用户组"
+msgstr "user group"
+
+msgid "告警组ID"
+msgstr "Alarm group ID"
+
+msgid "通知对象ID"
+msgstr "Notification ID"
+
+msgid "通知对象类别"
+msgstr "Recipients class"
+
+msgid "通知组名称"
+msgstr "Team Name"
+
+msgid "通知对象"
+msgstr "Recipients"
+
+msgid "说明"
+msgstr "Tips"
+
+msgid "各级别对应的通知方式"
+msgstr "Each level corresponding notification method"
+
+msgid "修改对应的通知组ID列表"
+msgstr "Modifying the corresponding notification group ID list"
+
+msgid "通知人员不能为空"
+msgstr "Inform the staff can not be empty"
+
+msgid "通知方式至少开启一项"
+msgstr "Open at least one notification method"
+
+msgid "修改通知组失败"
+msgstr "Modify failure notification group"
+
+msgid "通知组ID"
+msgstr "Notification group ID"
+
+msgid "业务Id"
+msgstr "Business Id"
+
+msgid "是否展示全部"
+msgstr "All show whether"
+
+msgid "通知組ID"
+msgstr "Notification group ID"
+
+msgid "获取详情失败"
+msgstr "Failure to obtain details"
+
+msgid "统计天数"
+msgstr "Statistical Days"
+
+msgid "磁盘空间使用率"
+msgstr "Disk space usage"
+
+msgid "磁盘I/O利用率"
+msgstr "Disk I/O utilization"
+
+msgid "主机性能数据获取失败"
+msgstr "Host performance data acquisition failure"
+
+#, python-format
+msgid "检测到 %s 实例的MySQL有慢查询产生，建议查看并优化SQL语句"
+msgstr "Detected instances(%s) of MySQL has slow query, it is recommended to view"
+" and optimize SQL statements"
+
+msgid "{}前{}修改了告警策略：{}"
+msgstr "{} ago, {} has modified rule: {}"
+
+msgid "主机“{}”的{}{}"
+msgstr "{}{} For host “{}“"
+
+msgid "5分钟平均负载"
+msgstr "5-minutes load average"
+
+msgid "应用内存使用占比"
+msgstr "Application memory usage accounting"
+
+msgid "磁盘写满"
+msgstr "disk full"
+
+msgid "PING不可达"
+msgstr "PING unreachable"
+
+msgid "主机“{}”的{}"
+msgstr "Host “{}“ of {}"
+
+msgid "查询组件信息失败"
+msgstr "Failed to query component information"
+
+msgid "未有选中的主机"
+msgstr "No host selected"
+
+#, python-format
+msgid "下列主机下发失败：%s,"
+msgstr "Host assignment fails following:%s,"
+
+msgid "查询的维度字段"
+msgstr "Dimension field query"
+
+msgid "主机ID（批量）"
+msgstr "Host ID (batch)"
+
+msgid "查询时间"
+msgstr "Query time"
+
+msgid "自动处理类型"
+msgstr "Automatic processing type"
+
+msgid "获取主机列表"
+msgstr "Get the host list"
+
+msgid "获取主机agent状态"
+msgstr "Gets the host agent state"
+
+msgid "并发拉取性能数据"
+msgstr "Pull performance data concurrently"
+
+msgid "处理整合所有数据"
+msgstr "Process and integrate all data"
+
+#, python-format
+msgid "拉取主机性能信息失败: %s"
+msgstr "Pull master capability information failed:%s"
+
+msgid "系统错误：请联系管理员"
+msgstr "System error: please contact the administrator"
+
+msgid "查询无主机，请确认ip"
+msgstr "Query-host, make sure ip"
+
+msgid "无效的任务类型"
+msgstr "Invalid task type"
+
+msgid "消息中间件"
+msgstr "Messaging middleware"
+
+msgid "HTTP服务"
+msgstr "HTTP Server"
+
+msgid "数据库"
+msgstr "Database"
+
+msgid "办公应⽤"
+msgstr "Office to apply it"
+
+msgid "脚本运行报错,原因是{}"
+msgstr "Script error, because {}"
+
+msgid "脚本命令不合法,原因是{}"
+msgstr "Script command is illegal because {}"
+
+msgid "解析脚本标准输出报错,原因是{}"
+msgstr "Parse script standard error output, because the {}"
+
+msgid "是否升级"
+msgstr "Whether upgrade"
+
+msgid "文件正在打包中..."
+msgstr "Files are being packed in ..."
+
+msgid "文件正在上传中..."
+msgstr "File upload ..."
+
+msgid "文件正在注册中..."
+msgstr "File being registered ..."
+
+msgid "配置模板正在注册中..."
+msgstr "Configuration template being registered ..."
+
+msgid "导入版本不大于当前版本"
+msgstr "Import version is not greater than the current version"
+
+msgid "插件类型冲突"
+msgstr "Plug-type conflict"
+
+msgid "远程采集配置项冲突"
+msgstr "Remote configuration item collection conflict"
+
+#, python-format
+msgid "插件已关联%s个采集配置"
+msgstr "The plugin has associated %s collection configurations"
+
+msgid "导入插件与当前插件内容完全一致"
+msgstr "Import Plug the current plugin exactly the same content"
+
+msgid ", 且"
+msgstr "And"
+
+msgid "插件id"
+msgstr "Plug-id"
+
+msgid "该插件诞生了!"
+msgstr "The plug-born!"
+
+msgid "用户很懒,没有说明哦."
+msgstr "Users lazy, did not say oh."
+
+msgid "默认值"
+msgstr "Defaults"
+
+msgid "模式"
+msgstr "mode"
+
+msgid "类型"
+msgstr "Types of"
+
+msgid "是否可见"
+msgstr "Is visible"
+
+msgid "描述文件md"
+msgstr "Description File md"
+
+msgid "logo"
+msgstr "logo"
+
+msgid "采集器版本"
+msgstr "Collector version"
+
+msgid "插件签名"
+msgstr "Plug-In Signatures"
+
+msgid "插件版本日志"
+msgstr "Plugin version Log"
+
+msgid "供应商ID"
+msgstr "Vendor ID"
+
+msgid "file_id"
+msgstr "file_id"
+
+msgid "文件内容对应MD5"
+msgstr "Document responds MD5"
+
+msgid "collector_json不合法，至少添加一项操作系统相关内容"
+msgstr "collector_json illegal, add at least an operating system-related content"
+
+msgid "校验名"
+msgstr "DataDog check name"
+
+msgid "配置内容"
+msgstr "config content"
+
+msgid "{}配置"
+msgstr "{} config"
+
+msgid "脚本文件名"
+msgstr "Script file name"
+
+msgid "采集器信息版本"
+msgstr "Collector version information"
+
+msgid "凭据"
+msgstr "Credential"
+
+msgid "服务商ID"
+msgstr "Service Provider ID"
+
+msgid "ip地址"
+msgstr "ip address"
+
+msgid "采集域名"
+msgstr "Acquisition domain"
+
+msgid "采集端口"
+msgstr "Collection port"
+
+msgid "采集周期(秒)"
+msgstr "Acquisition cycle (sec)"
+
+msgid "采集URL"
+msgstr "Collect URL"
+
+msgid "插件调试参数"
+msgstr "Plug-tuning parameters"
+
+msgid "config版本"
+msgstr "config version"
+
+msgid "info版本"
+msgstr "info version"
+
+msgid "调试参数"
+msgstr "Debugging parameters"
+
+msgid "目标主机"
+msgstr "Target host"
+
+msgid "该用户无权限查询所有业务下的插件"
+msgstr "The user does not have permission to plug in all business inquiries"
+
+msgid "该用户无权限创建全业务插件"
+msgstr "The user does not have permission to create a full-service plugins"
+
+msgid "存在其余业务的关联项"
+msgstr "There is the rest of the business association"
+
+msgid "该用户无权限导入全业务插件"
+msgstr "The user does not have permission to import the full-service plugins"
+
+#, python-format
+msgid "文件夹不存在：%s"
+msgstr "Folder does not exist: %s"
+
+msgid "已开启远程采集的插件无法关闭远程采集"
+msgstr "Is on remote collection of plugins can not turn off the remote collection"
+
+msgid "该插件没有release版本可导出"
+msgstr "The plugin does not export the release version"
+
+#, python-format
+msgid "%s文件读取失败"
+msgstr "%s file read failed"
+
+msgid "不存在info文件夹，无法解析插件包"
+msgstr "Info folder does not exist, can not be resolved plugin package"
+
+msgid "不支持打包的插件类型"
+msgstr "It does not support plugin type of packaging"
+
+msgid "meta.yaml 缺少 datadog_check_name"
+msgstr "Meta.yaml 缺少 datadog_check_name"
+
+msgid "缺少 lib 文件夹"
+msgstr "Missing lib folder"
+
+msgid "缺少 conf.yaml.tpl 配置模板文件"
+msgstr "Missing conf.yaml.tpl configuration template file"
+
+#, python-format
+msgid "采集配置中配置的参数 %s 未定义"
+msgstr "Acquisition configuration parameters configured%s undefined"
+
+msgid "缺少 conf.yaml.example 配置模板文件"
+msgstr "Missing conf.yaml.example configuration template file"
+
+msgid "缺少 meta.yaml 配置模板文件"
+msgstr "Missing meta.yaml configuration template file"
+
+msgid "文件{}不是windows下的可执行文件"
+msgstr "{} Executable file is not under the windows"
+
+msgid "文件{}不是linux下的可执行文件"
+msgstr "{} Executable file is not in the linux"
+
+msgid "无法获取JMX对应的配置文件"
+msgstr "Unable to get corresponding configuration file JMX"
+
+msgid "日志关键字采集"
+msgstr "Log keyword collection"
+
+msgid "默认分类"
+msgstr "default category"
+
+msgid "无法解析脚本内容"
+msgstr "Unable to resolve script content"
+
+msgid "维度配置"
+msgstr "Dimensions Configuration"
+
+msgid "周期配置"
+msgstr "Period configuration"
+
+msgid "是否有屏蔽通知"
+msgstr "Is there a mute notice"
+
+msgid "通知配置"
+msgstr "Notification Config"
+
+msgid "屏蔽原因"
+msgstr "mute reason"
+
+msgid "是否是快捷屏蔽"
+msgstr "mute or not "
+
+msgid "是否处于屏蔽中"
+msgstr "Is in Active?"
+
+msgid "屏蔽id"
+msgstr "Id"
+
+msgid "策略"
+msgstr "Rules"
+
+msgid "策略的屏蔽等级"
+msgstr "Rule level"
+
+msgid "屏蔽中"
+msgstr "Active"
+
+msgid "已过期"
+msgstr "Expired"
+
+msgid "被解除"
+msgstr "Unmute"
+
+msgid "屏蔽快照"
+msgstr "Snapshots"
+
+msgid "活跃业务"
+msgstr "Active Business"
+
+msgid "迁移业务"
+msgstr "Business Migration"
+
+msgid "用户登陆"
+msgstr "user login"
+
+msgid "主机上报"
+msgstr "Host reporting"
+
+msgid "通知"
+msgstr "Notice"
+
+msgid "全局"
+msgstr "Global"
+
+msgid "返回格式"
+msgstr "Return to form"
+
+msgid "CMDB变量"
+msgstr "CMDB variable"
+
+msgid "{{target.对象.字段名}}"
+msgstr "{{target.object.field_name}}"
+
+msgid "CMDB中定义的字段名"
+msgstr "CMDB defined field names"
+
+msgid "业务名称"
+msgstr "business name"
+
+msgid "开发人员字符串"
+msgstr "Developers string"
+
+msgid "运维人员字符串"
+msgstr "Operation and maintenance personnel string"
+
+msgid "测试人员字符串"
+msgstr "Testers string"
+
+msgid "产品人员字符串"
+msgstr "Product personnel string"
+
+msgid "操作人员字符串"
+msgstr "Operator string"
+
+msgid "模块名"
+msgstr "Module name"
+
+msgid "云区域名称"
+msgstr "Cloud area name"
+
+msgid "默认区域"
+msgstr "Default zone"
+
+msgid "内网IP"
+msgstr "LAN IP"
+
+msgid "外网IP"
+msgstr "WAN IP"
+
+msgid "操作系统类型(枚举数值)"
+msgstr "Operating system type (enum value)."
+
+msgid "负责人"
+msgstr "principal"
+
+msgid "进程1"
+msgstr "Process 1"
+
+msgid "进程功能名称"
+msgstr "Process function name"
+
+msgid "绑定端口"
+msgstr "Bind ports"
+
+msgid "告警变量"
+msgstr "Alert Variables"
+
+msgid "告警维度(除目标)"
+msgstr "Alarm dimension (except target)."
+
+msgid "磁盘=C,主机名=xxx"
+msgstr "Disk = C, hostname = xxx"
+
+msgid "汇总事件数量"
+msgstr "Summary of the number of events."
+
+msgid "消息来源"
+msgstr "source"
+
+msgid "企业标识"
+msgstr "Corporate logo"
+
+msgid "数据来源名称"
+msgstr "Data Source Name"
+
+msgid "详情链接"
+msgstr "Details link"
+
+msgid "目标类型"
+msgstr "Target Type"
+
+msgid "目标类型名称"
+msgstr "Target type name"
+
+msgid "IP/实例/节点"
+msgstr "The IP / instance / node"
+
+msgid "策略变量"
+msgstr "Strategy Variables"
+
+msgid "策略ID"
+msgstr "Policy ID"
+
+msgid "场景"
+msgstr "Scenes"
+
+msgid "空闲率"
+msgstr "Free rate"
+
+msgid "周期"
+msgstr "Period"
+
+msgid "内容变量"
+msgstr "Contents of the variable"
+
+msgid "最近异常时间"
+msgstr "The recent abnormal time."
+
+msgid "告警持续时间"
+msgstr "Alarm duration"
+
+msgid "告警目标类型"
+msgstr "Alarm target type"
+
+msgid "告警数据来源"
+msgstr "Alarm Source"
+
+msgid "告警详情"
+msgstr "Alarm Details"
+
+msgid "首次异常时间"
+msgstr "First time anomaly"
+
+msgid "单点可用率"
+msgstr "A single point of availability"
+
+msgid "响应时间"
+msgstr "Response time"
+
+msgid "期望响应码"
+msgstr "Expected response code"
+
+msgid "期望响应内容"
+msgstr "The expected response content"
+
+msgid "节点层级"
+msgstr "Node hierarchy"
+
+msgid "目标ip地址"
+msgstr "Target IP"
+
+msgid "目标云区域ID"
+msgstr "Clouds area ID"
+
+msgid "target结构不符合要求"
+msgstr "target structure does not meet the requirements"
+
+msgid "target需要field字段且不能为空"
+msgstr "Target field required field and can not be empty."
+
+#, python-format
+msgid "target需要method字段且为%s"
+msgstr "target requires method field and it should be %s"
+
+msgid "target需要value字段且不能为空且为列表"
+msgstr "target value field and need not be empty, and the list"
+
+msgid "检测算法不符合要求，周期为正整数，值为正数"
+msgstr "Detection algorithm does not meet the requirements, the cycle is a "
+"positive integer, is a positive number"
+
+msgid "检测算法的计算方法不符合要求"
+msgstr "Calculation of the detection algorithm does not meet the requirements"
+
+msgid "静态阈值检测算法结构不符合要求"
+msgstr "Static threshold detection algorithm structure does not meet the "
+"requirements"
+
+msgid "触发条件满足条件次数不能大于所填周期数,且为正整数"
+msgstr "Trigger condition is met the condition number can not be greater than the"
+" number of cycles filled, and is a positive integer"
+
+msgid "恢复周期需要是正整数"
+msgstr "Recovery period required is a positive integer"
+
+msgid "启用无数据告警的周期数不能为空，且大于0"
+msgstr "Number of alarm period of no data to enable not be empty, and greater "
+"than 0"
+
+msgid "无数据告警周期需要为正整数"
+msgstr "No data required warning period is a positive integer"
+
+msgid "通知间隔需要是正整数"
+msgstr "Notification interval needs to be a positive integer"
+
+msgid "监控条件填写错误，需要key、method、value键"
+msgstr "Monitoring conditions fill in error, you need to key, method, value key"
+
+msgid "多个条件时，聚合条件中需要condition参数，且为and或or"
+msgstr "When a plurality of conditions, the polymerization conditions need to "
+"condition parameter, and to and or or"
+
+msgid "触发次数"
+msgstr "Trigger times"
+
+msgid "检测周期"
+msgstr "Detection period"
+
+msgid "通知模板"
+msgstr "Notification Template"
+
+msgid "监控指标别名"
+msgstr "Alias"
+
+msgid "扩展字段"
+msgstr "no"
+
+msgid "聚合算法"
+msgstr "Aggregation algorithm"
+
+msgid "item_id"
+msgstr "item_id"
+
+msgid "指标标识"
+msgstr "Metirc Identify"
+
+msgid "无数据告警配置"
+msgstr "No data alarm configuration"
+
+msgid "查询表"
+msgstr "Lookup table"
+
+msgid "策略目标"
+msgstr "Strategic goals"
+
+msgid "告警发生通知模板"
+msgstr "Alarm generation notification templates"
+
+msgid "告警恢复通知模板"
+msgstr "Alarm restoration notification templates"
+
+msgid "action_id"
+msgstr "action_id"
+
+msgid "触发动作"
+msgstr "Trigger action"
+
+msgid "告警相关配置"
+msgstr "Alarm configuration"
+
+msgid "通知组ID列表"
+msgstr "Notification group ID list"
+
+msgid "策略配置来源"
+msgstr "Policy Configuration Source"
+
+msgid "监控算法配置"
+msgstr "Monitoring algorithm configuration"
+
+msgid "数据接入源标签"
+msgstr "Source data access tag"
+
+msgid "插件名称"
+msgstr "Plugin name"
+
+msgid "表ID"
+msgstr "Table ID"
+
+msgid "每页数目"
+msgstr "Page number"
+
+msgid "查询关键字"
+msgstr "Search Keyword"
+
+msgid "任务名"
+msgstr "Task Name"
+
+msgid "该指标需下发采集配置: 主机监控 --> 采集下发。"
+msgstr "The index needs issued a collection configuration: Host Monitoring -> "
+"acquisition issued."
+
+#, python-format
+msgid ""
+"查看corefile生成路径：cat /proc/sys/kernel/core_pattern，确保在某一个目录下，例如 "
+"/data/corefile/core_%e_%t。该指标需下发采集配置: 主机监控 --> 采集下发。"
+msgstr "See corefile generation path: cat / proc / sys / kernel / core_pattern, "
+"to ensure that in a directory, for example / data / corefile / core_%e_%"
+"t delivers the index for an acquisition configuration: Host Monitoring "
+"-> next collection. hair."
+
+msgid ""
+"通过蓝鲸Agent目录中的gsecmdline命令上报自定义字符型告警。用法：{}plugins/bin/gsecmdline -d 1000 "
+"-l \"This service is offline.\""
+msgstr "By whale Agent directory gsecmdline command character custom reporting "
+"alarms Usage:. {} Plugins / bin / gsecmdline -d 1000 -l \" This service "
+"is offline.\""
+
+msgid "gse每隔60秒检查一次agent心跳数据。gse从agent最后一次心跳数据更新开始，第5分钟、第10分钟、第12小时各触发一次告警事件。从第24小时起，如果心跳依然未更新则重复上述第5分钟、第10分钟、第12小时各触发一次告警事件的过程。"
+msgstr "Gse agent once every 60 seconds to check the heartbeat data .gse agent "
+"from the last data update start heartbeat, 5 minutes, 10 minutes, the "
+"first 12 hours of each trigger an alarm event. From the first 24 hours, "
+"if the heartbeat is still not updated then repeat the first 5 minutes, 10"
+" minutes, the first 12 hours of each alarm event is triggered once the "
+"process. "
+
+msgid "metric_field_name"
+msgstr "metric_field_name"
+
+msgid "category_display"
+msgstr "category_display"
+
+msgid "result_table_label_name"
+msgstr "result_table_label_name"
+
+msgid "result_table_name"
+msgstr "result_table_name"
+
+msgid "name"
+msgstr "name"
+
+msgid "数据来源列表"
+msgstr "Source List"
+
+#, python-format
+msgid "data_source_list参数错误, %s"
+msgstr "Data_source_list parameter error,%s"
+
+msgid "检测算法列表"
+msgstr "Detection algorithm list"
+
+msgid "告警触发配置"
+msgstr "Alarm trigger configuration"
+
+msgid "告警恢复配置"
+msgstr "Alarm Restore Configuration"
+
+msgid "检测算法不允许为空"
+msgstr "Detection algorithm does not allow nulls"
+
+msgid "告警模板"
+msgstr "The alarm template"
+
+msgid "批量修改的策略ID列表"
+msgstr "Batch modified policy ID list"
+
+msgid "批量修改的值"
+msgstr "Bulk edit value"
+
+msgid "自定义事件组ID"
+msgstr "Custom Event Group ID"
+
+msgid "是否展示全部维度"
+msgstr "Whether to show all dimensions."
+
+msgid "查询索引集"
+msgstr "Queries index set"
+
+msgid "消息模板"
+msgstr "Message templates"
+
+msgid "磁盘=C,主机名=centos"
+msgstr "Disk = C, hostname = centos"
+
+msgid "首次异常: 1970-01-01 00:00:00"
+msgstr "First Exception: 1970-01-01 00:00:00"
+
+msgid "最近异常: 1970-01-01 00:00:00"
+msgstr "Last Exception: 1970-01-01 00:00:00"
+
+msgid "内容: 已持续10分钟, sum(in_user) > 10"
+msgstr "Content: continue 10 minutes, sum (in_user)> 10"
+
+msgid "目标: 蓝鲸[2] 127.0.0.1,127.0.0.2 (2)"
+msgstr "Target: BKmonitor[2] 127.0.0.1,127.0.0.2 (2)"
+
+msgid "维度: 磁盘=C"
+msgstr "Dimensions: Disk = C"
+
+msgid "详情: http://example.com/"
+msgstr "Details: http://example.com/"
+
+msgid "关联信息: 集群(set1,set2) 模块(module1,module2)"
+msgstr "Related Info: Cluster (set1, set2) module (module1, module2)"
+
+msgid "告警ID: 12345"
+msgstr "Alarm ID: 12345"
+
+msgid "10分钟"
+msgstr "10 minutes"
+
+msgid "sum(in_user) > 10, 当前值15"
+msgstr "sum (in_user)> 10,  current value 15"
+
+msgid "告警业务"
+msgstr "Business"
+
+msgid "蓝鲸[2]"
+msgstr "BlueKing [2]"
+
+msgid "磁盘=C"
+msgstr "Disk=C"
+
+msgid "内容: 已持续10分钟, sum(in_user) > 10,当前值 15%"
+msgstr "Content: 10 minutes already, sum(in_user)> 10, the current value of 15%"
+
+msgid "致命(1)、预警(2)"
+msgstr "Emergency (1), Critical (2)"
+
+msgid "比如: [致命]磁盘使用率 10:10告警,已持续10分钟,sum(in_user) > 10,当前值 15%"
+msgstr "For example: [Emergency] 10:10 disk usage alarm has continued for 10 minutes,"
+" sum (in_user)> 10, the current value of 15%"
+
+msgid "同维度告警通知"
+msgstr "With dimensions of alarm notification"
+
+msgid "汇总告警通知"
+msgstr "Summary alarm notification"
+
+msgid "脚本运行报错,原因是[run script timeout]"
+msgstr "Script error, because the [run script timeout]"
+
+msgid "10.0.1.10 | 0"
+msgstr "10.0.1.10 | 0"
+
+msgid "获取待升级项目列表发生异常，原因：{}"
+msgstr "Get a list of projects to be upgraded abnormal reasons: {}"
+
+msgid "执行升级发生异常，原因：{}"
+msgstr "Perform an upgrade abnormal reasons: {}"
+
+msgid "配置ID"
+msgstr "Configuration ID"
+
+msgid "当前策略列表不为空，不允许创建默认策略，请清空后重试"
+msgstr "The current policy list is not empty, not allowed to create a default "
+"policy, please try again empty."
+
+msgid "是否停用"
+msgstr "Whether to disable"
+
+msgid "策略项ID"
+msgstr "Rule ID"
+
+msgid "等待迁移"
+msgstr "Waiting for Migration"
+
+msgid "迁移成功"
+msgstr "Migration successful"
+
+msgid "迁移失败，原因：{}"
+msgstr "Migration failed due to: {}"
+
+msgid "自定义监控-{}"
+msgstr "Custom Monitor - {}"
+
+msgid "不支持迁移。该配置使用了不支持的数据源类型"
+msgstr "Migration is not supported. This configuration uses a data source types "
+"are not supported."
+
+msgid "不支持迁移。该视图配置使用了不支持的数据源类型"
+msgstr "Migration is not supported. The view configuration uses a data source "
+"types are not supported."
+
+msgid "监听IP"
+msgstr "Listener IP"
+
+msgid "监听端口"
+msgstr "Listen Port"
+
+msgid "不支持迁移日志关键字类型的策略项"
+msgstr "Does not support the migration log key type of policy items"
+
+msgid "不支持迁移。该监控项使用了不支持的数据源类型"
+msgstr "Migration is not supported. The monitor uses the term data source types "
+"are not supported."
+
+msgid "已成功探测目标服务，保存任务中..."
+msgstr "The target service has been successfully detected and saved in the task."
+
+msgid "测试任务执行失败：未知错误（1）"
+msgstr "Test task execution failure: unknown error (1)"
+
+msgid "采集器任务取消（2）"
+msgstr "Collector task cancelled (2)"
+
+msgid "目标响应时间大于期望响应时间（3）"
+msgstr "Target response time exceeds expected response time (3)"
+
+msgid "请检查任务参数是否有误，或确认目标服务是否可访问（1000）"
+msgstr "Check task parameters is wrong, or confirm whether the target service "
+"accessible (1000)"
+
+msgid "请检查任务参数是否有误，或网络/目标服务是否可访问（1001）"
+msgstr "Check task parameters is wrong, or network / target service is accessible"
+" (1001)"
+
+msgid "请检查代理是否配置正确，或网络是否可达（1002）"
+msgstr "Please check the proxy is configured correctly, or whether the network is"
+" up (1002)"
+
+msgid "请检查任务参数是否有误，或网络/目标服务是否可访问（2000）"
+msgstr "Check task parameters is wrong, or whether the network / target service "
+"accessible (2000)"
+
+msgid "请确认网络/目标服务是否可访问（2001）"
+msgstr "Make sure that the network / target service accessible (2001)"
+
+msgid "目标服务请求超时（2002）"
+msgstr "Target service request timeout (2002)"
+
+msgid "拨测采集器配置异常，请联系管开发者（2003）"
+msgstr "Uptimecheck collector configuration exception, please contact tube "
+"Developers (2003)"
+
+msgid "请检查任务参数是否有误，或确认目标服务是否可访问（3000）"
+msgstr "Check task parameters is wrong, or confirm whether the target service "
+"accessible (3000)"
+
+msgid "请确认网络/目标服务是否可访问（3001）"
+msgstr "Make sure that the network / target service accessible (3001)"
+
+msgid "请确认响应内容是否正确（3002）"
+msgstr "Make sure the content of the response is correct (3002)"
+
+msgid "请确认返回码是否正确（3003）"
+msgstr "Make sure the return code is correct (3003)"
+
+msgid "临时响应失败（3004）"
+msgstr "Interim response failure (3004)"
+
+msgid "请确认网络/目标服务是否可访问（3005）"
+msgstr "Make sure that the network / target service accessible (3005)"
+
+msgid "请确认目标服务是否可访问（3006）"
+msgstr "Make sure that the target service accessible (3006)"
+
+msgid "可用率"
+msgstr "availability"
+
+msgid "响应时长"
+msgstr "response time"
+
+msgid "错误码"
+msgstr "Error code"
+
+msgid "本机IP"
+msgstr "local IP"
+
+msgid "拨测节点ID"
+msgstr "Uptimecheck node ID"
+
+msgid "检测结果"
+msgstr "Test results"
+
+msgid "目标ip或域名"
+msgstr "Target IP or domain name"
+
+msgid "目标端口号"
+msgstr "Target port number"
+
+msgid "拨测任务类型"
+msgstr "Type of uptime check task"
+
+msgid "检测类型"
+msgstr "Detection type"
+
+msgid "运行任务数"
+msgstr "Number of tasks running"
+
+msgid "成功事件数"
+msgstr "The number of success events"
+
+msgid "启动时间"
+msgstr "Start Time"
+
+msgid "失败事件数"
+msgstr "Number of failed events"
+
+msgid "运行错误数"
+msgstr "Run errors"
+
+msgid "重载时间"
+msgstr "Reload time"
+
+msgid "历史载入任务数"
+msgstr "Load the job history number"
+
+msgid "耗时"
+msgstr "time consuming"
+
+msgid "响应长度"
+msgstr "Response length"
+
+msgid "请求方法"
+msgstr "Request method"
+
+msgid "请求步骤数"
+msgstr "Requesting step number"
+
+msgid "请求网址"
+msgstr "Request URL"
+
+msgid "重试次数"
+msgstr "number of retries"
+
+msgid "云区域id"
+msgstr "Cloud area id"
+
+msgid "重载次数"
+msgstr "Heavy-duty number"
+
+msgid "任务类型"
+msgstr "Task Type"
+
+msgid "编码类型"
+msgstr "Encoding type"
+
+msgid "媒体类型"
+msgstr "media type"
+
+msgid "目标端口"
+msgstr "Destination port"
+
+msgid "拨测任务数据"
+msgstr "Uptimecheck task data"
+
+msgid "获取可用率"
+msgstr "Get availability"
+
+msgid "获取响应时间"
+msgstr "Get Response Time"
+
+#, python-format
+msgid "生成yaml配置文件时出错：%s"
+msgstr "Error generating yaml configuration file:%s"
+
+#, python-format
+msgid "不存在的节点id:%s"
+msgstr "Nonexistent node id:%s"
+
+msgid " 节点:"
+msgstr "Node:"
+
+#, python-format
+msgid "部分节点测试失败:%s"
+msgstr "Partial node failed:%s"
+
+msgid "node:{node}, log:{log}"
+msgstr "node:{node}, log:{log}"
+
+msgid "采集器无返回"
+msgstr "Collector has no return"
+
+msgid "采集器返回结果校验失败，请重试"
+msgstr "Collector return results check fails, please try again"
+
+msgid "校验测试结果时发生异常，请联系系统管理员"
+msgstr "An exception occurred while checking test results, please contact your "
+"system administrator"
+
+#, python-format
+msgid "不存在的节点ip=%s"
+msgstr "Node IP(%s) that does not exist"
+
+msgid "拨测任务配置"
+msgstr "Uptimecheck task configuration"
+
+#, python-format
+msgid "不存在的任务id:%s"
+msgstr "Task ID that does not exist:%s"
+
+msgid "任务配置为空，请检查任务参数是否正确"
+msgstr "task config is empty, check to see if the task parameters are correct"
+
+#, python-format
+msgid "未找到拨测任务ID=%s"
+msgstr "Uptimecheck task ID =%s was not found"
+
+#, python-format
+msgid "生成图表时发生异常: %s"
+msgstr "Something wrong when generating graphs: %s"
+
+#, python-format
+msgid "拨测任务(id=%s)获取失败"
+msgstr "Uptimecheck task (id=%s) acquisition failure"
+
+msgid "节点IP"
+msgstr "Node IP"
+
+msgid "节点云区域ID"
+msgstr "Cloud region Node ID"
+
+msgid "状态码"
+msgstr "State code"
+
+msgid "响应内容"
+msgstr "Response content"
+
+#, python-format
+msgid "celery period task: 订阅任务%s正在运行中"
+msgstr "Celery period task: Subscribe to task%s is running"
+
+#, python-format
+msgid "error_log: %s"
+msgstr "error_log: %s"
+
+#, python-format
+msgid "celery period task: 订阅任务%s启动失败"
+msgstr "Celery period task: Subscribe to task%s failed to start."
+
+msgid "拨测任务ID列表"
+msgstr "Uptimecheck task ID list"
+
+#, python-format
+msgid "未找到拨测任务: %s"
+msgstr "Not Found dial testing task: %s"
+
+msgid "暂无数据，请在展示设置中添加拨测任务"
+msgstr "No data yet, add dial testing task show settings"
+
+msgid "协议类型"
+msgstr "agreement type"
+
+msgid "是否需要导出节点配置"
+msgstr "The need to export node configuration"
+
+msgid "不合规的参数，请使用逗号拼接数字"
+msgstr "Non-compliance parameters, use a comma splice digital"
+
+msgid "任务名称（必填）"
+msgstr "Task Name (required)"
+
+msgid "协议（必填）"
+msgstr "Agreement (required)"
+
+msgid "方法（必填）"
+msgstr "Method (required)"
+
+msgid "地址（必填,小写）"
+msgstr "Address (Required, lowercase)"
+
+msgid "节点（必填）"
+msgstr "Node (required)"
+
+msgid "提交内容（POST方法必填）"
+msgstr "Submission (POST method required)"
+
+msgid "SSL证书校验"
+msgstr "SSL certificate verification"
+
+msgid "否"
+msgstr "No"
+
+msgid "^是$|^否$"
+msgstr "^ Is $ | ^ N $"
+
+msgid "期望响应时间（ms）"
+msgstr "Expected response time (ms)"
+
+msgid "任务分组"
+msgstr "Task group"
+
+msgid "周期（分钟）"
+msgstr "Period (minutes)"
+
+msgid "期望返回码"
+msgstr "Expected return code"
+
+msgid "期望响应信息"
+msgstr "The expected response information"
+
+msgid "包含:"
+msgstr "contain:"
+
+msgid "地理位置"
+msgstr "Location"
+
+msgid "头信息"
+msgstr "Header"
+
+msgid "地址（必填）"
+msgstr "Address (required)"
+
+msgid "端口（必填）"
+msgstr "Port (required)"
+
+msgid "请求内容（必填,十六进制）"
+msgstr "Request Content (Required, hexadecimal)"
+
+msgid "包含"
+msgstr "contains"
+
+msgid "不包含"
+msgstr "Does not contain"
+
+msgid "任务配置列表"
+msgstr "Configuration Task List"
+
+#, python-format
+msgid "当前业务下不存在拨测节点[%s]"
+msgstr "There is no Uptimecheck node under the current business [%s]"
+
+msgid "拨测节点未填写"
+msgstr "Uptimecheck node is not filled"
+
+msgid "期望响应信息内容填写错误"
+msgstr "Fill in the information content expected response error"
+
+msgid "方法内容填写错误"
+msgstr "SUMMARY fill in error"
+
+msgid "头信息内容填写错误"
+msgstr "Fill in the header information content error"
+
+msgid "是"
+msgstr "Yes"
+
+msgid "SSL证书校验内容填写错误"
+msgstr "SSL certificate verification contents fill in error"
+
+msgid "地址内容填写错误"
+msgstr "The contents of the address fill in error"
+
+msgid "国家"
+msgstr "country"
+
+msgid "城市"
+msgstr "city"
+
+msgid "ip"
+msgstr "ip"
+
+msgid "节点ID列表"
+msgstr "Node ID list"
+
+msgid "节点配置列表"
+msgstr "Node configuration list"
+
+msgid "采集配置信息"
+msgstr "Collect configuration information"
+
+msgid "未填写业务ID,请检查配置"
+msgstr "Not filled business ID, please check the configuration"
+
+msgid "业务下没有该主机，请检查配置"
+msgstr "Under business is not the host, check the configuration"
+
+msgid "监控策略配置"
+msgstr "Monitoring policy configuration"
+
+msgid "配置列表"
+msgstr "Configuration list"
+
+msgid "下发配置缺少节点信息，请填写node_list或node_id_list"
+msgstr "Issued a missing node configuration information, please fill out "
+"node_list or node_id_list"
+
+msgid "节点{}不存在，请检查节点信息"
+msgstr "Node({}) does not exist, the check node information"
+
+msgid "节点创建失败，请检查节点创建信息，{}"
+msgstr "Create a node fails, check the nodes create information, {}"
+
+msgid "节点不存在，请检查节点配置"
+msgstr "Node does not exist, please check the node configuration"
+
+msgid "config缺少参数urls或method，请检查参数"
+msgstr "config parameter is missing urls or method, check the parameters"
+
+msgid "config缺少参数ip_list或port，请检查参数"
+msgstr "config parameter is missing ip_list or port, please check the parameters"
+
+#, python-format
+msgid "不存在id为%s的拨测任务"
+msgstr "Task Id(%s) does not exist"
+
+msgid "拨测节点id列表"
+msgstr "Uptimecheck node list id"
+
+msgid "拨测任务id列表"
+msgstr "Uptimecheck task id list"
+
+msgid "{}(业务id:{})"
+msgstr "{} (Service id: {})"
+
+#, python-format
+msgid "不能取消公共节点勾选，若要取消，请先删除以下任务的当前节点：%s"
+msgstr "Common node check can not cancel, To cancel, delete the following tasks "
+"of the current node: %s"
+
+#, python-format
+msgid "分组 %s 已存在！"
+msgstr "Packet %s already exists!"
+
+msgid "拨测分组({})已存在任务({})"
+msgstr "Uptimecheck group ({}) has already exists ({})"
+
+msgid "拨测分组({})添加任务({})成功"
+msgstr "Uptimecheck group ({}) adding a task ({}) successfully"
+
+msgid "查询采集器版本失败"
+msgstr "Query collector version failed"
+
+msgid "采集器下发失败"
+msgstr "Failure of collector"
+
+msgid "采集器安装失败"
+msgstr "Collector installation failed"
+
+msgid "托管程序启动失败"
+msgstr "Managed program startup failed"
+
+msgid "托管程序停用失败"
+msgstr "Failed hosting process shutdown"
+
+msgid "查询托管状态失败"
+msgstr "Query hosting status failed"
+
+msgid "进程不存在"
+msgstr "The process does not exist."
+
+#, python-format
+msgid "执行脚本 %s 失败"
+msgstr "Execution script %s failed"
+
+msgid "配置下发失败"
+msgstr "Failed to dispatch config"
+
+msgid "测试任务失败"
+msgstr "Test mission failed"
+
+msgid "脚本测试执行失败"
+msgstr "Test script execution failed"
+
+#, python-format
+msgid "无效的查询参数%s"
+msgstr "Invalid query parameter %s"
+
+#, python-format
+msgid "无效的过滤条件%s"
+msgstr "Invalid filter criteria %s"
+
+msgid "个"
+msgstr ""
+
+msgid "查询当前的状态值为空"
+msgstr "The current state of the inquiry is empty."
+
+msgid "参数graph_type是必须的"
+msgstr "Parameter graph_type is required"
+
+#, python-format
+msgid "未知的graph_type值:%s"
+msgstr "Unknown graph_type value: %s"
+
+#, python-format
+msgid "series:%s 数据查询"
+msgstr "series:%s data query"
+
+msgid "sql 查询"
+msgstr "sql query"
+
+msgid "处理查询结果"
+msgstr "process query result"
+
+#, python-format
+msgid "验证请求weixin code的 state参数出错： %s"
+msgstr "Weixin state verification request parameter code error:%s"
+
+msgid "非微信访问，或应用未启动微信访问"
+msgstr "Non micro-channel access, or application does not start micro-channel "
+"access"
+
+msgid "State验证失败"
+msgstr "State verification failed"
+
+msgid "登录失败"
+msgstr "Login failed"
+
+msgid "Personal info"
+msgstr "Personal info"
+
+msgid "Extra info"
+msgstr "Extra information"
+
+msgid "登录票据CODE接口返回无access_token或openid"
+msgstr "Log bills CODE interface has returned no access_token or openid"
+
+msgid "企业微信：登录票据CODE接口返回无access_token或openid"
+msgstr "Enterprise micro letter: Log bills CODE interface has returned no "
+"access_token or openid"
+
+msgid "微信用户应用唯一标识"
+msgstr "Uniquely identifies the user application micro-channel"
+
+msgid "企业微信用户应用唯一标识"
+msgstr "Micro-channel business user applications that uniquely identifies"
+
+msgid "昵称"
+msgstr "nickname"
+
+msgid "性别"
+msgstr "gender"
+
+msgid "省份"
+msgstr "province"
+
+msgid "头像"
+msgstr "Avatar"
+
+msgid "手机号"
+msgstr "phone number"
+
+msgid "二维码链接"
+msgstr "Two-dimensional code link"
+
+msgid "邮箱"
+msgstr "mailbox"
+
+msgid "加入时间"
+msgstr "Joined"
+
+msgid "微信用户"
+msgstr "wechat user"
+
+msgid "当前"
+msgstr "current"
+
+msgid "分组类型"
+msgstr "Packet type"
+
+msgid "只看统计数量"
+msgstr "Look at the number of statistics"
+
+msgid "移动端确认"
+msgstr "Moving end confirmation"
+
+msgid "屏蔽描述"
+msgstr "Mask Description"
+
+msgid "[RIO]login exception"
+msgstr "[RIO]login exception"
+
+msgid "[RIO]login time expire"
+msgstr "[RIO]login time expire"
+
+msgid "[RIO] App access must use a separate domain"
+msgstr "[RIO] App access must use a separate domain"
+
+msgid "[RIO] login token limit"
+msgstr "[RIO] login token limit"
+
+msgid "[RIO]login signature error"
+msgstr "[RIO]login signature error"
+
+msgid "SQL查询语句"
+msgstr "SQL query "
+
+msgid "索引名"
+msgstr "Index name"
+
+msgid "文档类型"
+msgstr "Document Type"
+
+msgid "链接信息"
+msgstr "Link"
+
+msgid "语法错误: 查询字段不能为空"
+msgstr "Syntax Error: The query can not be empty"
+
+#, python-format
+msgid "结果表[%s]不存在"
+msgstr "Results Table [%s] does not exist"
+
+#, python-format
+msgid "结果表[%s]未配置物理存储"
+msgstr "Results Table [%s] is not the physical store"
+
+#, python-format
+msgid "存储[%s]对应的查询引擎不存在"
+msgstr "Storage [%s] corresponding to the query engine absent"
+
+msgid "无效的rt表名"
+msgstr "Invalid table name rt"
+
+#, python-format
+msgid "结果表[%s]对应的物理存储不存在"
+msgstr "Results Table [%s] corresponding to the absence of physical storage"
+
+msgid "动态字段表查询的指标项最多只能指定一个"
+msgstr "Index entries dynamic field of query table can only specify one"
+
+msgid "minuteX字段不能设置别名"
+msgstr "minuteX fields can not set the alias"
+
+msgid "minuteX字段必须保持一致"
+msgstr "minuteX field must be consistent"
+
+#, python-format
+msgid "%s只能使用一个minuteX/time字段"
+msgstr "%s can only use a minuteX/time field"
+
+msgid "未登录蓝鲸平台(401页)"
+msgstr "BlueKing are not logged platform (401)"
+
+msgid "您还没有登录蓝鲸！"
+msgstr "You are not logged blue whale!"
+
+msgid "立即登录"
+msgstr "log in immediately"
+
+msgid "系统异常(500页)"
+msgstr "Abnormalities (500)."
+
+msgid "系统出现异常了！"
+msgstr "Abnormalities appeared!"
+
+msgid "请记录下错误场景并与开发人员联系！"
+msgstr "Please record the error scenarios and contact the developers!"
+
+msgid "组件监控"
+msgstr "Component monitoring"
+
+msgid "监控配置"
+msgstr "Monitoring Configuration"
+
+msgid "事件中心"
+msgstr "Event Center"
+
+msgid "采集中心"
+msgstr "Collections"
+
+msgid "业务管理"
+msgstr "Business Management"
+
+msgid "仪表盘"
+msgstr "Dashboard"
+
+msgid "首页"
+msgstr "Home"
+
+msgid "蓝鲸智云企业版"
+msgstr "BlueKing Enterprise Edition"
+
+msgid "蓝鲸智云社区版"
+msgstr "BlueKing Community Edition"
+
+msgid "当前业务："
+msgstr "Current business:"
+
+msgid "插件管理"
+msgstr "Plugin Manager"
+
+msgid "事件中心(日历)"
+msgstr "Event Center (calendar)"
+
+msgid "事件中心(列表)"
+msgstr "Event Center (the list)."
+
+msgid "确认"
+msgstr "Confirm"
+
+msgid "确定"
+msgstr "Sure"
+
+msgid "取消"
+msgstr "Cancel"
+
+msgid "温馨提示"
+msgstr "Tips"
+
+msgid "对不起，您当前没有可操作的业务权限"
+msgstr "Sorry, you do not have current operational service authority"
+
+msgid "请尝试如下操作："
+msgstr "Try the following:"
+
+msgid "QQ咨询"
+msgstr "QQ consultation"
+
+msgid "蓝鲸智云桌面"
+msgstr "BlueKing Desktop"
+
+msgid "Copyright © 2012-2019 Tencent BlueKing. All Rights Reserved. 蓝鲸智云 版权所有"
+msgstr "Copyright © 2012-2019 Tencent BlueKing. All Rights Reserved."
+
+msgid "日志"
+msgstr "Log"
+
+msgid "添加监控"
+msgstr "Adding Monitoring"
+
+msgid "产品反馈"
+msgstr "Feedback"
+
+msgid "产品文档"
+msgstr "Document"
+
+msgid "蓝鲸监控运行状态"
+msgstr "BK Monitor Status"
+
+msgid "刷新"
+msgstr "Refresh"
+
+msgid "移除"
+msgstr "Remove"
+
+msgid "请选择"
+msgstr "please select"
+
+msgid "刷新间隔"
+msgstr "Refresh interval"
+
+msgid "固定时间范围"
+msgstr "Fixed time"
+
+msgid "点击选择时间"
+msgstr "Select Time"
+
+msgid "相对时间范围"
+msgstr "Relative time"
+
+msgid "选择时间"
+msgstr "selection period"
+
+msgid "全屏显示"
+msgstr "full-screen display"
+
+msgid "新建视图"
+msgstr "New View"
+
+msgid "页面加载中"
+msgstr "Page Loading"
+
+msgid "关闭"
+msgstr "Close"
+
+msgid "top排行"
+msgstr "Top ranking"
+
+msgid "视图"
+msgstr "Views"
+
+msgid "分享"
+msgstr "Share"
+
+msgid "请填写该监控视图的名称"
+msgstr "Please fill in the name of the monitoring view"
+
+msgid "指标1"
+msgstr "Metric 1"
+
+msgid "AVG"
+msgstr "AVG"
+
+msgid "SUM"
+msgstr "SUM"
+
+msgid "MAX"
+msgstr "MAX"
+
+msgid "MIN"
+msgstr "MIN"
+
+msgid "服务名称"
+msgstr "service name"
+
+msgid "含义描述"
+msgstr "Meaning Description"
+
+msgid "曲线图"
+msgstr "Graph"
+
+msgid "柱状图"
+msgstr "Histogram"
+
+msgid "面积图"
+msgstr "Area"
+
+msgid "添加指标"
+msgstr "Add metric"
+
+msgid "添加标记"
+msgstr "Add marker"
+
+msgid "指标"
+msgstr "Metric"
+
+msgid "指标加载中..."
+msgstr "Loading ..."
+
+msgid "新增"
+msgstr "Add"
+
+msgid "显示条数"
+msgstr "show"
+
+msgid "排序方式"
+msgstr "Sort"
+
+msgid "正序"
+msgstr "Positive-sequence"
+
+msgid "倒序"
+msgstr "Reverse"
+
+msgid "设置规则"
+msgstr "Set rules"
+
+msgid "指标指标加载中..."
+msgstr "Loading ..."
+
+msgid "数值格式"
+msgstr "Numeric Format"
+
+msgid "取整数"
+msgstr "Taken integer"
+
+msgid "1个小数位"
+msgstr "1 decimal "
+
+msgid "2个小数位"
+msgstr "2 decimal"
+
+msgid "3个小数位"
+msgstr "3 decimal"
+
+msgid "原始数值"
+msgstr "Original value"
+
+msgid "默认不显示单位"
+msgstr "The default does not display the unit"
+
+msgid "保存"
+msgstr "Save"
+
+msgid "新建告警策略"
+msgstr "New Alarm Policy"
+
+msgid "新建分享"
+msgstr "New Share"
+
+msgid "分享名称"
+msgstr "Share Name"
+
+msgid "请输入此分享配置的名称"
+msgstr "Please enter a name for this share configuration"
+
+msgid "防盗链设置"
+msgstr "Anti-hotlinking settings"
+
+msgid "请输入防盗链限制来源页"
+msgstr "Please enter the anti-hotlinking limit Source Page"
+
+msgid "图表外链"
+msgstr "Chart outer chain"
+
+msgid "自动刷新"
+msgstr "Auto Refresh"
+
+msgid "刷新间隔（分）"
+msgstr "Refresh interval (minutes)."
+
+msgid "时间范围（分）"
+msgstr "Time (minutes)"
+
+msgid "保存提交"
+msgstr "Save submit"
+
+msgid "取消编辑"
+msgstr "Cancel Edit"
+
+msgid "最近 1 小时"
+msgstr "Last hour"
+
+msgid "最近 12 小时"
+msgstr "The recent 12 hours."
+
+msgid "最近 1 天"
+msgstr "Last day"
+
+msgid "最近 7 天"
+msgstr "Last 7 Days"
+
+msgid "最近 30 天"
+msgstr "Last 30 days"
+
+msgid "不刷新"
+msgstr "No Refresh"
+
+msgid "每 1 分钟"
+msgstr "Every minute"
+
+msgid "每 5 分钟"
+msgstr "Every 5 minutes"
+
+msgid "日"
+msgstr "day"
+
+msgid "一"
+msgstr "One"
+
+msgid "二"
+msgstr "two"
+
+msgid "三"
+msgstr "three"
+
+msgid "四"
+msgstr "four"
+
+msgid "五"
+msgstr "Fives"
+
+msgid "六"
+msgstr "six"
+
+msgid "一月"
+msgstr "Jan"
+
+msgid "二月"
+msgstr "Feb"
+
+msgid "三月"
+msgstr "Mar"
+
+msgid "四月"
+msgstr "Apr"
+
+msgid "五月"
+msgstr "May"
+
+msgid "六月"
+msgstr "Jun"
+
+msgid "七月"
+msgstr "Jul"
+
+msgid "八月"
+msgstr "Aug"
+
+msgid "九月"
+msgstr "Sep"
+
+msgid "十月"
+msgstr "Oct"
+
+msgid "十一月"
+msgstr "Nov"
+
+msgid "十二月"
+msgstr "Dec"
+
+msgid "今天"
+msgstr "Today"
+
+msgid "昨天"
+msgstr "yesterday"
+
+msgid "本周"
+msgstr "This Week"
+
+msgid "本月"
+msgstr "This month"
+
+msgid "确认删除"
+msgstr "confirm deletion"
+
+msgid "仪表盘？"
+msgstr "dashboard?"
+
+msgid "删除失败："
+msgstr "failed to delete:"
+
+msgid "编辑名称"
+msgstr "Edit"
+
+msgid "请输入新名称"
+msgstr "Please enter a new name."
+
+msgid "已存在名称为"
+msgstr "Name already exists"
+
+msgid "的仪表盘，请重新命名"
+msgstr "Dashboard, please rename"
+
+msgid "编辑成功"
+msgstr "Editing success"
+
+msgid "新建仪表盘"
+msgstr "New Dashboard"
+
+msgid "请为你的自定义仪表盘命名"
+msgstr "Please name your custom dashboard"
+
+msgid "创建"
+msgstr "create"
+
+msgid "创建成功"
+msgstr "Creating Success"
+
+msgid "一分钟"
+msgstr "1 minute"
+
+msgid "两分钟"
+msgstr "2 minutes."
+
+msgid "五分钟"
+msgstr "5 minutes"
+
+msgid "关联策略"
+msgstr "Related Rule"
+
+msgid "新增策略"
+msgstr "New"
+
+msgid "删除"
+msgstr "Delete"
+
+msgid "详情："
+msgstr "Detail: "
+
+msgid "代表："
+msgstr "One of: "
+
+msgid "已汇总%(collect_count)d条%(level_name)s告警"
+msgstr "Summarized %(collect_count)d %(level_name)s Alarms"
+
+msgid "蓝鲸监控通知，您当前有%(collect_count)d个%(level_name)s告警"
+msgstr "BK Monitor Notice, You currently have %(collect_count)d %(level_name)s Alarms"
+
+msgid "业务应用"
+msgstr "Application"
+
+msgid "用户体验"
+msgstr "User-Experience"
+
+msgid "服务"
+msgstr "Services"
+
+msgid "服务模块"
+msgstr "Module"
+
+msgid "操作系统"
+msgstr "Operating System"
+
+msgid "查看详情"
+msgstr "Detail"
+
+msgid "此为系统邮件，由蓝鲸监控自动发送，请勿回复"
+msgstr "This is a system mail, sent automatically by BKMonitor, please do not reply."
+
+msgid "监控通知，"
+msgstr "BK Monitor Notice,"
+
+msgid "蓝鲸监控通知，当前%(bk_biz_name)s业务%(strategy_name)s下%(level_name)s告警已恢复"
+msgstr "BK Monitor notification ,the business %(bk_biz_name) , the rule %(strategy_name) alarms has been restored"
+
+msgid "蓝鲸监控通知，当前%(bk_biz_name)s业务%(strategy_name)s下发生%(level_name)s告警"
+msgstr "BK Monitor alerting,the business %(bk_biz_name) , the rule %(strategy_name) triggered alarms"
+
+msgid "监控采集"
+msgstr "Collections"
+
+msgid "日志采集"
+msgstr "Log Collections"
+
+msgid "系统事件"
+msgstr "System Event"
+
+msgid "自定义事件"
+msgstr "Custom Event"
+
+msgid "自定义时序数据"
+msgstr "Custom Metric"

@@ -1,0 +1,4 @@
+{{ request.method | safe }} {{ request.get_full_path | safe }}
+{% for key, value in headers.iteritems %}{{ key | safe }}: {{ value | safe }}
+{% endfor%}
+{% ifequal request.body None %}{% else %}{{ request.body | safe }}{% endifequal %}

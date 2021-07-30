@@ -1,0 +1,26 @@
+const getters = {
+  bizId: state => state.app.bizId,
+  bizList: state => state.app.bizList.slice(),
+  title: state => state.app.title,
+  needBack: state => state.app.needBack,
+  csrfCookieName: state => state.app.csrfCookieName,
+  userName: state => state.app.userName,
+  isSuperUser: state => state.app.isSuperUser,
+  siteUrl: state => state.app.siteUrl,
+  navId: state => state.app.navId,
+  navTitle: state => state.app.navTitle,
+  enableMessageQueue: state => state.app.enableMessageQueue,
+  messageQueueDSN: state => state.app.messageQueueDSN,
+  mcMainLoading: state => state.app.mcMainLoading,
+  maxAvailableDurationLimit: state => state.app.maxAvailableDurationLimit,
+  upgradeAllowed: state => state.app.upgradeAllowed,
+  cmdbUrl: state => state.app.cmdbUrl,
+  bkLogSearchUrl: state => state.app.bkLogSearchUrl,
+  bkUrl: state => state.app.bkUrl,
+  bkNodemanHost: state => state.app.bkNodemanHost,
+  loginUrl: state => state.app.loginUrl,
+  navToggle: state => state.app.navToggle,
+  collectingConfigFileMaxSize: state => state.app.collectingConfigFileMaxSize,
+  enable_cmdb_level: state => state.app.enable_cmdb_level
+}
+export default getters

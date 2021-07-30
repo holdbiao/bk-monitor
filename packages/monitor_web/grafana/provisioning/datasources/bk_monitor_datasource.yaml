@@ -1,0 +1,9 @@
+apiVersion: 1
+datasources:
+  - name: 蓝鲸监控 - 指标数据
+    type: bkmonitor-timeseries-datasource
+    access: direct
+    isDefault: true
+    url: ""
+    jsonData:
+      baseUrl: /${SETTINGS_SITE_URL}rest/v2/grafana/

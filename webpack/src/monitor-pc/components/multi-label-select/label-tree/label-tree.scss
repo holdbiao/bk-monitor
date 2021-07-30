@@ -1,0 +1,127 @@
+.label-tree-wrap {
+  .bk-tree,
+  .leaf {
+    /* stylelint-disable-next-line declaration-no-important */
+    padding: 0 !important;
+  }
+  .tree-drag-node {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+    .tree-expanded-icon {
+      display: none;
+      color: #979ba5;
+    }
+    // &:hover {
+    //     background-color: #E1ECFF;
+    // }
+    .tree-node {
+      flex: 1;
+
+      /* stylelint-disable-next-line declaration-no-important */
+      font-size: 14px !important;
+      height: 100%;
+    }
+  }
+  .tree-node-item {
+    height: 36px;
+    color: #63656e;
+    margin-top: 2px;
+    transition: background-color .1s ease-in-out;
+    .edit-item-wrap {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .bk-form-control {
+        width: calc(100% - 66px);
+      }
+      /deep/.bk-input-text {
+        display: flex;
+        align-items: center;
+      }
+      .icon-group {
+        display: flex;
+        align-items: center;
+        color: #3a84ff;
+        padding: 0 16px 0 8px;
+        width: 66px;
+        flex-shrink: 0;
+        .icon-mc-check-small {
+          font-size: 24px;
+        }
+        .icon-mc-close {
+          font-size: 18px;
+        }
+        i {
+          vertical-align: middle;
+          cursor: pointer;
+        }
+      }
+    }
+    .normal-item-wrap {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      .item-name-wrap {
+        display: flex;
+        align-items: center;
+        .icon-mc-triangle-down {
+          font-size: 20px;
+        }
+        .to-right {
+          transform: rotate(-90deg);
+        }
+        .hidden {
+          display: none;
+        }
+      }
+      .item-icon-group {
+        display: none;
+        padding-right: 18px;
+        color: #3a84ff;
+        i {
+          vertical-align: middle;
+          font-size: 24px;
+          cursor: pointer;
+        }
+        .icon-mc-delete-line {
+          font-size: 16px;
+          margin-left: 4px;
+          &:hover {
+            color: #ff5656;
+          }
+        }
+      }
+      &:hover {
+        .item-icon-group {
+          display: inline-block;
+        }
+      }
+    }
+    &:hover {
+      color: #3a84ff;
+      background-color: #e1ecff;
+    }
+  }
+  .node-item-active {
+    background-color: #f4f6fa;
+    .normal-item-wrap {
+      .icon-mc-check-small {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        padding-right: 16px;
+        color: #3a84ff;
+      }
+    }
+  }
+}
+.info-subHeader {
+  text-align: center;
+  .count {
+    padding: 0 8px;
+    color: #ff5656
+  }
+}

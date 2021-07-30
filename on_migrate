@@ -1,0 +1,14 @@
+#!/bin/bash
+
+source /root/.bkrc
+source $CTRL_DIR/functions
+
+# workon 会自动进入到工程目录
+workon bkmonitorv3-monitor || fail "activate virtualenv (monitor) failed."
+
+# 同步写入zk的配置信息, 请勿更改执行顺序
+bin/manage.sh sync_cluster_config
+bin/manage.sh sync_zk_config
+bin/manage.sh refresh_influxdb_proxy_config
+bin/manage.sh init_influxdb_env
+bin/manage.sh refresh_custom_report_metric_path

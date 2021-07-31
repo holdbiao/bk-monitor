@@ -8,9 +8,6 @@ Unless required by applicable law or agreed to in writing, software distributed 
 an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
 specific language governing permissions and limitations under the License.
 """
-"""
-移动端事件模块错误类
-"""
 from __future__ import absolute_import, print_function, unicode_literals
 
 from django.utils.translation import ugettext_lazy as _lazy

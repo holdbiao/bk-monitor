@@ -14,7 +14,6 @@ specific language governing permissions and limitations under the License.
 python convert_yaml.py -s ../docs/api/monitor_v3.yaml -t ./ -f json
 """
 
-from __future__ import absolute_import, print_function, unicode_literals
 
 import argparse
 import json

@@ -28,7 +28,6 @@ INSTALLED_APPS += ()
 
 # Keep 'DATABASES' empty in this file,
 # configurate it in your own local_settings.py instead.
-DATABASES = {}
 
 #
 # Redis

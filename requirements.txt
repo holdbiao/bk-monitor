@@ -59,7 +59,7 @@ humanize==0.5.1
 gevent==1.1.1
 celery-redbeat==0.13.0
 mysqlclient==1.4.4
-supervisor==4.0.2    # backend
+supervisor==4.0.2
 jedi==0.17.2
 
 # jwt

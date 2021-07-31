@@ -13,8 +13,6 @@ specific language governing permissions and limitations under the License.
 IntelligentDetect：智能异常检测算法基于计算平台的计算结果，再基于结果表的is_anomaly{1,2,3}来进行判断。
 """
 
-from __future__ import absolute_import, print_function, unicode_literals
-
 from django.utils.translation import ugettext as _
 
 from alarm_backends.service.detect.strategy import BasicAlgorithmsCollection, ExprDetectAlgorithms

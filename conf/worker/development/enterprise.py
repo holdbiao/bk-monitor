@@ -209,7 +209,7 @@ ESB_COMPONENT_URL = "http://paas.replace.me:80"
 COMMON_USERNAME = "admin"
 
 # 配置库
-MYSQL_NAME = "bkdata_monitor_alert"
+MYSQL_NAME = "backend_dev"
 MYSQL_USER = "root"
 MYSQL_PASSWORD = ""
 MYSQL_HOST = "127.0.0.1"
@@ -225,16 +225,9 @@ DATABASES = {
         "PORT": MYSQL_PORT,
         "TEST": {"CHARSET": "utf8", "COLLATION": "utf8_general_ci"},
     },
-    "monitor_api": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": MYSQL_NAME,
-        "USER": MYSQL_USER,
-        "PASSWORD": MYSQL_PASSWORD,
-        "HOST": MYSQL_HOST,
-        "PORT": MYSQL_PORT,
-        "TEST": {"CHARSET": "utf8", "COLLATION": "utf8_general_ci"},
-    },
 }
+
+DATABASES["monitor_api"] = DATABASES["default"]
 
 ########################## new alarm settings ############################ noqa
 APP_CODE = str(os.environ.get("APP_ID", "bk_monitor"))  # noqa

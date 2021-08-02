@@ -207,22 +207,26 @@ class GetCustomEventGroup(Resource):
         event_info_list = api.metadata.get_event_group.request.refresh(event_group_id=event_group_id)
         data["event_info_list"] = list()
 
-        #  获得每个事件的关联策略ID
-        related_strategies = {
-            f"{event_info_list['event_group_id']}-{item['event_id']}": list(
-                QueryConfigModel.objects.filter(
-                    metric_id=f"custom.event.{event_info_list['bk_data_id']}.{item['event_id']}"
-                ).values_list("strategy_id", flat=True)
+        # 查询事件关联策略ID
+        related_query_configs = (
+            QueryConfigModel.objects.filter(
+                data_source_label=DataSourceLabel.CUSTOM,
+                data_type_label=DataTypeLabel.EVENT,
+                config__result_table_id=data["table_id"],
             )
-            for item in event_info_list["event_info_list"]
-        }
+            .values("strategy_id")
+            .annotate(custom_event_name=JSONExtract("config", "$.custom_event_name"))
+        )
+        related_strategies = defaultdict(set)
+        for query_config in related_query_configs:
+            related_strategies[query_config["custom_event_name"]].add(query_config["strategy_id"])
 
         for item in event_info_list["event_info_list"]:
             event_info = {
                 "custom_event_name": item["event_name"],
                 "bk_event_group_id": event_info_list["event_group_id"],
                 "custom_event_id": item["event_id"],
-                "related_strategies": related_strategies.get(f"{event_info_list['event_group_id']}-{item['event_id']}"),
+                "related_strategies": list(related_strategies[item["event_name"]]),
                 "dimension_list": [{"dimension_name": dimension} for dimension in item["dimension_list"]],
             }
             data["event_info_list"].append(event_info)

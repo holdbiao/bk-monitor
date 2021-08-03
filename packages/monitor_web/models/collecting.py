@@ -237,6 +237,8 @@ class CollectConfigMeta(OperateRecordModelBase):
             # 将目标版本置为当前版本
             self.deployment_config = new_deployment_config
             self.save()
+            # 启动订阅
+            api.node_man.switch_subscription(subscription_id=subscription_id, action="enable")
 
         diff_result = self.deployment_config.show_diff(target_deployment_config)
 

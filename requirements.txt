@@ -1,7 +1,6 @@
 bkoauth==0.0.22                      # ieod requirment
 bkstorages==0.1.3                    # ieod requirment
-blueking-component-ieod==0.0.90      # internal
-blueapps==3.2.7                      # self-developed
+blueapps-open==3.2.7                      # self-developed
 
 # need move to 01_requirements.txt on pack
 # move to "02_requirements_local.txt" if end with "self-developed" tag
